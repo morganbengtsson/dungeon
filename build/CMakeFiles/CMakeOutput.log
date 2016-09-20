@@ -1,0 +1,1702 @@
+The system is: Linux - 4.4.0-36-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c6ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c6ab.dir/build.make CMakeFiles/cmTC_4c6ab.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c6ab.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4c6ab.dir/testCCompiler.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_4c6ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c6ab.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4c6ab.dir/testCCompiler.c.o  -o cmTC_4c6ab -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9367e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9367e.dir/build.make CMakeFiles/cmTC_9367e.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_9367e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9367e.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o  -o cmTC_9367e -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9367e' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrnM3Fx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9367e /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9367e/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9367e.dir/build.make CMakeFiles/cmTC_9367e.dir/build]
+  ignore line: [make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_9367e]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9367e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o  -o cmTC_9367e -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9367e' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrnM3Fx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9367e /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccrnM3Fx.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_9367e] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTC_9367e.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e2df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e2df.dir/build.make CMakeFiles/cmTC_4e2df.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e2df.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_4e2df.dir/feature_tests.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_4e2df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e2df.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4e2df.dir/feature_tests.c.o  -o cmTC_4e2df -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0d734/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0d734.dir/build.make CMakeFiles/cmTC_0d734.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d734.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_0d734.dir/feature_tests.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_0d734
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d734.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_0d734.dir/feature_tests.c.o  -o cmTC_0d734 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca693/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca693.dir/build.make CMakeFiles/cmTC_ca693.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca693.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_ca693.dir/feature_tests.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_ca693
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca693.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ca693.dir/feature_tests.c.o  -o cmTC_ca693 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd078/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd078.dir/build.make CMakeFiles/cmTC_bd078.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd078.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_bd078.dir/testCXXCompiler.cxx.o -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_bd078
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd078.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_bd078.dir/testCXXCompiler.cxx.o  -o cmTC_bd078 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e079/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e079.dir/build.make CMakeFiles/cmTC_0e079.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_0e079
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e079.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_0e079 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0e079' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc93I9vD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0e079 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0e079/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0e079.dir/build.make CMakeFiles/cmTC_0e079.dir/build]
+  ignore line: [make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_0e079]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e079.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_0e079 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0e079' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc93I9vD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0e079 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc93I9vD.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0e079] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTC_0e079.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cc6f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc6f8.dir/build.make CMakeFiles/cmTC_cc6f8.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cc6f8.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_cc6f8.dir/feature_tests.cxx.o -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_cc6f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc6f8.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_cc6f8.dir/feature_tests.cxx.o  -o cmTC_cc6f8 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6870b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6870b.dir/build.make CMakeFiles/cmTC_6870b.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6870b.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_6870b.dir/feature_tests.cxx.o -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_6870b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6870b.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_6870b.dir/feature_tests.cxx.o  -o cmTC_6870b -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f7dcd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7dcd.dir/build.make CMakeFiles/cmTC_f7dcd.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f7dcd.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_f7dcd.dir/feature_tests.cxx.o -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_f7dcd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7dcd.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_f7dcd.dir/feature_tests.cxx.o  -o cmTC_f7dcd -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4884f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4884f.dir/build.make CMakeFiles/cmTC_4884f.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4884f.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4884f.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_4884f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4884f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4884f.dir/CheckIncludeFile.c.o  -o cmTC_4884f -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9ea0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9ea0.dir/build.make CMakeFiles/cmTC_a9ea0.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9ea0.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a9ea0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a9ea0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9ea0.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a9ea0.dir/CheckFunctionExists.c.o  -o cmTC_a9ea0 -rdynamic -lpthread 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5fbcc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5fbcc.dir/build.make CMakeFiles/cmTC_5fbcc.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5fbcc.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_5fbcc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5fbcc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fbcc.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_5fbcc.dir/CheckFunctionExists.c.o  -o cmTC_5fbcc -rdynamic /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_927d5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_927d5.dir/build.make CMakeFiles/cmTC_927d5.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_927d5.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_927d5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_927d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_927d5.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_927d5.dir/CheckFunctionExists.c.o  -o cmTC_927d5 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e939/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e939.dir/build.make CMakeFiles/cmTC_0e939.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e939.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_0e939.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0e939
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e939.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_0e939.dir/CheckFunctionExists.c.o  -o cmTC_0e939 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2796d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2796d.dir/build.make CMakeFiles/cmTC_2796d.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2796d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_2796d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2796d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2796d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_2796d.dir/CheckFunctionExists.c.o  -o cmTC_2796d -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74d7e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74d7e.dir/build.make CMakeFiles/cmTC_74d7e.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74d7e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_74d7e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_74d7e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74d7e.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_74d7e.dir/CheckFunctionExists.c.o  -o cmTC_74d7e -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bdaf7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bdaf7.dir/build.make CMakeFiles/cmTC_bdaf7.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bdaf7.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_bdaf7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bdaf7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdaf7.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_bdaf7.dir/CheckFunctionExists.c.o  -o cmTC_bdaf7 -rdynamic -lICE 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ceef5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ceef5.dir/build.make CMakeFiles/cmTC_ceef5.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ceef5.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ceef5.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_ceef5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ceef5.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ceef5.dir/CheckIncludeFile.c.o  -o cmTC_ceef5 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e7ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e7ec.dir/build.make CMakeFiles/cmTC_0e7ec.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e7ec.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_0e7ec.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_0e7ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e7ec.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_0e7ec.dir/CheckIncludeFile.c.o  -o cmTC_0e7ec -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_17245/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17245.dir/build.make CMakeFiles/cmTC_17245.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17245.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_17245.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_17245
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17245.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_17245.dir/CheckIncludeFile.c.o  -o cmTC_17245 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_daac3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_daac3.dir/build.make CMakeFiles/cmTC_daac3.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_daac3.dir/SIZEOF_LONG.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_daac3.dir/SIZEOF_LONG.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c"
+Linking C executable cmTC_daac3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daac3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_daac3.dir/SIZEOF_LONG.c.o  -o cmTC_daac3 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_17507/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17507.dir/build.make CMakeFiles/cmTC_17507.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17507.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_17507.dir/SIZEOF_LONG_LONG.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c"
+Linking C executable cmTC_17507
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17507.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_17507.dir/SIZEOF_LONG_LONG.c.o  -o cmTC_17507 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_STD_C11 succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_997f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_997f0.dir/build.make CMakeFiles/cmTC_997f0.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_997f0.dir/src.c.o
+/usr/bin/cc    -DHAVE_STD_C11   -std=c11 -o CMakeFiles/cmTC_997f0.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_997f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_997f0.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_STD_C11    CMakeFiles/cmTC_997f0.dir/src.c.o  -o cmTC_997f0 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the posix_memalign exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3709c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3709c.dir/build.make CMakeFiles/cmTC_3709c.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3709c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500   -o CMakeFiles/cmTC_3709c.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_3709c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3709c.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500    CMakeFiles/cmTC_3709c.dir/CheckSymbolExists.c.o  -o cmTC_3709c -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test INLINE_IS_C99 succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_993d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_993d8.dir/build.make CMakeFiles/cmTC_993d8.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_993d8.dir/src.c.o
+/usr/bin/cc    -std=c11  -DINLINE_IS_C99  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -fno-inline   -o CMakeFiles/cmTC_993d8.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_993d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_993d8.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DINLINE_IS_C99  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -fno-inline    CMakeFiles/cmTC_993d8.dir/src.c.o  -o cmTC_993d8 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+extern inline int foo() { return 0; }
+                             int main() {return foo();}
+Performing C SOURCE FILE Test HAVE_C99_VLA succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b16f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b16f3.dir/build.make CMakeFiles/cmTC_b16f3.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b16f3.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_C99_VLA  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_b16f3.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_b16f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b16f3.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_C99_VLA  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_b16f3.dir/src.c.o  -o cmTC_b16f3 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(int argc, char *argv[])
+ {
+     volatile int tmp[argc];
+     tmp[0] = argv[0][0];
+     return tmp[0];
+ }
+Performing C SOURCE FILE Test HAVE_C99_BOOL succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_38143/fast"
+/usr/bin/make -f CMakeFiles/cmTC_38143.dir/build.make CMakeFiles/cmTC_38143.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38143.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_C99_BOOL  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_38143.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_38143
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38143.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_C99_BOOL  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_38143.dir/src.c.o  -o cmTC_38143 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(int argc, char *argv[])
+ {
+     volatile _Bool ret;
+     ret = (argc > 1) ? 1 : 0;
+     return ret ? -1 : 0;
+ }
+Performing C SOURCE FILE Test HAVE_C11_STATIC_ASSERT succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2946d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2946d.dir/build.make CMakeFiles/cmTC_2946d.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2946d.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_C11_STATIC_ASSERT  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_2946d.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_2946d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2946d.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_C11_STATIC_ASSERT  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_2946d.dir/src.c.o  -o cmTC_2946d -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main()
+ {
+     _Static_assert(sizeof(int) == sizeof(int), "What");
+     return 0;
+ }
+Performing C SOURCE FILE Test HAVE_C11_ALIGNAS succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8d152/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8d152.dir/build.make CMakeFiles/cmTC_8d152.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d152.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_C11_ALIGNAS  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_8d152.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_8d152
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d152.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_C11_ALIGNAS  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_8d152.dir/src.c.o  -o cmTC_8d152 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+_Alignas(16) int foo;
+ int main()
+ {
+     return 0;
+ }
+Performing C SOURCE FILE Test HAVE_C11_ATOMIC succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62ca8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62ca8.dir/build.make CMakeFiles/cmTC_62ca8.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62ca8.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_C11_ATOMIC  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_62ca8.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_62ca8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62ca8.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_C11_ATOMIC  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_62ca8.dir/src.c.o  -o cmTC_62ca8 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <stdatomic.h>
+ const int _Atomic foo = ATOMIC_VAR_INIT(~0);
+ int main()
+ {
+     return atomic_load(&foo);
+ }
+Performing C SOURCE FILE Test HAVE_W_EXTRA succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d439c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d439c.dir/build.make CMakeFiles/cmTC_d439c.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d439c.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_W_EXTRA  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -Wextra -o CMakeFiles/cmTC_d439c.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_d439c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d439c.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_W_EXTRA  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_d439c.dir/src.c.o  -o cmTC_d439c -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_DESTRUCTOR succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0c2fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c2fd.dir/build.make CMakeFiles/cmTC_0c2fd.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c2fd.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_GCC_DESTRUCTOR  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_0c2fd.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_0c2fd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c2fd.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_GCC_DESTRUCTOR  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_0c2fd.dir/src.c.o  -o cmTC_0c2fd -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int foo() __attribute__((destructor));
+                             int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_GCC_PROTECTED_VISIBILITY succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f901b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f901b.dir/build.make CMakeFiles/cmTC_f901b.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f901b.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_GCC_PROTECTED_VISIBILITY  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -Wattributes -Werror   -o CMakeFiles/cmTC_f901b.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_f901b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f901b.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_GCC_PROTECTED_VISIBILITY  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -Wattributes -Werror    CMakeFiles/cmTC_f901b.dir/src.c.o  -o cmTC_f901b -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int foo() __attribute__((visibility("protected")));
+                             int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_VISIBILITY_HIDDEN_SWITCH succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_34fdf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_34fdf.dir/build.make CMakeFiles/cmTC_34fdf.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34fdf.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_VISIBILITY_HIDDEN_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -Wattributes -Werror   -fvisibility=hidden -o CMakeFiles/cmTC_34fdf.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_34fdf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34fdf.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_VISIBILITY_HIDDEN_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -Wattributes -Werror    CMakeFiles/cmTC_34fdf.dir/src.c.o  -o cmTC_34fdf -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_ALIGNED succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0bbb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0bbb0.dir/build.make CMakeFiles/cmTC_0bbb0.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0bbb0.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_ATTRIBUTE_ALIGNED  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -Wattributes -Werror   -o CMakeFiles/cmTC_0bbb0.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_0bbb0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bbb0.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_ATTRIBUTE_ALIGNED  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -Wattributes -Werror    CMakeFiles/cmTC_0bbb0.dir/src.c.o  -o cmTC_0bbb0 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int foo __attribute__((aligned(16)));
+                             int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_MSSE_SWITCH succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7fd56/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7fd56.dir/build.make CMakeFiles/cmTC_7fd56.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7fd56.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_MSSE_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -msse -o CMakeFiles/cmTC_7fd56.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_7fd56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fd56.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_MSSE_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_7fd56.dir/src.c.o  -o cmTC_7fd56 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_MSSE2_SWITCH succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac8dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac8dc.dir/build.make CMakeFiles/cmTC_ac8dc.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac8dc.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_MSSE2_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -msse2 -o CMakeFiles/cmTC_ac8dc.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_ac8dc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac8dc.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_MSSE2_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_ac8dc.dir/src.c.o  -o cmTC_ac8dc -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_MSSE3_SWITCH succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc39f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc39f.dir/build.make CMakeFiles/cmTC_dc39f.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc39f.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_MSSE3_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -msse3 -o CMakeFiles/cmTC_dc39f.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_dc39f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc39f.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_MSSE3_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_dc39f.dir/src.c.o  -o cmTC_dc39f -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_MSSE4_1_SWITCH succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3ffff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ffff.dir/build.make CMakeFiles/cmTC_3ffff.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ffff.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_MSSE4_1_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -msse4.1 -o CMakeFiles/cmTC_3ffff.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_3ffff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ffff.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_MSSE4_1_SWITCH  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_3ffff.dir/src.c.o  -o cmTC_3ffff -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_FORMAT succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ec7eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ec7eb.dir/build.make CMakeFiles/cmTC_ec7eb.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec7eb.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_GCC_FORMAT  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_ec7eb.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_ec7eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec7eb.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_GCC_FORMAT  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_ec7eb.dir/src.c.o  -o cmTC_ec7eb -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int foo(const char *str, ...) __attribute__((format(printf, 1, 2)));
+                         int main() {return 0;}
+Determining if the include file stdbool.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92d03/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92d03.dir/build.make CMakeFiles/cmTC_92d03.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92d03.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_92d03.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_92d03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92d03.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_92d03.dir/CheckIncludeFile.c.o  -o cmTC_92d03 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdalign.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_587a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_587a7.dir/build.make CMakeFiles/cmTC_587a7.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_587a7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_587a7.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_587a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_587a7.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_587a7.dir/CheckIncludeFile.c.o  -o cmTC_587a7 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b6b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b6b7.dir/build.make CMakeFiles/cmTC_9b6b7.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b6b7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_9b6b7.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_9b6b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b6b7.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_9b6b7.dir/CheckIncludeFile.c.o  -o cmTC_9b6b7 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e36ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e36ab.dir/build.make CMakeFiles/cmTC_e36ab.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e36ab.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_e36ab.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_e36ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e36ab.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_e36ab.dir/CheckIncludeFile.c.o  -o cmTC_e36ab -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd4be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd4be.dir/build.make CMakeFiles/cmTC_fd4be.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd4be.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_fd4be.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_fd4be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd4be.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_fd4be.dir/CheckIncludeFile.c.o  -o cmTC_fd4be -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file cpuid.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45fc0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45fc0.dir/build.make CMakeFiles/cmTC_45fc0.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45fc0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_45fc0.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_45fc0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45fc0.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_45fc0.dir/CheckIncludeFile.c.o  -o cmTC_45fc0 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fenv.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f0f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f0f5.dir/build.make CMakeFiles/cmTC_7f0f5.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f0f5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_7f0f5.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_7f0f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f0f5.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_7f0f5.dir/CheckIncludeFile.c.o  -o cmTC_7f0f5 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95dfe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95dfe.dir/build.make CMakeFiles/cmTC_95dfe.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95dfe.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_95dfe.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_95dfe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95dfe.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_95dfe.dir/CheckIncludeFile.c.o  -o cmTC_95dfe -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pow exists in the m passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_16805/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16805.dir/build.make CMakeFiles/cmTC_16805.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16805.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=pow  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_16805.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘pow’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_16805
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16805.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=pow  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_16805.dir/CheckFunctionExists.c.o  -o cmTC_16805 -rdynamic -lm 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2ddb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2ddb.dir/build.make CMakeFiles/cmTC_b2ddb.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2ddb.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=dlopen  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_b2ddb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2ddb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2ddb.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=dlopen  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_b2ddb.dir/CheckFunctionExists.c.o  -o cmTC_b2ddb -rdynamic -ldl -lm 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e6a22/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e6a22.dir/build.make CMakeFiles/cmTC_e6a22.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6a22.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_e6a22.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_e6a22
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6a22.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_e6a22.dir/CheckIncludeFile.c.o  -o cmTC_e6a22 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_GCC_GET_CPUID succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65758/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65758.dir/build.make CMakeFiles/cmTC_65758.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65758.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_GCC_GET_CPUID  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_65758.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_65758
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65758.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_GCC_GET_CPUID  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_65758.dir/src.c.o  -o cmTC_65758 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <cpuid.h>
+        int main()
+        {
+            unsigned int eax, ebx, ecx, edx;
+            return __get_cpuid(0, &eax, &ebx, &ecx, &edx);
+        }
+Determining if the aligned_alloc exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5935/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5935.dir/build.make CMakeFiles/cmTC_d5935.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5935.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_d5935.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_d5935
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5935.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_d5935.dir/CheckSymbolExists.c.o  -o cmTC_d5935 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef aligned_alloc
+  return ((int*)(&aligned_alloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the posix_memalign exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62f4d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62f4d.dir/build.make CMakeFiles/cmTC_62f4d.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62f4d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_62f4d.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_62f4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62f4d.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_62f4d.dir/CheckSymbolExists.c.o  -o cmTC_62f4d -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the lrintf exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6f700/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6f700.dir/build.make CMakeFiles/cmTC_6f700.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6f700.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_6f700.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_6f700
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f700.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_6f700.dir/CheckSymbolExists.c.o  -o cmTC_6f700 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef lrintf
+  return ((int*)(&lrintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the modff exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5aebd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5aebd.dir/build.make CMakeFiles/cmTC_5aebd.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5aebd.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_5aebd.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_5aebd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5aebd.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_5aebd.dir/CheckSymbolExists.c.o  -o cmTC_5aebd -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef modff
+  return ((int*)(&modff))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function stat exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a14b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a14b1.dir/build.make CMakeFiles/cmTC_a14b1.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a14b1.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=stat  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_a14b1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a14b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a14b1.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=stat  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_a14b1.dir/CheckFunctionExists.c.o  -o cmTC_a14b1 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtof exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f268e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f268e.dir/build.make CMakeFiles/cmTC_f268e.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f268e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=strtof  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_f268e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f268e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f268e.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=strtof  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_f268e.dir/CheckFunctionExists.c.o  -o cmTC_f268e -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62823/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62823.dir/build.make CMakeFiles/cmTC_62823.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62823.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=strcasecmp  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_62823.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_62823
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62823.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=strcasecmp  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_62823.dir/CheckFunctionExists.c.o  -o cmTC_62823 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strncasecmp exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_27c06/fast"
+/usr/bin/make -f CMakeFiles/cmTC_27c06.dir/build.make CMakeFiles/cmTC_27c06.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27c06.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=strncasecmp  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_27c06.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_27c06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27c06.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=strncasecmp  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_27c06.dir/CheckFunctionExists.c.o  -o cmTC_27c06 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_851b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_851b2.dir/build.make CMakeFiles/cmTC_851b2.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_851b2.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_851b2.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_851b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_851b2.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_851b2.dir/CheckSymbolExists.c.o  -o cmTC_851b2 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the isfinite exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff271/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff271.dir/build.make CMakeFiles/cmTC_ff271.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff271.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_ff271.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_ff271
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff271.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_ff271.dir/CheckSymbolExists.c.o  -o cmTC_ff271 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isfinite
+  return ((int*)(&isfinite))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the isnan exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2dc04/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2dc04.dir/build.make CMakeFiles/cmTC_2dc04.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2dc04.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_2dc04.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_2dc04
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dc04.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_2dc04.dir/CheckSymbolExists.c.o  -o cmTC_2dc04 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gettimeofday exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_22ef1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_22ef1.dir/build.make CMakeFiles/cmTC_22ef1.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22ef1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_22ef1.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_22ef1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22ef1.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_22ef1.dir/CheckSymbolExists.c.o  -o cmTC_22ef1 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gettimeofday
+  return ((int*)(&gettimeofday))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the nanosleep exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_be97a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_be97a.dir/build.make CMakeFiles/cmTC_be97a.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be97a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_be97a.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_be97a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be97a.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_be97a.dir/CheckSymbolExists.c.o  -o cmTC_be97a -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nanosleep
+  return ((int*)(&nanosleep))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eebb7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eebb7.dir/build.make CMakeFiles/cmTC_eebb7.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eebb7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -o CMakeFiles/cmTC_eebb7.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_eebb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eebb7.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_eebb7.dir/CheckIncludeFile.c.o  -o cmTC_eebb7 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_PTHREAD succeeded with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1ac34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ac34.dir/build.make CMakeFiles/cmTC_1ac34.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ac34.dir/src.c.o
+/usr/bin/cc    -std=c11  -DHAVE_PTHREAD  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES   -pthread -o CMakeFiles/cmTC_1ac34.dir/src.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_1ac34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ac34.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DHAVE_PTHREAD  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES    CMakeFiles/cmTC_1ac34.dir/src.c.o  -o cmTC_1ac34 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_153c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_153c2.dir/build.make CMakeFiles/cmTC_153c2.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_153c2.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=pthread_create  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_153c2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_153c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_153c2.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=pthread_create  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_153c2.dir/CheckFunctionExists.c.o  -o cmTC_153c2 -rdynamic -lpthread -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_setschedparam exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c9780/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9780.dir/build.make CMakeFiles/cmTC_c9780.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9780.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_c9780.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_c9780
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9780.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_c9780.dir/CheckSymbolExists.c.o  -o cmTC_c9780 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_setschedparam
+  return ((int*)(&pthread_setschedparam))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_mutex_timedlock exist passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b2e1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b2e1.dir/build.make CMakeFiles/cmTC_3b2e1.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b2e1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_3b2e1.dir/CheckSymbolExists.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_3b2e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b2e1.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11   -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_3b2e1.dir/CheckSymbolExists.c.o  -o cmTC_3b2e1 -rdynamic -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+File /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_mutex_timedlock
+  return ((int*)(&pthread_mutex_timedlock))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_addd6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_addd6.dir/build.make CMakeFiles/cmTC_addd6.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_addd6.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -DCHECK_FUNCTION_EXISTS=clock_gettime  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_addd6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_addd6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_addd6.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -DCHECK_FUNCTION_EXISTS=clock_gettime  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_addd6.dir/CheckFunctionExists.c.o  -o cmTC_addd6 -rdynamic -lrt -lm -ldl 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file xmmintrin.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96053/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96053.dir/build.make CMakeFiles/cmTC_96053.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96053.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11  -msse  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_96053.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_96053
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96053.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -msse  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_96053.dir/CheckIncludeFile.c.o  -o cmTC_96053 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file emmintrin.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6fa98/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fa98.dir/build.make CMakeFiles/cmTC_6fa98.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6fa98.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11  -msse2  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_6fa98.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_6fa98
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fa98.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -msse2  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_6fa98.dir/CheckIncludeFile.c.o  -o cmTC_6fa98 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pmmintrin.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c6cae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6cae.dir/build.make CMakeFiles/cmTC_c6cae.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6cae.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11  -msse3  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_c6cae.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_c6cae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6cae.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -msse3  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_c6cae.dir/CheckIncludeFile.c.o  -o cmTC_c6cae -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file smmintrin.h exists passed with the following output:
+Change Dir: /home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_09826/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09826.dir/build.make CMakeFiles/cmTC_09826.dir/build
+make[1]: Entering directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09826.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -std=c11  -msse4.1  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread   -o CMakeFiles/cmTC_09826.dir/CheckIncludeFile.c.o   -c "/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_09826
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09826.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -msse4.1  -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -D_LARGEFILE_SOURCE -D_LARGE_FILES -pthread    CMakeFiles/cmTC_09826.dir/CheckIncludeFile.c.o  -o cmTC_09826 -rdynamic 
+make[1]: Leaving directory '/home/morgan/Projects/Dungeon on the fly/build/CMakeFiles/CMakeTmp'
+
+

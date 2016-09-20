@@ -1,0 +1,1 @@
+{"models": [], "euler": [0.0, -0.0, 0.0], "material": "floor.material", "lightmap": null, "angle": 0.0, "name": "floor", "mesh": "floor.mesh", "position": [0.0, 0.0, 0.0], "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], "axis": [0.0, 1.0, 0.0]}
