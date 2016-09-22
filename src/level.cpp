@@ -3,7 +3,9 @@
 
 Level::Level(mos::Assets &assets) {
   auto m = assets.model("floor.model");
-  rooms_.push_back(Room(glm::vec3(0.0f), glm::uvec2(4, 4), m, m, m));
+  for (int i = 0 ; i < 500; i += 10){
+  rooms_.push_back(Room(glm::vec3(i, 0.0f, 0.0f), m, m, m));
+  }
 }
 
 Level::~Level() {
@@ -17,7 +19,9 @@ void Level::update(const float dt) {
 
 Level::Models Level::models(){
   out_models_.clear();
-  out_models_.push_back(rooms_[0].model());
+  for (auto & r : rooms_){
+    out_models_.push_back(r.model());
+  }
   return out_models_;
 }
 
