@@ -19,7 +19,7 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution) {
   const auto light = mos::Light(glm::vec3(0.0f, 10.0f, 10.0f),
                                 glm::vec3(200.0f), glm::vec3(0.0f), glm::vec3(0.3f));
   const auto camera = mos::Camera(
-      glm::vec3(10.0f), glm::vec3(0.0f),
+      glm::vec3(40.0f), glm::vec3(0.0f),
       glm::perspective(45.0f, ((float)resolution_.x / (float)resolution_.y),
                        0.1f, 100.0f));
 

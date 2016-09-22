@@ -3,13 +3,16 @@
 
 Level::Level(mos::Assets &assets) {
   auto m = assets.model("floor.model");
-  rooms_.push_back(Room(glm::uvec2(4, 4), m, m, m));
+  rooms_.push_back(Room(glm::vec3(0.0f), glm::uvec2(4, 4), m, m, m));
 }
 
 Level::~Level() {
 }
 
 void Level::update(const float dt) {
+  for (auto &room : rooms_){
+    room.update(dt);
+  }
 }
 
 Level::Models Level::models(){
