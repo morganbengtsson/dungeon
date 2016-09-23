@@ -4,17 +4,28 @@
 #include <glm/gtx/io.hpp>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
-    : camera(glm::vec3(0.0f, 20.0f, 20.0f), glm::vec3(0.0f),
+    : time_(0.0f), camera(glm::vec3(0.0f, 20.0f, 20.0f), glm::vec3(0.0f),
               glm::perspective(45.0f,
                                ((float)resolution.x / (float)resolution.y),
                                0.1f, 100.0f)) {
   m_ = assets.model("floor.model");
-  corridors_.push_back(Corridor(glm::vec3(0.0f), m_));
+  corridors_.push_back(std::make_shared<Corridor>(glm::vec3(0.0f), m_));
 }
 
 Level::~Level() {}
 
 void Level::update(const float dt, const glm::bvec4 &camera_movement) {
+  time_ += dt;
+
+  if (time_ > 3.0f){
+    for (auto & c : corridors_){
+      if (!c->next){
+        c->next = std::make_shared<Corridor>(c->end(), m_);
+        corridors_.push_back(c->next);
+      }
+    }
+    time_ = 0.0f;
+  }
 
   auto p = camera.position();
   auto c = camera.center();
@@ -42,7 +53,7 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
 Level::Models Level::models() {
   out_models_.clear();
   for (auto &c : corridors_) {
-    out_models_.push_back(c.model());
+    out_models_.push_back(c->model());
   }
   return out_models_;
 }

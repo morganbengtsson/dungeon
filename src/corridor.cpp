@@ -1,6 +1,6 @@
 #include <corridor.hpp>
 
-Corridor::Corridor(const glm::vec3 &position, const mos::Model &floor) {
+Corridor::Corridor(const glm::vec3 &position, const mos::Model &floor) : floor_(floor) {
   model_.position(position);
 
   auto m = floor;
@@ -13,3 +13,7 @@ Corridor::Corridor(const glm::vec3 &position, const mos::Model &floor) {
 }
 
 mos::Model Corridor::model() { return model_; }
+
+glm::vec3 Corridor::end() {
+  return model_.position() + glm::vec3(3.0f, 0.0f, 0.0f);
+}
