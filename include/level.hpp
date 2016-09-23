@@ -17,6 +17,7 @@ public:
   Models models();
   mos::Camera camera;
 private:
+  mos::Model m_;
   Rooms rooms_;
   Models out_models_;
 };
