@@ -7,13 +7,14 @@
 #include <mos/render/model.hpp>
 #include <room.hpp>
 #include <corridor.hpp>
+#include <stairs.hpp>
 #include <door.hpp>
 
 class Level {
 public:
   using Models = std::vector<mos::Model>;
   using Rooms = std::vector<Room>;
-  using Corridors = std::vector<std::shared_ptr<Corridor>>;
+  using Entities = std::vector<std::shared_ptr<Entity>>;
   using Doors = std::vector<Door>;
   Level(mos::Assets &assets, const glm::vec2 &resolution);
   ~Level();
@@ -22,8 +23,9 @@ public:
   mos::Camera camera;
 private:
   float time_;
-  Corridors corridors_;
+  Entities entities_;
   mos::Model m_;
+  mos::Model stairs_;
   Models out_models_;
 };
 

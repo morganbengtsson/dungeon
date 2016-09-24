@@ -9,7 +9,8 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
                                ((float)resolution.x / (float)resolution.y),
                                0.1f, 100.0f)) {
   m_ = assets.model("floor.model");
-  corridors_.push_back(std::make_shared<Corridor>(glm::vec3(0.0f), m_));
+  stairs_ = assets.model("stairs.model");
+  entities_.push_back(std::make_shared<Corridor>(glm::vec3(0.0f), glm::vec2(1.0f, 0.0f), m_));
 }
 
 Level::~Level() {}
@@ -17,11 +18,12 @@ Level::~Level() {}
 void Level::update(const float dt, const glm::bvec4 &camera_movement) {
   time_ += dt;
 
-  if (time_ > 3.0f){
-    for (auto & c : corridors_){
-      if (!c->next){
-        c->next = std::make_shared<Corridor>(c->end(), m_);
-        corridors_.push_back(c->next);
+  if (time_ > 0.5f){
+    for (auto & e : entities_) {
+      if (!e->next){
+        //e->next = std::make_shared<Corridor>(e->end(), e->direction(), m_);
+        e->next = std::make_shared<Stairs>(e->end(), e->direction(), stairs_);
+        entities_.push_back(e->next);
       }
     }
     time_ = 0.0f;
@@ -52,7 +54,7 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
 
 Level::Models Level::models() {
   out_models_.clear();
-  for (auto &c : corridors_) {
+  for (auto &c : entities_) {
     out_models_.push_back(c->model());
   }
   return out_models_;
