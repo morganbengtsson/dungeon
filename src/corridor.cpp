@@ -16,6 +16,10 @@ Corridor::Corridor(const glm::vec3 &position,
   length_ = 3;
   auto m = floor;
 
+  if (glm::abs(direction_.y) == 1.0f){
+    m.transform = glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f));
+  }
+
   for (float i = 0; i < length_; i++) {
     m.position(glm::vec3(direction_, 0.0f) * i);
     model_.models.push_back(m);

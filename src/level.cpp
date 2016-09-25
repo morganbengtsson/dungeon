@@ -4,11 +4,11 @@
 #include <glm/gtx/io.hpp>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
-    : time_(0.0f), camera(glm::vec3(0.0f, 20.0f, 20.0f), glm::vec3(0.0f),
+    : time_(0.0f), camera(glm::vec3(0.0f, 10.0f, 10.0f), glm::vec3(0.0f),
               glm::perspective(45.0f,
                                ((float)resolution.x / (float)resolution.y),
                                0.1f, 100.0f)) {
-  m_ = assets.model("floor.model");
+  m_ = assets.model("corridor.model");
   stairs_ = assets.model("stairs.model");
   entities_.push_back(std::make_shared<Corridor>(glm::vec3(0.0f), glm::vec2(1.0f, 0.0f), m_));
 }
@@ -21,8 +21,8 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
   if (time_ > 0.5f){
     for (auto & e : entities_) {
       if (!e->next){
-        //e->next = std::make_shared<Corridor>(e->end(), e->direction(), m_);
-        e->next = std::make_shared<Stairs>(e->end(), e->direction(), stairs_);
+        e->next = std::make_shared<Corridor>(e->end(), e->direction(), m_);
+        //e->next = std::make_shared<Stairs>(e->end(), e->direction(), stairs_);
         entities_.push_back(e->next);
       }
     }

@@ -17,8 +17,8 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution,
   level_.update(dt, camera_movement);
 
   const auto light =
-      mos::Light(glm::vec3(0.0f, 100.0f, 100.0f), glm::vec3(2000.0f),
-                 glm::vec3(0.0f), glm::vec3(0.3f));
+      mos::Light(glm::vec3(0.0f, 100.0f, 100.0f), glm::vec3(0.0f),
+                 glm::vec3(0.0f), glm::vec3(1.0f));
 
   const auto models = level_.models();
 
