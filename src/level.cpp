@@ -3,6 +3,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/io.hpp>
 #include <glm/gtc/noise.hpp>
+#include <queue>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
     : time_(0.0f), camera(glm::vec3(0.0f, -10.0f, 10.0f), glm::vec3(0.0f),
@@ -13,7 +14,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
   stairs_ = assets.model("stairs.model");
   left_turn_ = assets.model("left_turn.model");
   right_turn_ = assets.model("right_turn.model");
-  entities_.push_back(std::make_shared<Corridor>(glm::vec3(0.0f), glm::vec2(1.0f, 0.0f), corridor_));
+  entities_.push_back(std::make_shared<Corridor>(glm::mat4(1.0f), corridor_));
 }
 
 Level::~Level() {}
@@ -21,16 +22,19 @@ Level::~Level() {}
 void Level::update(const float dt, const glm::bvec4 &camera_movement) {
   time_ += dt;
 
+
+  Entities new_entities;
+
   if (time_ > 0.5f) {
     for (auto & e : entities_) {
-      if (!e->next) {
-        //e->next = std::make_shared<Corridor>(e->end(), e->direction(), m_);
-        //e->next = std::make_shared<Stairs>(e->end(), e->direction(), stairs_);
-        e->next = std::make_shared<Corridor>(e->end(), e->direction(), corridor_);
-
-        entities_.push_back(e->next);
+      for (auto &d : e->exits){
+        if (!d.next) {
+          d.next = std::make_shared<Corridor>(d.transform, corridor_);
+          new_entities.push_back(d.next);
+        }
       }
     }
+    entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
     time_ = 0.0f;
   }
 

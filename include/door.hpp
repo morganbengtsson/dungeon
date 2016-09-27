@@ -4,13 +4,13 @@
 #include <memory>
 #include <entity.hpp>
 
+class Entity;
+
 class Door {
 public:
-  Door(const glm::vec3 &position, const glm::vec2 &direction);
-  using SharedEntity = std::shared_ptr<Entity>;
-  SharedEntity next;
-  const glm::vec3 position;
-  const glm::vec2 direction;
+  Door(const glm::mat4 &transform);
+  std::shared_ptr<Entity> next;
+  const glm::mat4 transform;
 };
 
 #endif // DOOR_HPP

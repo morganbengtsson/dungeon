@@ -4,15 +4,17 @@
 #include <glm/glm.hpp>
 #include <memory>
 #include <mos/render/model.hpp>
+#include <vector>
+#include <door.hpp>
+
+class Door;
 
 class Entity {
 public:
   using SharedEntity = std::shared_ptr<Entity>;
   virtual ~Entity(){}
   virtual mos::Model model() = 0;
-  virtual glm::vec3 end() = 0;
-  virtual glm::vec2 direction() const = 0;
-  SharedEntity next;
+  std::vector<Door> exits;
 };
 
 #endif // ENTITY_HPP

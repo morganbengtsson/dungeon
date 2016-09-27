@@ -5,17 +5,12 @@
 #include <mos/assets.hpp>
 #include <mos/render/camera.hpp>
 #include <mos/render/model.hpp>
-#include <room.hpp>
 #include <corridor.hpp>
-#include <stairs.hpp>
 #include <door.hpp>
-#include <left_turn.hpp>
-#include <right_turn.hpp>
 
 class Level {
 public:
   using Models = std::vector<mos::Model>;
-  using Rooms = std::vector<Room>;
   using Entities = std::vector<std::shared_ptr<Entity>>;
   using Doors = std::vector<Door>;
   Level(mos::Assets &assets, const glm::vec2 &resolution);
