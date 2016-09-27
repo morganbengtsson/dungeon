@@ -12,11 +12,12 @@ Corridor::Corridor(const glm::vec3 &position,
   model_.position(position);
   auto noise = glm::simplex(position * 1000000.0f);
   auto n = int(glm::roundEven(noise));
-  direction_ = glm::rotate(previous_direction, n * glm::half_pi<float>());
-  length_ = 3;
+  //direction_ = glm::rotate(previous_direction, n * glm::half_pi<float>());
+  direction_ = previous_direction;
+  length_ = 5;
   auto m = floor;
 
-  if (glm::abs(direction_.y) == 1.0f){
+  if (glm::abs(direction_.y) == 1.0f) {
     m.transform = glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f));
   }
 

@@ -1,12 +1,13 @@
-#include <left_turn.hpp>
+#include <right_turn.hpp>
 #include <glm/gtx/rotate_vector.hpp>
+#include <glm/gtx/io.hpp>
 
-LeftTurn::LeftTurn(const glm::vec3 &position, const glm::vec2 &previous_direction,
+RightTurn::RightTurn(const glm::vec3 &position, const glm::vec2 &previous_direction,
                    const mos::Model &model) : model_(model), previous_direction_(previous_direction) {
 
 
   model_.position(position);
-  direction_ = glm::rotate(previous_direction, glm::half_pi<float>());
+  direction_ = glm::rotate(previous_direction, -glm::half_pi<float>());
 
   if (previous_direction.x == 1.0f) {
   }
@@ -21,15 +22,15 @@ LeftTurn::LeftTurn(const glm::vec3 &position, const glm::vec2 &previous_directio
   }
 }
 
-mos::Model LeftTurn::model() {
+mos::Model RightTurn::model() {
     return model_;
 }
 
-glm::vec3 LeftTurn::end() {
+glm::vec3 RightTurn::end() {
   auto out = model_.position() + glm::vec3(direction_ * 2.0f, 0.0f) + glm::vec3(previous_direction_, 0.0f);
   return out;
 }
 
-glm::vec2 LeftTurn::direction() const {
+glm::vec2 RightTurn::direction() const {
     return direction_;
 }

@@ -9,6 +9,8 @@
 #include <corridor.hpp>
 #include <stairs.hpp>
 #include <door.hpp>
+#include <left_turn.hpp>
+#include <right_turn.hpp>
 
 class Level {
 public:
@@ -24,8 +26,10 @@ public:
 private:
   float time_;
   Entities entities_;
-  mos::Model m_;
+  mos::Model corridor_;
   mos::Model stairs_;
+  mos::Model left_turn_;
+  mos::Model right_turn_;
   Models out_models_;
 };
 

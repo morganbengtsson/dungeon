@@ -1,13 +1,13 @@
-#ifndef LEFTTURN_HPP
-#define LEFTTURN_HPP
+#ifndef RIGHTTURN_HPP
+#define RIGHTTURN_HPP
 
 #include <memory>
 #include <mos/render/model.hpp>
 #include <entity.hpp>
 
-class LeftTurn : public Entity {
+class RightTurn : public Entity {
 public:
-  LeftTurn(const glm::vec3 &position,
+  RightTurn(const glm::vec3 &position,
            const glm::vec2 &previous_direction,
            const mos::Model &model);
   mos::Model model();
@@ -19,4 +19,4 @@ private:
   mos::Model model_;
 };
 
-#endif // LEFTTURN_HPP
+#endif // RIGHTTURN_HPP
