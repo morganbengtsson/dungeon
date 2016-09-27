@@ -26,16 +26,8 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
       if (!e->next) {
         //e->next = std::make_shared<Corridor>(e->end(), e->direction(), m_);
         //e->next = std::make_shared<Stairs>(e->end(), e->direction(), stairs_);
-        auto n = glm::simplex(e->end() * 1000000.0f);
-        if (n < -0.33f) {
-         e->next = std::make_shared<Corridor>(e->end(), e->direction(), corridor_);
-        }
-        else if (n > -0.33 && n < 0.33) {
-           e->next = std::make_shared<LeftTurn>(e->end(), e->direction(), left_turn_);
-        }
-        else {
-          e->next = std::make_shared<RightTurn>(e->end(), e->direction(), right_turn_);
-        }
+        e->next = std::make_shared<Corridor>(e->end(), e->direction(), corridor_);
+
         entities_.push_back(e->next);
       }
     }

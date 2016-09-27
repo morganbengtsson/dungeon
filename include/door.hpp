@@ -2,15 +2,15 @@
 #define DOOR_HPP
 
 #include <memory>
-#include <corridor.hpp>
+#include <entity.hpp>
 
 class Door {
 public:
-  using SharedEntity = std::shared_ptr<Corridor>;
-  Door(const glm::vec3& position);
-  SharedEntity previous;
+  Door(const glm::vec3 &position, const glm::vec2 &direction);
+  using SharedEntity = std::shared_ptr<Entity>;
   SharedEntity next;
   const glm::vec3 position;
+  const glm::vec2 direction;
 };
 
 #endif // DOOR_HPP
