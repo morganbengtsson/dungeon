@@ -21,8 +21,6 @@ Level::~Level() {}
 
 void Level::update(const float dt, const glm::bvec4 &camera_movement) {
   time_ += dt;
-
-
   Entities new_entities;
 
   if (time_ > 0.5f) {
