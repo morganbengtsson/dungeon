@@ -25,5 +25,10 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution,
   const mos::ModelsBatch main(models.begin(), models.end(), level_.camera.view,
                         level_.camera.projection, resolution_, light);
 
-  renderer_.batches({main}, {}, {}, glm::vec4(0.1f));
+
+
+  const auto boxes = level_.boxes();
+  const mos::BoxesBatch boxes_batch(boxes.begin(), boxes.end(), level_.camera.view,
+                        level_.camera.projection);
+  renderer_.batches({main}, {}, {boxes_batch}, glm::vec4(0.1f));
 }

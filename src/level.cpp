@@ -66,3 +66,12 @@ Level::Models Level::models() {
   }
   return out_models_;
 }
+
+Level::Boxes Level::boxes() {
+  Boxes boxes;
+  for (auto &e : entities_) {
+    auto b = e->box();
+    boxes.push_back(mos::RenderBox(b.position, b.extent));
+  }
+  return boxes;
+}

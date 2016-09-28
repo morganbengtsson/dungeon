@@ -7,6 +7,8 @@
 
 Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
     : floor_(floor) {
+  box_ = mos::Box(glm::vec3(2.0f), glm::vec3(0.0f));
+
   model_.transform = transform;
 
   length_ = glm::linearRand(1, 5);
