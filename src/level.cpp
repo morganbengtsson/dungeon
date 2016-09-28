@@ -4,6 +4,7 @@
 #include <glm/gtx/io.hpp>
 #include <glm/gtc/noise.hpp>
 #include <queue>
+#include <algorithm>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
     : time_(0.0f), camera(glm::vec3(0.0f, -10.0f, 10.0f), glm::vec3(0.0f),
@@ -23,12 +24,18 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
   time_ += dt;
   Entities new_entities;
 
-  if (time_ > 0.5f) {
+  if (time_ > 3.0f) {
     for (auto & e : entities_) {
       for (auto &d : e->exits){
         if (!d.next) {
-          d.next = std::make_shared<Corridor>(d.transform, corridor_);
-          new_entities.push_back(d.next);
+          auto next = std::make_shared<Corridor>(d.transform, corridor_);
+
+          if (std::none_of(entities_.begin(), entities_.end(), [&](const Entity::SharedEntity& e0){
+                           return e0->intersects(*next);
+        })) {
+            d.next = next;
+            new_entities.push_back(d.next);
+          }
         }
       }
     }
@@ -43,15 +50,15 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
     p.y += dt * speed;
     c.y += dt * speed;
   }
-  if (camera_movement[1]){
+  if (camera_movement[1]) {
     p.y -= dt * speed;
     c.y -= dt * speed;
   }
-  if (camera_movement[2]){
+  if (camera_movement[2]) {
     p.x -= dt * speed;
     c.x -= dt * speed;
   }
-  if (camera_movement[3]){
+  if (camera_movement[3]) {
     p.x += dt * speed;
     c.x += dt * speed;
   }

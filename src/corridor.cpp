@@ -7,11 +7,10 @@
 
 Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
     : floor_(floor) {
-  box_ = mos::Box(glm::vec3(2.0f), glm::vec3(0.0f));
 
   model_.transform = transform;
 
-  length_ = glm::linearRand(1, 5);
+  length_ = glm::linearRand(1, 20);
   auto m = floor;
 
   for (float i = 0; i < length_; i++) {
@@ -28,6 +27,19 @@ Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
            glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
   model_.overlay(glm::linearRand(glm::vec4(0.0f), glm::vec4(1.0f)));
+
+  std::vector<mos::Vertex> all_vertices;
+
+  //TODO: Generalize
+  for (auto & m : model_.models) {
+    for (auto &v0 : m.mesh->vertices()){
+      auto vt0 = v0;
+      vt0.position = glm::vec3(transform * m.transform * glm::vec4(v0.position, 1.0f));
+      all_vertices.push_back(vt0);
+    }
+  }
+  box_ = mos::Box(all_vertices.begin(), all_vertices.end(), glm::mat4(1.0f));
+  box_.extent *= 0.9f;
 }
 
 mos::Model Corridor::model() { return model_; }
