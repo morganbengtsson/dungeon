@@ -11,7 +11,6 @@ static glm::uvec2 resolution(1980 / 1, 1080 / 1);
 
 mos::Window window("Dungeons", resolution);
 Dungeon dungeon(resolution);
-glm::bvec4 camera_movement(false);
 
 int main(int argc, char **argv) {
 
@@ -25,30 +24,30 @@ int main(int argc, char **argv) {
 
     if (key == GLFW_KEY_W) {
       if (action == GLFW_PRESS) {
-        camera_movement[0] = true;
+        dungeon.camera_forward(true);
       } else if (action == GLFW_RELEASE) {
-        camera_movement[0] = false;
+        dungeon.camera_forward(false);
       }
     }
     if (key == GLFW_KEY_S) {
       if (action == GLFW_PRESS) {
-        camera_movement[1] = true;
+        dungeon.camera_backward(true);
       } else if (action == GLFW_RELEASE) {
-        camera_movement[1] = false;
+        dungeon.camera_backward(false);
       }
     }
     if (key == GLFW_KEY_A) {
       if (action == GLFW_PRESS) {
-        camera_movement[2] = true;
+        dungeon.camera_right(true);
       } else if (action == GLFW_RELEASE) {
-        camera_movement[2] = false;
+        dungeon.camera_right(false);
       }
     }
     if (key == GLFW_KEY_D) {
       if (action == GLFW_PRESS) {
-        camera_movement[3] = true;
+        dungeon.camera_left(true);
       } else if (action == GLFW_RELEASE) {
-        camera_movement[3] = false;
+        dungeon.camera_left(false);
       }
     }
 
@@ -69,7 +68,7 @@ int main(int argc, char **argv) {
   while (!window.close()) {
     auto old_time = std::chrono::high_resolution_clock::now();
 
-    dungeon.update(frame_time.count(), window.framebuffer_size(), camera_movement);
+    dungeon.update(frame_time.count(), window.framebuffer_size());
     window.poll_events();
     window.swap_buffers();
 

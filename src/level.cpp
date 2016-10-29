@@ -1,16 +1,12 @@
 #include <level.hpp>
 #include <mos/util.hpp>
-#include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/io.hpp>
 #include <glm/gtc/noise.hpp>
 #include <queue>
 #include <algorithm>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
-    : time_(0.0f), camera(glm::vec3(0.0f, -50.0f, 50.0f), glm::vec3(0.0f),
-              glm::perspective(45.0f,
-                               ((float)resolution.x / (float)resolution.y),
-                               0.1f, 200.0f)) {
+    : time_(0.0f), camera_(resolution) {
   corridor_ = assets.model("corridor.model");
   stairs_ = assets.model("stairs.model");
   left_turn_ = assets.model("left_turn.model");
@@ -20,7 +16,23 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
 
 Level::~Level() {}
 
-void Level::update(const float dt, const glm::bvec4 &camera_movement) {
+void Level::camera_left(const bool left) {
+  camera_.left = left;
+}
+
+void Level::camera_right(const bool right) {
+  camera_.right = right;
+}
+
+void Level::camera_forward(const bool forward) {
+  camera_.forward = forward;
+}
+
+void Level::camera_backward(const bool backward) {
+  camera_.backward = backward;
+}
+
+void Level::update(const float dt) {
   time_ += dt;
   Entities new_entities;
 
@@ -42,28 +54,7 @@ void Level::update(const float dt, const glm::bvec4 &camera_movement) {
     entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
     time_ = 0.0f;
   }
-
-  auto p = camera.position();
-  auto c = camera.center();
-  const float speed = 10.0f;
-  if (camera_movement[0]) {
-    p.y += dt * speed;
-    c.y += dt * speed;
-  }
-  if (camera_movement[1]) {
-    p.y -= dt * speed;
-    c.y -= dt * speed;
-  }
-  if (camera_movement[2]) {
-    p.x -= dt * speed;
-    c.x -= dt * speed;
-  }
-  if (camera_movement[3]) {
-    p.x += dt * speed;
-    c.x += dt * speed;
-  }
-  camera.position(p);
-  camera.center(c);
+  camera_.update(dt);
 }
 
 Level::Models Level::models() {
@@ -81,4 +72,8 @@ Level::Boxes Level::boxes() {
     boxes.push_back(mos::RenderBox(b.position, b.extent));
   }
   return boxes;
+}
+
+mos::Camera Level::camera() const {
+   return camera_.camera();
 }

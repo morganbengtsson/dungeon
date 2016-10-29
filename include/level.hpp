@@ -8,6 +8,7 @@
 #include <mos/render/render_box.hpp>
 #include <corridor.hpp>
 #include <door.hpp>
+#include <camera.hpp>
 
 class Level {
 public:
@@ -17,11 +18,16 @@ public:
   using Doors = std::vector<Door>;
   Level(mos::Assets &assets, const glm::vec2 &resolution);
   ~Level();
-  void update(const float dt, const glm::bvec4 &camera_movement);
+  void update(const float dt);
+  void camera_left(const bool left);
+  void camera_right(const bool right);
+  void camera_forward(const bool forward);
+  void camera_backward(const bool backward);
   Models models();
   Boxes boxes();
-  mos::Camera camera;
+  mos::Camera camera() const;
 private:
+  Camera camera_;
   float time_;
   Entities entities_;
   mos::Model corridor_;

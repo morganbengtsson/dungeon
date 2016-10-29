@@ -12,9 +12,8 @@ Dungeon::Dungeon(const glm::uvec2 &resolution)
 
 Dungeon::~Dungeon() {}
 
-void Dungeon::update(const float dt, const glm::uvec2 &resolution,
-                     const glm::bvec4 &camera_movement) {
-  level_.update(dt, camera_movement);
+void Dungeon::update(const float dt, const glm::uvec2 &resolution) {
+  level_.update(dt);
 
   const auto light =
       mos::Light(glm::vec3(0.0f, 100.0f, 100.0f), glm::vec3(10000.0f),
@@ -22,13 +21,29 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution,
 
   const auto models = level_.models();
 
-  const mos::ModelsBatch main(models.begin(), models.end(), level_.camera.view,
-                        level_.camera.projection, resolution_, light);
+  const mos::ModelsBatch main(models.begin(), models.end(), level_.camera().view,
+                        level_.camera().projection, resolution_, light);
 
 
 
   const auto boxes = level_.boxes();
-  const mos::BoxesBatch boxes_batch(boxes.begin(), boxes.end(), level_.camera.view,
-                        level_.camera.projection);
+  const mos::BoxesBatch boxes_batch(boxes.begin(), boxes.end(), level_.camera().view,
+                        level_.camera().projection);
   renderer_.batches({main}, {}, {boxes_batch}, glm::vec4(0.1f));
+}
+
+void Dungeon::camera_left(const bool left) {
+  level_.camera_left(left);
+}
+
+void Dungeon::camera_right(const bool right) {
+  level_.camera_right(right);
+}
+
+void Dungeon::camera_backward(const bool backward) {
+  level_.camera_backward(backward);
+}
+
+void Dungeon::camera_forward(const bool forward) {
+  level_.camera_forward(forward);
 }
