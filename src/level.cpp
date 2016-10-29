@@ -7,10 +7,10 @@
 #include <algorithm>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
-    : time_(0.0f), camera(glm::vec3(0.0f, -10.0f, 10.0f), glm::vec3(0.0f),
+    : time_(0.0f), camera(glm::vec3(0.0f, -50.0f, 50.0f), glm::vec3(0.0f),
               glm::perspective(45.0f,
                                ((float)resolution.x / (float)resolution.y),
-                               0.1f, 100.0f)) {
+                               0.1f, 200.0f)) {
   corridor_ = assets.model("corridor.model");
   stairs_ = assets.model("stairs.model");
   left_turn_ = assets.model("left_turn.model");

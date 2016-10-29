@@ -7,7 +7,7 @@
 #include <dungeon.hpp>
 #include <mos/experimental/window.hpp>
 
-static glm::uvec2 resolution(1980 / 2, 1080 / 2);
+static glm::uvec2 resolution(1980 / 1, 1080 / 1);
 
 mos::Window window("Dungeons", resolution);
 Dungeon dungeon(resolution);
