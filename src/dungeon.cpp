@@ -47,3 +47,11 @@ void Dungeon::camera_backward(const bool backward) {
 void Dungeon::camera_forward(const bool forward) {
   level_.camera_forward(forward);
 }
+
+void Dungeon::camera_zoom_in(const bool zoom_in) {
+  level_.camera_zoom_in(zoom_in);
+}
+
+void Dungeon::camera_zoom_out(const bool zoom_out) {
+  level_.camera_zoom_out(zoom_out);
+}

@@ -32,6 +32,14 @@ void Level::camera_backward(const bool backward) {
   camera_.backward = backward;
 }
 
+void Level::camera_zoom_in(const bool zoom_in) {
+  camera_.zoom_in = zoom_in;
+}
+
+void Level::camera_zoom_out(const bool zoom_out) {
+  camera_.zoom_out = zoom_out;
+}
+
 void Level::update(const float dt) {
   time_ += dt;
   Entities new_entities;

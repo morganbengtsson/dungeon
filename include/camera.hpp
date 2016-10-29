@@ -12,7 +12,10 @@ public:
   bool right;
   bool forward;
   bool backward;
+  bool zoom_in;
+  bool zoom_out;
 private:
+  glm::vec3 velocity_;
   mos::Camera camera_;
 };
 
