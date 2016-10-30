@@ -43,15 +43,8 @@ void Level::update(const float dt) {
     for (auto &e : entities_) {
       for (auto &d : e->exits) {
         if (!d.next) {
-          std::shared_ptr<Entity> next;
-          auto v = glm::simplex(e->model().position());
+          auto next = create_entity(d.transform, e->model().position());
 
-          if (v < 0.0f) {
-            next = std::make_shared<Corridor>(d.transform, corridor_);
-          }
-          else {
-            next = std::make_shared<Stairs>(d.transform, stairs_);
-          }
           if (std::none_of(entities_.begin(), entities_.end(),
                            [&](const Entity::SharedEntity &e0) {
                              return e0->intersects(*next);
