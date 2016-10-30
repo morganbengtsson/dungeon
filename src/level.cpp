@@ -7,6 +7,7 @@
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
     : time_(0.0f), times_(0), camera_(resolution) {
+  stairs_ = assets.model("stairs.model");
   corridor_ = assets.model("corridor.model");
   stairs_ = assets.model("stairs.model");
   left_turn_ = assets.model("left_turn.model");
@@ -45,13 +46,21 @@ void Level::update(const float dt) {
   Entities new_entities;
 
   //if (time_ > 3.0f) {
-  if (times_ < 5){
+  if (times_ < 10){
     times_++;
     for (auto & e : entities_) {
       for (auto &d : e->exits){
         if (!d.next) {
-          auto next = std::make_shared<Corridor>(d.transform, corridor_);
+          std::shared_ptr<Entity> next;
+          // auto v = glm::simplex(e->model().position());
 
+          //if (v < 0.0f) {
+            next = std::make_shared<Corridor>(d.transform, corridor_);
+          //}
+            /*
+          else {
+            next = std::make_shared<Stairs>(d.transform, stairs_);
+          }*/
           if (std::none_of(entities_.begin(), entities_.end(), [&](const Entity::SharedEntity& e0){
                            return e0->intersects(*next);
         })) {

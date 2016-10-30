@@ -9,6 +9,7 @@
 #include <corridor.hpp>
 #include <door.hpp>
 #include <camera.hpp>
+#include <stairs.hpp>
 
 class Level {
 public:
