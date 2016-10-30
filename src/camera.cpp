@@ -6,7 +6,7 @@
 Camera::Camera(const glm::uvec2 &resolution)
     : left(false), right(false), forward(false), backward(false),
       zoom_in(false), zoom_out(false), velocity_(0.0f),
-      camera_(glm::vec3(0.0f, -1.0f, 50.0f), glm::vec3(0.0f),
+      camera_(glm::vec3(-20.0f, -20.0f, 50.0f), glm::vec3(0.0f),
               glm::perspective(45.0f,
                                ((float)resolution.x / (float)resolution.y),
                                0.1f, 200.0f)) {}
