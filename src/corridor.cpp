@@ -21,16 +21,17 @@ Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
       Door(transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(length_, 0.0f, 0.0f))));
 
+
   exits.push_back(
       Door(transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(0.5f * glm::linearRand(1, int(length_)), -0.5f, 0.0f))*
            glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
-
+  /*
   exits.push_back(
       Door(transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(0.5f * glm::linearRand(1, int(length_)), 0.5f, 0.0f))*
            glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
-
+           */
   model_.overlay(glm::linearRand(glm::vec4(0.0f), glm::vec4(1.0f)));
 
   std::vector<mos::Vertex> all_vertices;
@@ -44,7 +45,7 @@ Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
     }
   }
   box_ = mos::Box(all_vertices.begin(), all_vertices.end(), glm::mat4(1.0f));
-  box_.extent *= 0.9f;
+  box_.extent -= 0.01f;
 }
 
 mos::Model Corridor::model() { return model_; }

@@ -31,6 +31,7 @@ public:
 private:
   Camera camera_;
   float time_;
+  int times_;
   Entities entities_;
   mos::Model corridor_;
   mos::Model stairs_;

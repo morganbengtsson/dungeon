@@ -29,7 +29,7 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution) {
   const auto boxes = level_.boxes();
   const mos::BoxesBatch boxes_batch(boxes.begin(), boxes.end(), level_.camera().view,
                         level_.camera().projection);
-  renderer_.batches({main}, {}, {boxes_batch}, glm::vec4(0.1f));
+  renderer_.batches({}, {}, {boxes_batch}, glm::vec4(0.1f));
 }
 
 void Dungeon::camera_left(const bool left) {

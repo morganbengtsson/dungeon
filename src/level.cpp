@@ -6,7 +6,7 @@
 #include <algorithm>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
-    : time_(0.0f), camera_(resolution) {
+    : time_(0.0f), times_(0), camera_(resolution) {
   corridor_ = assets.model("corridor.model");
   stairs_ = assets.model("stairs.model");
   left_turn_ = assets.model("left_turn.model");
@@ -44,7 +44,9 @@ void Level::update(const float dt) {
   time_ += dt;
   Entities new_entities;
 
-  if (time_ > 3.0f) {
+  //if (time_ > 3.0f) {
+  if (times_ < 5){
+    times_++;
     for (auto & e : entities_) {
       for (auto &d : e->exits){
         if (!d.next) {
@@ -62,6 +64,7 @@ void Level::update(const float dt) {
     entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
     time_ = 0.0f;
   }
+  //}
   camera_.update(dt);
 }
 
