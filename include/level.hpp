@@ -10,6 +10,7 @@
 #include <door.hpp>
 #include <camera.hpp>
 #include <stairs.hpp>
+#include <room.hpp>
 
 class Level {
 public:
