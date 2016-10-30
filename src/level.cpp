@@ -91,3 +91,11 @@ Level::Boxes Level::boxes() {
 }
 
 mos::Camera Level::camera() const { return camera_.camera(); }
+
+Entity::SharedEntity Level::create_entity(const glm::mat4 &transform, const glm::vec3 seed) {
+  std::vector<std::shared_ptr<Entity>> entities;
+  entities.push_back(std::make_shared<Corridor>(transform, corridor_));
+  entities.push_back(std::make_shared<Stairs>(transform, stairs_));
+  auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
+  return entities[value];
+}
