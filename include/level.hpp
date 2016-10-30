@@ -30,6 +30,7 @@ public:
   Boxes boxes();
   mos::Camera camera() const;
 private:
+  Entity::SharedEntity create_entity()
   Camera camera_;
   float time_;
   int times_;

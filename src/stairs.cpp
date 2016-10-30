@@ -11,18 +11,13 @@ Stairs::Stairs(const glm::mat4 &transform, const mos::Model model)
       Door(transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(length_, 0.0f, length_))));
 
-  box_.transform(transform);
-  box_.position.x += float(length_) / 2.0f;
-  box_.position.z += float(length_) / 2.0f;
-  box_.extent.x = float(length_) / 2.0f;
-  box_.extent.y = 0.5f;
-  box_.extent.z = float(length_) / 2.0f;
+  auto vertices = model_.mesh->vertices();
+  for (auto &v : vertices) {
+    v.position = glm::vec3(transform * glm::vec4(v.position, 1.0f));
+  }
 
+  box_ = mos::Box(vertices.begin(), vertices.end(), glm::mat4(1.0f));
   box_.extent -= 0.01f;
-
-
-  //model_.transform *= glm::scale(glm::mat4(1.0f), glm::vec3(length_, 1.0f, length_));
-
 }
 
 mos::Model Stairs::model() { return model_; }
