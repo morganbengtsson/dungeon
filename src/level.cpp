@@ -92,5 +92,5 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform, const glm:
   entities.push_back(std::make_shared<Room>(transform, corridor_));
 
   auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
-  return entities[value];
+  return entities[2];
 }
