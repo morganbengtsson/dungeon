@@ -1,0 +1,2077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Dungeon"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\externals\;CMake Files\externals\mos\;CMake Files\externals\mos\externals\;CMake Files\externals\mos\externals\glew-cmake\;CMake Files\externals\mos\externals\glfw\;CMake Files\externals\mos\externals\glfw\CMake\;CMake Files\externals\mos\externals\glfw\CMake\modules\;CMake Files\externals\mos\externals\glfw\src\;CMake Files\externals\mos\externals\openal-soft\;CMake Files\externals\mos\externals\openal-soft\cmake\;CMake Files\externals\mos\externals\Optional\;CMake Files\externals\mos\externals\glm\;CMake Files\externals\mos\externals\glm\cmake\;CMake Files\externals\mos\externals\glm\glm\;CMake Files\externals\mos\externals\glm\test\;CMake Files\externals\mos\externals\glm\test\bug\;CMake Files\externals\mos\externals\glm\test\core\;CMake Files\externals\mos\externals\glm\test\gtc\;CMake Files\externals\mos\externals\glm\test\gtx\;CMake Files\externals\mos\externals\lodepng\;CMake Files\externals\mos\externals\stb\;CMake Files\externals\mos\externals\json\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Dungeon">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/Dungeon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/objload"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 Dungeon"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Dungeon/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/Dungeon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/objload"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 Dungeon/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mos">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/libmos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/objload"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 mos"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mos/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/libmos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/objload"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 mos/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglewmx_shared">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewmxd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglewmx_shared"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglewmx_shared/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewmxd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglewmx_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_shared">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_shared"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_shared/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglewmx_static">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewmxd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglewmx_static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglewmx_static/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewmxd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglewmx_static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glew-cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="altonegen">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/altonegen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 altonegen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="altonegen/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/altonegen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 altonegen/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test-common">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/libtest-common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 test-common"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test-common/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/libtest-common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 test-common/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="openal">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/libopenal.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DAL_BUILD_LIBRARY"/>
+					<Add option="-DAL_ALEXT_PROTOTYPES"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/Include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 openal"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="openal/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/libopenal.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DAL_BUILD_LIBRARY"/>
+					<Add option="-DAL_ALEXT_PROTOTYPES"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/Include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 openal/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="common">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/libcommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 common"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="common/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft/libcommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-D_POSIX_C_SOURCE=200112L"/>
+					<Add option="-D_XOPEN_SOURCE=500"/>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_LARGE_FILES"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 common/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/openal-soft/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_type_traits">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional/test_type_traits" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 test_type_traits"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_type_traits/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional/test_type_traits" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 test_type_traits/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_optional">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional/test_optional" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 test_optional"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_optional/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional/test_optional" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/Optional"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 test_optional/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/Optional/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lodepng">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/lodepng/liblodepng.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/lodepng"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 lodepng"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lodepng/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/lodepng/liblodepng.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/lodepng"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 lodepng/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/lodepng/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stb">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/stb/libstb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/stb"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 stb"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stb/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/stb/libstb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/stb"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 stb/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/stb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="json_unit">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/json/json_unit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/json"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/test"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 json_unit"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="json_unit/fast">
+				<Option output="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/json/json_unit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/json"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew_cmake/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/include"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src"/>
+					<Add directory="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/test"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 json_unit/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/morgan/Projects/Dungeon\ on\ the\ fly/cmake-build-debug/externals/mos/externals/json/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/CMakeLists.txt">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/glfw/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional/test_optional.cpp">
+			<Option target="test_optional"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional/test_type_traits.cpp">
+			<Option target="test_type_traits"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/src/glew.c">
+			<Option target="libglewmx_shared"/>
+			<Option target="libglew_shared"/>
+			<Option target="libglewmx_static"/>
+			<Option target="libglew_static"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glx_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glx_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/linux_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/linux_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/posix_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/posix_time.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/posix_tls.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/posix_tls.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/x11_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/x11_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/x11_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/x11_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/xkb_unicode.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/xkb_unicode.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/src/json.hpp">
+			<Option target="json_unit"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/test/catch.hpp">
+			<Option target="json_unit"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/test/unit.cpp">
+			<Option target="json_unit"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng/lodepng.cpp">
+			<Option target="lodepng"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng/lodepng.h">
+			<Option target="lodepng"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/ALc.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/ALu.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/alcConfig.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/alcRing.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/ambdec.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/ambdec.h">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/base.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/base.h">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/loopback.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/null.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/oss.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/pulseaudio.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/backends/wave.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/bformatdec.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/bformatdec.h">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/bs2b.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/bsinc.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/autowah.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/chorus.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/compressor.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/dedicated.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/distortion.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/echo.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/equalizer.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/flanger.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/modulator.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/null.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/effects/reverb.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/helpers.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/hrtf.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/hrtf.h">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/mixer.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/mixer_c.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/mixer_sse.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/mixer_sse2.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/mixer_sse3.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/mixer_sse41.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/panning.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/uhjfilter.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/Alc/uhjfilter.h">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alAuxEffectSlot.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alBuffer.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alEffect.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alError.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alExtension.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alFilter.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alListener.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alSource.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alState.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/alThunk.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/OpenAL32/sample_cvt.c">
+			<Option target="openal"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/common/almalloc.c">
+			<Option target="common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/common/atomic.c">
+			<Option target="common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/common/rwlock.c">
+			<Option target="common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/common/threads.c">
+			<Option target="common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/common/uintmap.c">
+			<Option target="common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/examples/altonegen.c">
+			<Option target="altonegen"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/examples/common/alhelpers.c">
+			<Option target="test-common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/examples/common/alhelpers.h">
+			<Option target="test-common"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb/stb_vorbis.c">
+			<Option target="stb"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb/stb_vorbis.h">
+			<Option target="stb"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/assets.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_batch.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_buffer.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_buffer_source.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_listener.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_source.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_stream.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_stream_source.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_system.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/audio/audio_types.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/experimental/button.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/experimental/entity.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/experimental/menu.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/experimental/navmesh2.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/experimental/window.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/animation.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/boxes_batch.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/camera.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/character.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/fog_exp.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/fog_linear.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/font.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/light.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/material.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/mesh.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/model.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/models_batch.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/particle.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/particles.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/particles_batch.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/quad.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/render_box.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/render_system.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/render_target.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/text.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/texture.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/render/vertex.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/simulate/box.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/simulate/intersection.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/simulate/navmesh.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/include/mos/util.hpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/blur_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/blur_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/box_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/box_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/crt_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/crt_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/depth_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/depth_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/effect_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/effect_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/particles_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/particles_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/standard_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/standard_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/text_330.frag">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/shaders/text_330.vert">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/assets.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_batch.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_buffer.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_buffer_source.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_listener.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_source.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_stream.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_stream_source.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/audio/audio_system.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/experimental/button.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/experimental/menu.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/experimental/navmesh2.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/experimental/window.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/animation.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/boxes_batch.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/camera.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/fog_exp.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/fog_linear.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/font.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/light.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/material.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/mesh.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/model.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/models_batch.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/particles.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/particles_batch.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/quad.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/render_box.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/render_system.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/render_target.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/text.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/texture.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/render/vertex.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/simulate/box.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/simulate/intersection.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/simulate/navmesh.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/src/mos/util.cpp">
+			<Option target="mos"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/camera.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/corridor.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/door.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/dungeon.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/entity.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/level.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/room.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/include/stairs.hpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/camera.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/corridor.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/door.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/dungeon.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/entity.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/level.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/main.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/room.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/src/stairs.cpp">
+			<Option target="Dungeon"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glew-cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glew-cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glew-cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glew-cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/config.h.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/openal.pc.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/config.h.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/openal.pc.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/config.h.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/openal.pc.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckSharedFunctionExists.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckFileOffsetBits.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckFileOffsetBits.c">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindALSA.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindOSS.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindAudioIO.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindSoundIO.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindQSA.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindPortAudio.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindPulseAudio.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindJACK.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckSharedFunctionExists.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckFileOffsetBits.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckFileOffsetBits.c">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindALSA.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindOSS.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindAudioIO.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindSoundIO.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindQSA.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindPortAudio.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindPulseAudio.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindJACK.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckSharedFunctionExists.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckFileOffsetBits.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/CheckFileOffsetBits.c">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindALSA.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindOSS.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindAudioIO.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindSoundIO.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindQSA.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindPortAudio.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindPulseAudio.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/openal-soft/cmake/FindJACK.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\openal-soft\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\Optional\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\Optional\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/Optional/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\Optional\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\glm\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\glm\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\glm\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\core\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\core\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\core\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\lodepng\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/lodepng/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\lodepng\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\stb\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/stb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\stb\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\json\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\json\"/>
+		</Unit>
+		<Unit filename="/home/morgan/Projects/Dungeon on the fly/externals/mos/externals/json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\externals\mos\externals\json\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

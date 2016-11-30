@@ -1,0 +1,218 @@
+/home/morgan/Desktop/clion-2016.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/morgan/Projects/Dungeon on the fly"
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Could NOT find Vulkan (missing:  VULKAN_LIBRARY VULKAN_INCLUDE_DIR) 
+-- Using X11 for window creation
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found X11: /usr/lib/x86_64-linux-gnu/libX11.so
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Performing Test HAVE_STD_C11
+-- Performing Test HAVE_STD_C11 - Success
+-- Looking for posix_memalign
+-- Looking for posix_memalign - not found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - found
+-- Checking _FILE_OFFSET_BITS for large files
+-- Checking _FILE_OFFSET_BITS for large files - not needed
+-- Performing Test INLINE_IS_C99
+-- Performing Test INLINE_IS_C99 - Success
+-- Performing Test HAVE_C99_VLA
+-- Performing Test HAVE_C99_VLA - Success
+-- Performing Test HAVE_C99_BOOL
+-- Performing Test HAVE_C99_BOOL - Success
+-- Performing Test HAVE_C11_STATIC_ASSERT
+-- Performing Test HAVE_C11_STATIC_ASSERT - Success
+-- Performing Test HAVE_C11_ALIGNAS
+-- Performing Test HAVE_C11_ALIGNAS - Success
+-- Performing Test HAVE_C11_ATOMIC
+-- Performing Test HAVE_C11_ATOMIC - Success
+-- Performing Test HAVE_W_EXTRA
+-- Performing Test HAVE_W_EXTRA - Success
+-- Performing Test HAVE_GCC_DESTRUCTOR
+-- Performing Test HAVE_GCC_DESTRUCTOR - Success
+-- Performing Test HAVE_GCC_PROTECTED_VISIBILITY
+-- Performing Test HAVE_GCC_PROTECTED_VISIBILITY - Success
+-- Performing Test HAVE_VISIBILITY_HIDDEN_SWITCH
+-- Performing Test HAVE_VISIBILITY_HIDDEN_SWITCH - Success
+-- Performing Test HAVE_ATTRIBUTE_ALIGNED
+-- Performing Test HAVE_ATTRIBUTE_ALIGNED - Success
+-- Performing Test HAVE_MSSE_SWITCH
+-- Performing Test HAVE_MSSE_SWITCH - Success
+-- Performing Test HAVE_MSSE2_SWITCH
+-- Performing Test HAVE_MSSE2_SWITCH - Success
+-- Performing Test HAVE_MSSE3_SWITCH
+-- Performing Test HAVE_MSSE3_SWITCH - Success
+-- Performing Test HAVE_MSSE4_1_SWITCH
+-- Performing Test HAVE_MSSE4_1_SWITCH - Success
+-- Performing Test HAVE_GCC_FORMAT
+-- Performing Test HAVE_GCC_FORMAT - Success
+-- Looking for stdbool.h
+-- Looking for stdbool.h - found
+-- Looking for stdalign.h
+-- Looking for stdalign.h - found
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for dirent.h
+-- Looking for dirent.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for cpuid.h
+-- Looking for cpuid.h - found
+-- Looking for intrin.h
+-- Looking for intrin.h - not found
+-- Looking for sys/sysconf.h
+-- Looking for sys/sysconf.h - not found
+-- Looking for fenv.h
+-- Looking for fenv.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for ieeefp.h
+-- Looking for ieeefp.h - not found
+-- Looking for guiddef.h
+-- Looking for guiddef.h - not found
+-- Looking for initguid.h
+-- Looking for initguid.h - not found
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Performing Test HAVE_GCC_GET_CPUID
+-- Performing Test HAVE_GCC_GET_CPUID - Success
+-- Looking for aligned_alloc
+-- Looking for aligned_alloc - found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - not found
+-- Looking for lrintf
+-- Looking for lrintf - found
+-- Looking for modff
+-- Looking for modff - found
+-- Looking for _controlfp
+-- Looking for _controlfp - not found
+-- Looking for __control87_2
+-- Looking for __control87_2 - not found
+-- Looking for stat
+-- Looking for stat - found
+-- Looking for strtof
+-- Looking for strtof - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for strncasecmp
+-- Looking for strncasecmp - found
+-- Looking for strnlen
+-- Looking for strnlen - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for isfinite
+-- Looking for isfinite - found
+-- Looking for isnan
+-- Looking for isnan - found
+-- Looking for windows.h
+-- Looking for windows.h - not found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for include files pthread.h, pthread_np.h
+-- Looking for include files pthread.h, pthread_np.h - not found
+-- Performing Test HAVE_PTHREAD
+-- Performing Test HAVE_PTHREAD - Success
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Looking for pthread_setschedparam
+-- Looking for pthread_setschedparam - found
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - not found
+-- Looking for pthread_set_name_np
+-- Looking for pthread_set_name_np - not found
+-- Looking for pthread_mutexattr_setkind_np
+-- Looking for pthread_mutexattr_setkind_np - not found
+-- Looking for pthread_mutex_timedlock
+-- Looking for pthread_mutex_timedlock - found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Looking for xmmintrin.h
+-- Looking for xmmintrin.h - found
+-- Looking for emmintrin.h
+-- Looking for emmintrin.h - found
+-- Looking for pmmintrin.h
+-- Looking for pmmintrin.h - found
+-- Looking for smmintrin.h
+-- Looking for smmintrin.h - found
+-- Looking for arm_neon.h
+-- Looking for arm_neon.h - not found
+-- Could NOT find ALSA (missing:  ALSA_LIBRARY ALSA_INCLUDE_DIR) 
+-- Found OSS: /usr/include/x86_64-linux-gnu  
+-- Could NOT find AudioIO (missing:  AUDIOIO_INCLUDE_DIR) 
+-- Could NOT find SoundIO (missing:  SOUNDIO_LIBRARY SOUNDIO_INCLUDE_DIR) 
+-- Could NOT find QSA (missing:  QSA_LIBRARY QSA_INCLUDE_DIR) 
+-- Could NOT find PortAudio (missing:  PORTAUDIO_LIBRARY PORTAUDIO_INCLUDE_DIR) 
+-- Found PulseAudio: /usr/lib/x86_64-linux-gnu/libpulse.so (found version "8.0.0") 
+-- Could NOT find JACK (missing:  JACK_LIBRARY JACK_INCLUDE_DIR) 
+-- Looking for include files SLES/OpenSLES.h, SLES/OpenSLES_Android.h
+-- Looking for include files SLES/OpenSLES.h, SLES/OpenSLES_Android.h - not found
+-- 
+-- Building OpenAL with support for the following backends:
+--      OSS, PulseAudio, WaveFile, Null
+-- 
+-- Building with support for CPU extensions:
+--     Default, SSE, SSE2, SSE3, SSE4.1
+-- 
+-- Installing sample configuration
+-- 
+-- Installing HRTF definitions
+-- 
+-- Installing HRTF definitions
+-- 
+-- Building test programs
+-- 
+-- GLM is a header only library, no need to build it. Set the option GLM_TEST_ENABLE with ON to build and run the test bench
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/morgan/Projects/Dungeon on the fly/cmake-build-debug

@@ -1,0 +1,1 @@
+/usr/bin/cc  -std=c11  -g -O0   CMakeFiles/altonegen.dir/examples/altonegen.c.o  -o altonegen -rdynamic libtest-common.a libopenal.so.1.17.2 libcommon.a -lrt -lpthread -ldl -lm -pthread -Wl,-rpath,"/home/morgan/Projects/Dungeon on the fly/cmake-build-debug/externals/mos/externals/openal-soft:" 

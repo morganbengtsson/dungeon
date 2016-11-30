@@ -1,0 +1,1 @@
+{"lightmap": null, "euler": [0.0, 0.0, 0.0], "name": "Cube", "models": [], "position": [0.0, 0.0, 0.0], "mesh": "Cube.mesh", "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], "material": "stairs.material", "angle": 0.0, "axis": [0.0, 1.0, 0.0]}
