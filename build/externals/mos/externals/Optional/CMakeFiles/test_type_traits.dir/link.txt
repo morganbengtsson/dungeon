@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -Wall -Wextra -g -O0   CMakeFiles/test_type_traits.dir/test_type_traits.cpp.o  -o test_type_traits -rdynamic 
