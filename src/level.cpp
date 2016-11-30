@@ -12,7 +12,8 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
   stairs_ = assets.model("stairs.model");
   left_turn_ = assets.model("left_turn.model");
   right_turn_ = assets.model("right_turn.model");
-  entities_.push_back(std::make_shared<Corridor>(glm::mat4(1.0f), corridor_));
+  //entities_.push_back(std::make_shared<Corridor>(glm::mat4(1.0f), corridor_));
+  entities_.push_back(std::make_shared<Room>(glm::mat4(1.0f), corridor_));
 }
 
 Level::~Level() {}
@@ -38,7 +39,7 @@ void Level::update(const float dt) {
   Entities new_entities;
 
   // if (time_ > 3.0f) {
-  if (times_ < 7) {
+  if (times_ < 6) {
     times_++;
     for (auto &e : entities_) {
       for (auto &d : e->exits) {
@@ -92,5 +93,5 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform, const glm:
   entities.push_back(std::make_shared<Room>(transform, corridor_));
 
   auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
-  return entities[2];
+  return entities[value];
 }
