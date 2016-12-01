@@ -10,6 +10,7 @@
 #include <door.hpp>
 #include <camera.hpp>
 #include <stairs.hpp>
+#include <stairs_down.hpp>
 #include <room.hpp>
 
 class Level {
@@ -38,8 +39,7 @@ private:
   Entities entities_;
   mos::Model corridor_;
   mos::Model stairs_;
-  mos::Model left_turn_;
-  mos::Model right_turn_;
+  mos::Model stairs_down_;
   Models out_models_;
 };
 

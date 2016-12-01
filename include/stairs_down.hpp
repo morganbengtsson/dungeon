@@ -6,7 +6,7 @@
 
 class StairsDown : public Entity {
 public:
-  Stairs(const glm::mat4 &transform,
+  StairsDown(const glm::mat4 &transform,
          const mos::Model model,
          const unsigned int max_length = 10);
   mos::Model model();

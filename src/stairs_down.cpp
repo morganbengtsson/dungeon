@@ -1,7 +1,7 @@
-#include <stairs_down.hpp.hpp>
+#include <stairs_down.hpp>
 #include <glm/gtc/noise.hpp>
 
-Stairs::Stairs(const glm::mat4 &transform,
+StairsDown::StairsDown(const glm::mat4 &transform,
                const mos::Model model,
 const unsigned int max_length)
     : model_(model) {
@@ -21,4 +21,4 @@ const unsigned int max_length)
   box_.extent -= 0.01f;
 }
 
-mos::Model Stairs::model() { return model_; }
+mos::Model StairsDown::model() { return model_; }

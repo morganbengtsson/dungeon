@@ -4,7 +4,7 @@
 #include <entity.hpp>
 #include <mos/render/model.hpp>
 
-class Stairs : public Entity{
+class Stairs : public Entity {
 public:
   Stairs(const glm::mat4 &transform,
          const mos::Model model,
