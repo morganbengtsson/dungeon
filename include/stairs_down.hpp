@@ -1,10 +1,10 @@
-#ifndef STAIRS_HPP
-#define STAIRS_HPP
+#ifndef STAIRSDOWN_HPP
+#define STAIRSDOWN_HPP
 
 #include <entity.hpp>
 #include <mos/render/model.hpp>
 
-class Stairs : public Entity{
+class StairsDown : public Entity {
 public:
   Stairs(const glm::mat4 &transform,
          const mos::Model model,
@@ -14,5 +14,4 @@ private:
   unsigned int length_;
   mos::Model model_;
 };
-
-#endif // STAIRS_HPP
+#endif //STAIRSDOWN_HPP

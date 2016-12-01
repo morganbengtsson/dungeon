@@ -1,0 +1,1 @@
+{"lightmap": null, "material": "stairs.material", "name": "stairs_down", "position": [0.0, 0.0, 0.0], "axis": [0.0, 1.0, 0.0], "models": [], "mesh": "stairs_down.mesh", "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], "euler": [0.0, -0.0, 0.0], "angle": 0.0}
