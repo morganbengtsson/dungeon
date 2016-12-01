@@ -17,7 +17,7 @@ const unsigned int max_length)
     v.position = glm::vec3(transform * glm::vec4(v.position, 1.0f));
   }
 
-  box_ = mos::Box(vertices.begin(), vertices.end(), glm::mat4(1.0f));
+  box_ = mos::Box::create_from_model(model_);
   box_.extent -= 0.01f;
 }
 
