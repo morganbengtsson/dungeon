@@ -32,7 +32,7 @@ public:
   Boxes boxes();
   mos::Camera camera() const;
 private:
-  Entity::SharedEntity create_entity(const glm::mat4 & transform, const glm::vec3 seed);
+  Entity::SharedEntity create_entity(const glm::mat4 & transform);
   Camera camera_;
   float time_;
   int times_;

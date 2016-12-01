@@ -42,7 +42,7 @@ void Level::update(const float dt) {
     for (auto &e : entities_) {
       for (auto &d : e->exits) {
         if (!d.next) {
-          auto next = create_entity(d.transform, e->model().position());
+          auto next = create_entity(d.transform);
 
           if (std::none_of(entities_.begin(), entities_.end(),
                            [&](const Entity::SharedEntity &e0) {
@@ -84,13 +84,15 @@ Level::Boxes Level::boxes() {
 
 mos::Camera Level::camera() const { return camera_.camera(); }
 
-Entity::SharedEntity Level::create_entity(const glm::mat4 &transform, const glm::vec3 seed) {
+Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
   std::vector<std::shared_ptr<Entity>> entities;
   entities.push_back(std::make_shared<Corridor>(transform, corridor_));
   entities.push_back(std::make_shared<Stairs>(transform, stairs_));
   entities.push_back(std::make_shared<StairsDown>(transform, stairs_down_));
   entities.push_back(std::make_shared<Room>(transform, corridor_));
 
-  auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
-  return entities[value];
+  auto s = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);
+
+  auto value = int(glm::abs(glm::simplex(s)) * entities.size());
+  return entities[2];
 }
