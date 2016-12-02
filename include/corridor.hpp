@@ -11,7 +11,7 @@ public:
            const mos::Model &floor);
   mos::Model model();
 private:
-  unsigned int length_;
+  int length_;
   mos::Model floor_;
   mos::Model model_;
 };

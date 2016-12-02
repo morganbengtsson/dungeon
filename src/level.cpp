@@ -34,9 +34,9 @@ void Level::camera_zoom_out(const bool zoom_out) {
 
 void Level::update(const float dt) {
   time_ += dt;
-  Entities new_entities;
 
-  // if (time_ > 3.0f) {
+  //TODO Move to own thread
+  Entities new_entities;
   if (times_ < 6) {
     times_++;
     for (auto &e : entities_) {
@@ -58,13 +58,10 @@ void Level::update(const float dt) {
           }
         }
       }
-      //std::cout << e->box() << std::endl;
     }
-    //std::cout << "---" << std::endl;
     entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
     time_ = 0.0f;
   }
-  //}
   camera_.update(dt);
 }
 
@@ -97,5 +94,5 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
   auto s = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);
 
   auto value = int(glm::abs(glm::simplex(s)) * entities.size());
-  return entities[2];
+  return entities[value];
 }
