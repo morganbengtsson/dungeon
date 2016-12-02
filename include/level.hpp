@@ -36,11 +36,10 @@ private:
   Entity::SharedEntity create_entity(const glm::mat4 & transform);
   Camera camera_;
   float time_;
-  int times_;
-  Entities entities_;
   mos::Model corridor_;
   mos::Model stairs_;
   mos::Model stairs_down_;
+  Entities entities_;
   Models out_models_;
   std::future<void> load_;
 };
