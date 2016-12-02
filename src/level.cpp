@@ -87,9 +87,10 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
   entities.push_back(std::make_shared<Stairs>(transform, stairs_));
   entities.push_back(std::make_shared<StairsDown>(transform, stairs_down_));
   entities.push_back(std::make_shared<Room>(transform, corridor_));
+  entities.push_back(std::make_shared<TestCorridor>(transform, corridor_));
 
   auto seed = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);
 
   auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
-  return entities[value];
+  return entities[4];
 }

@@ -11,6 +11,7 @@
 #include <camera.hpp>
 #include <stairs.hpp>
 #include <stairs_down.hpp>
+#include <test_corridor.hpp>
 #include <room.hpp>
 #include <future>
 
