@@ -28,7 +28,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f1e51167-da70-4809-9409-142f279b33bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/mos" afterPath="$PROJECT_DIR$/externals/mos" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/level.hpp" afterPath="$PROJECT_DIR$/include/level.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/level.cpp" afterPath="$PROJECT_DIR$/src/level.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +50,8 @@
       <file leaf-file-name="level.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/level.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -60,8 +60,8 @@
       <file leaf-file-name="level.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/level.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="218">
+              <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding>
                 <element signature="e#37#54#0" expanded="true" />
               </folding>
@@ -455,12 +455,12 @@
       <workItem from="1480533835585" duration="4342000" />
       <workItem from="1480593092424" duration="2789000" />
       <workItem from="1480604248038" duration="10940000" />
-      <workItem from="1480674340141" duration="1067000" />
+      <workItem from="1480674340141" duration="1299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25090000" />
+    <option name="totallyTimeSpent" value="25322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="1129" extended-state="4" />
@@ -898,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/level.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="218">
+          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding>
             <element signature="e#37#54#0" expanded="true" />
           </folding>
@@ -908,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/level.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
         </state>
       </provider>

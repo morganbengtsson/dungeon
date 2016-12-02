@@ -7,13 +7,12 @@
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
     : time_(0.0f), times_(0), camera_(resolution),
+      stairs_(assets.model("stairs.model")),
+      corridor_(assets.model("corridor.model")),
+      stairs_down_(assets.model("stairs_down.model")),
       load_(std::async(std::launch::async, [&]{
         std::cout << "Loading\n";
       })){
-  stairs_ = assets.model("stairs.model");
-  corridor_ = assets.model("corridor.model");
-  stairs_ = assets.model("stairs.model");
-  stairs_down_ = assets.model("stairs_down.model");
   entities_.push_back(std::make_shared<Corridor>(glm::mat4(1.0f), corridor_));
 }
 
