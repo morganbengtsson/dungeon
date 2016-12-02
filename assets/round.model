@@ -1,0 +1,1 @@
+{"angle": 0.0, "euler": [0.0, -0.0, 0.0], "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], "axis": [0.0, 1.0, 0.0], "mesh": "round.mesh", "name": "round", "material": "round.material", "position": [0.0, 0.0, 0.0], "lightmap": null, "models": []}
