@@ -54,7 +54,6 @@ void Level::update(const float dt) {
                            })) {
             d.next = next;
             new_entities.push_back(d.next);
-
           }
         }
       }

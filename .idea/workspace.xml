@@ -27,22 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1e51167-da70-4809-9409-142f279b33bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/corridor.mesh" afterPath="$PROJECT_DIR$/assets/corridor.mesh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stairs.mesh" afterPath="$PROJECT_DIR$/assets/stairs.mesh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stairs_down.mesh" afterPath="$PROJECT_DIR$/assets/stairs_down.mesh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/block.blend" afterPath="$PROJECT_DIR$/assets_src/block.blend" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/block.blend1" afterPath="$PROJECT_DIR$/assets_src/block.blend1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/stairs.blend" afterPath="$PROJECT_DIR$/assets_src/stairs.blend" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/stairs.blend1" afterPath="$PROJECT_DIR$/assets_src/stairs.blend1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/stairs_down.blend" afterPath="$PROJECT_DIR$/assets_src/stairs_down.blend" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/stairs_down.blend1" afterPath="$PROJECT_DIR$/assets_src/stairs_down.blend1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/mos" afterPath="$PROJECT_DIR$/externals/mos" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/corridor.model" afterPath="$PROJECT_DIR$/assets/corridor.model" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stairs.model" afterPath="$PROJECT_DIR$/assets/stairs.model" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stairs_down.model" afterPath="$PROJECT_DIR$/assets/stairs_down.model" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/corridor.hpp" afterPath="$PROJECT_DIR$/include/corridor.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/stairs.hpp" afterPath="$PROJECT_DIR$/include/stairs.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/level.cpp" afterPath="$PROJECT_DIR$/src/level.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/level.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
-              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="22" />
+              <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -458,12 +443,12 @@
       <workItem from="1480533835585" duration="4342000" />
       <workItem from="1480593092424" duration="2789000" />
       <workItem from="1480604248038" duration="10940000" />
-      <workItem from="1480674340141" duration="558000" />
+      <workItem from="1480674340141" duration="654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24581000" />
+    <option name="totallyTimeSpent" value="24677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2050" height="1130" extended-state="6" />
@@ -912,7 +897,7 @@
     <entry file="file://$PROJECT_DIR$/src/level.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
-          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="22" />
+          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding />
         </state>
       </provider>
