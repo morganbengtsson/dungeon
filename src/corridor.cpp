@@ -25,7 +25,6 @@ Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
            glm::translate(glm::mat4(1.0f), glm::vec3(0.5f + right, -0.5f, 0.0f)) *
            glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
-
   unsigned int left = uint((glm::abs(glm::simplex(model_.position())) * length_));
   exits.push_back(
       Door(transform *

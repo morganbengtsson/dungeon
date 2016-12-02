@@ -13,7 +13,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
       entities_{std::make_shared<Corridor>(glm::mat4(1.0f), corridor_)},
       load_(std::async(std::launch::async, [&] {
         Entities new_entities;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 4; i++) {
           for (auto &entity : entities_) {
             for (auto &door : entity->exits) {
               if (!door.next) {
@@ -92,5 +92,5 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
   auto seed = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);
 
   auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
-  return entities[4];
+  return entities[value];
 }
