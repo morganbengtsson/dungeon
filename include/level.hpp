@@ -12,6 +12,7 @@
 #include <stairs.hpp>
 #include <stairs_down.hpp>
 #include <room.hpp>
+#include <future>
 
 class Level {
 public:
@@ -41,6 +42,7 @@ private:
   mos::Model stairs_;
   mos::Model stairs_down_;
   Models out_models_;
+  std::future<void> load_;
 };
 
 #endif // LEVEL_HPP

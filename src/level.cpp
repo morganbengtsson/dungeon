@@ -6,7 +6,10 @@
 #include <queue>
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
-    : time_(0.0f), times_(0), camera_(resolution) {
+    : time_(0.0f), times_(0), camera_(resolution),
+      load_(std::async(std::launch::async, [&]{
+        std::cout << "Loading\n";
+      })){
   stairs_ = assets.model("stairs.model");
   corridor_ = assets.model("corridor.model");
   stairs_ = assets.model("stairs.model");

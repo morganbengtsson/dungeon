@@ -28,6 +28,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f1e51167-da70-4809-9409-142f279b33bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/mos" afterPath="$PROJECT_DIR$/externals/mos" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/level.hpp" afterPath="$PROJECT_DIR$/include/level.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/level.cpp" afterPath="$PROJECT_DIR$/src/level.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,9 +50,21 @@
       <file leaf-file-name="level.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/level.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+            <state relative-caret-position="198">
+              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/level.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+              <folding>
+                <element signature="e#37#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,7 +90,6 @@
         <option value="$PROJECT_DIR$/src/stairs.cpp" />
         <option value="$PROJECT_DIR$/include/door.hpp" />
         <option value="$PROJECT_DIR$/src/door.cpp" />
-        <option value="$PROJECT_DIR$/include/level.hpp" />
         <option value="$PROJECT_DIR$/src/corridor.cpp" />
         <option value="$PROJECT_DIR$/src/room.cpp" />
         <option value="$PROJECT_DIR$/externals/mos/include/mos/simulate/box.hpp" />
@@ -86,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/stairs_down.cpp" />
         <option value="$PROJECT_DIR$/include/corridor.hpp" />
         <option value="$PROJECT_DIR$/include/stairs.hpp" />
+        <option value="$PROJECT_DIR$/include/level.hpp" />
         <option value="$PROJECT_DIR$/src/level.cpp" />
       </list>
     </option>
@@ -98,9 +111,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="2050" />
-    <option name="height" value="1130" />
+    <option name="width" value="1024" />
+    <option name="height" value="1129" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -443,24 +455,24 @@
       <workItem from="1480533835585" duration="4342000" />
       <workItem from="1480593092424" duration="2789000" />
       <workItem from="1480604248038" duration="10940000" />
-      <workItem from="1480674340141" duration="654000" />
+      <workItem from="1480674340141" duration="1067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24677000" />
+    <option name="totallyTimeSpent" value="25090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="2050" height="1130" extended-state="6" />
+    <frame x="0" y="0" width="1024" height="1129" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11376953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21232876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32778865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297456" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -482,7 +494,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -522,7 +534,7 @@
         <state relative-caret-position="216">
           <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <element signature="e#37#54#0" expanded="false" />
+            <element signature="e#37#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,7 +596,7 @@
         <state relative-caret-position="666">
           <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding>
-            <element signature="e#37#54#0" expanded="false" />
+            <element signature="e#37#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,7 +654,7 @@
         <state relative-caret-position="666">
           <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding>
-            <element signature="e#37#54#0" expanded="false" />
+            <element signature="e#37#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,16 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/level.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#37#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/door.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -894,10 +896,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/level.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+          <folding>
+            <element signature="e#37#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/level.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        <state relative-caret-position="198">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding />
         </state>
       </provider>
