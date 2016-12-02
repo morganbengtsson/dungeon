@@ -39,6 +39,7 @@ private:
   mos::Model corridor_;
   mos::Model stairs_;
   mos::Model stairs_down_;
+  mos::Model round_;
   Entities entities_;
   Models out_models_;
   std::future<void> load_;
