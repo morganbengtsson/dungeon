@@ -35,7 +35,6 @@ Room::Room(const glm::mat4 &transform, const mos::Model &model) : model_(model) 
           glm::translate(glm::mat4(1.0f), glm::vec3(size_.x / 2.0f, size_.y / 2.0f, 0.0f)) *
           glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
-  std::cout << *this << std::endl;
 }
 
 mos::Model Room::model() {

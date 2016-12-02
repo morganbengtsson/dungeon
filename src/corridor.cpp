@@ -9,7 +9,6 @@ Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
   model_.transform = transform;
 
   length_ = uint((glm::abs(glm::simplex(model_.position()))) * 10.0f + 1.0f);
-  std::cout << "Corridor " << length_ <<  std::endl;
   auto m = floor;
 
   for (float i = 0; i < length_; i++) {

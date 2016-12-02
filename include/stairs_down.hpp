@@ -11,7 +11,7 @@ public:
          const unsigned int max_length = 10);
   mos::Model model();
 private:
-  unsigned int length_;
+  int length_;
   mos::Model model_;
 };
 #endif //STAIRSDOWN_HPP

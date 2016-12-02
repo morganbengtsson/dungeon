@@ -54,10 +54,13 @@ void Level::update(const float dt) {
                            })) {
             d.next = next;
             new_entities.push_back(d.next);
+
           }
         }
       }
+      //std::cout << e->box() << std::endl;
     }
+    //std::cout << "---" << std::endl;
     entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
     time_ = 0.0f;
   }

@@ -3,9 +3,9 @@
 
 StairsDown::StairsDown(const glm::mat4 &transform,
                const mos::Model model,
-const unsigned int max_length) {
+const unsigned int max_length) : length_(0) {
   model_.transform = transform;
-  length_ = uint((glm::abs(glm::simplex(model_.position()))) * max_length + 1.0f);
+  length_ = int((glm::abs(glm::simplex(model_.position()))) * max_length + 1.0f);
 
   exits.push_back(
       Door(transform *
