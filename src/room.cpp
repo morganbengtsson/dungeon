@@ -6,7 +6,6 @@ Room::Room(const glm::mat4 &transform, const mos::Model &model){
   size_.x = int(glm::abs(glm::simplex(model_.position()) * 5.0f)) + 2.0f;
   size_.y = int(glm::abs(glm::simplex(model_.position()) * 5.0f)) + 2.0f;
 
-
   size_ = {3,3};
 
   auto m = model;
@@ -28,14 +27,10 @@ Room::Room(const glm::mat4 &transform, const mos::Model &model){
 
   //uint right = uint((glm::abs(glm::simplex(model_.position())) * length_));
 
-
-
   exits.push_back(
       Door(transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, -0.5f, 0.0f))
           * glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
-
-
 
   //uint left = uint((glm::abs(glm::simplex(model_.position())) * length_));
 
