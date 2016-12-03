@@ -92,5 +92,5 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
   auto seed = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);
 
   auto value = int(glm::abs(glm::simplex(seed)) * entities.size());
-  return entities[value];
+  return entities[3];
 }

@@ -10,7 +10,7 @@ public:
   mos::Model model();
   friend std::ostream &operator<<(std::ostream &os, const Room &room);
 private:
-  glm::uvec2 size_;
+  glm::ivec2 size_;
   mos::Model model_;
 };
 
