@@ -9,9 +9,9 @@ Room::Room(const glm::mat4 &transform, const mos::Model &model){
   size_ = {3,3};
 
   auto m = model;
-  for (float x = 0; x < size_.x; x++){
+  for (float x = 0; x < size_.x; x++) {
     for(float y = 0; y  < size_.y; y++) {
-      m.position(glm::vec3(x, y, 0.0f));
+      m.position(glm::vec3(x + 0.5f, y, 0.0f));
       std::cout << m.position();
       model_.models.push_back(m);
     }

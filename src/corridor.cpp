@@ -12,7 +12,7 @@ Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
   auto m = floor;
 
   for (float i = 0; i < length_; i++) {
-    m.position(glm::vec3(i, 0.0f, 0.0f));
+    m.position(glm::vec3(i + 0.5f, 0.0f, 0.0f));
     model_.models.push_back(m);
   }
   exits.push_back(
