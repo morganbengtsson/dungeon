@@ -14,8 +14,7 @@ Room::Room(const glm::mat4 &transform,
   auto e = floor_edge;
 
   for (float x = 0; x < size_.x; x++) {
-
-    e.transform = glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}) * glm::rotate(glm::mat4(1.0f));
+    e.transform = glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}) * glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), {.0f, .0f, 1.f});
     room_.models.push_back(e);
     for(float y = 1; y  < size_.y; y++) {
       m.position(glm::vec3(x + 0.5f, y, 0.0f));
