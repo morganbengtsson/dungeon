@@ -12,8 +12,21 @@ Room::Room(const glm::mat4 &transform){
 
   auto m = assets_.model("room_floor.model");
   auto e = assets_.model("room_edge.model");
+  auto c = assets_.model("room_corner.model");
 
-  for (float x = 0; x < size_.x; x++) {
+  c.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, 0.0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
+  room_.models.push_back(c);
+
+  c.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, 0.0f, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+  room_.models.push_back(c);
+
+  c.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, size_.y - 1.0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+  room_.models.push_back(c);
+
+  c.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, size_.y - 1.0f, .0f}), -glm::half_pi<float>(), {.0f, .0f, 1.f});
+  room_.models.push_back(c);
+
+  for (float x = 1.0f; x < (size_.x - 1.0f); x++) {
     e.transform =  glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
     room_.models.push_back(e);
 
