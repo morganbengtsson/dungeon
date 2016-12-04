@@ -7,8 +7,9 @@
 
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
     : time_(0.0f), camera_(resolution),
-      stairs_(assets.model("stairs.model")),
       floor_(assets.model("floor.model")),
+      floor_edge_(assets.model("floor_edge.model")),
+      stairs_(assets.model("stairs.model")),
       stairs_down_(assets.model("stairs_down.model")),
       entities_{std::make_shared<Corridor>(glm::mat4(1.0f), floor_)},
       load_(std::async(std::launch::async, [&] {
@@ -86,7 +87,7 @@ Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
   entities.push_back(std::make_shared<Corridor>(transform, floor_));
   entities.push_back(std::make_shared<Stairs>(transform, stairs_));
   entities.push_back(std::make_shared<StairsDown>(transform, stairs_down_));
-  entities.push_back(std::make_shared<Room>(transform, floor_));
+  entities.push_back(std::make_shared<Room>(transform, floor_, floor_edge_));
   entities.push_back(std::make_shared<TestCorridor>(transform, floor_));
 
   auto seed = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);

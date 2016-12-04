@@ -38,6 +38,7 @@ private:
   Camera camera_;
   float time_;
   mos::Model floor_;
+  mos::Model floor_edge_;
   mos::Model stairs_;
   mos::Model stairs_down_;
   Entities entities_;

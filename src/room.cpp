@@ -1,24 +1,32 @@
 #include <room.hpp>
 #include <glm/gtc/noise.hpp>
 
-Room::Room(const glm::mat4 &transform, const mos::Model &model){
-  model_.transform = transform;
-  size_.x = int(glm::abs(glm::simplex(model_.position()) * 5.0f)) + 2.0f;
-  size_.y = int(glm::abs(glm::simplex(model_.position()) * 5.0f)) + 2.0f;
+Room::Room(const glm::mat4 &transform,
+           const mos::Model &floor,
+           const mos::Model &floor_edge) {
+  room_.transform = transform;
+  size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
+  size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
 
   size_ = {3,3};
 
-  auto m = model;
+  auto m = floor;
+  auto e = floor_edge;
+
   for (float x = 0; x < size_.x; x++) {
-    for(float y = 0; y  < size_.y; y++) {
+
+    e.transform = glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}) * glm::rotate(glm::mat4(1.0f));
+    room_.models.push_back(e);
+    for(float y = 1; y  < size_.y; y++) {
       m.position(glm::vec3(x + 0.5f, y, 0.0f));
-      std::cout << m.position();
-      model_.models.push_back(m);
+      room_.models.push_back(m);
     }
   }
+
   //model_.transform *= glm::scale(glm::mat4(1.0f), glm::vec3(size_.x, size_.y, 1.0f));
 
-  box_ = mos::Box::create_from_model(model_);
+  box_ = mos::Box::create_from_model(room_);
+  std::cout << box_.extent << std::endl;
   box_.extent -= 0.01;
 
   exits.push_back(
@@ -42,7 +50,7 @@ Room::Room(const glm::mat4 &transform, const mos::Model &model){
 }
 
 mos::Model Room::model() {
-  return model_;
+  return room_;
 }
 
 std::ostream &operator<<(std::ostream &os, const Room &room) {
