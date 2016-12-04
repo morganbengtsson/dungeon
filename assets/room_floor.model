@@ -1,0 +1,1 @@
+{"models": [], "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], "texture": "floor.png", "lightmap": null, "position": [0.0, 0.0, 0.0], "name": "room_floor", "material": "corridor.material", "angle": 0.0, "axis": [0.0, 1.0, 0.0], "euler": [0.0, -0.0, 0.0], "mesh": "room_floor.mesh"}
