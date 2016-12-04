@@ -1,17 +1,17 @@
 #include <room.hpp>
 #include <glm/gtc/noise.hpp>
 
-Room::Room(const glm::mat4 &transform,
-           const mos::Model &floor,
-           const mos::Model &floor_edge) {
+mos::Assets Room::assets_;
+
+Room::Room(const glm::mat4 &transform){
   room_.transform = transform;
   size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
   size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
 
   size_ = {3,3};
 
-  auto m = floor;
-  auto e = floor_edge;
+  auto m = assets_.model("room_floor.model");
+  auto e = assets_.model("room_edge.model");
 
   for (float x = 0; x < size_.x; x++) {
     e.transform =  glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
@@ -60,3 +60,4 @@ std::ostream &operator<<(std::ostream &os, const Room &room) {
   os << " size: " << room.size_;
   return os;
 }
+
