@@ -15,6 +15,8 @@ Room::Room(const glm::mat4 &transform) {
 
   auto floor_model = assets_.model("room_floor.model");
   auto edge_model = assets_.model("room_edge.model");
+  auto edge_model1 = assets_.model("room_edge1.model");
+  edge_model = edge_model1;
   auto corner_model = assets_.model("room_corner.model");
   auto entry_model = assets_.model("room_entry.model");
 
