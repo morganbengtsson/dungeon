@@ -1,0 +1,1 @@
+{"lightmap": null, "models": [], "texture": "room_edge1.png", "axis": [0.0, 1.0, 0.0], "euler": [0.0, -0.0, 0.0], "name": "edge_wall1", "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -2.01071834564209, 0.0, 0.5, 1.0], "mesh": "edge_wall1.mesh", "material": "room_edge1.material", "angle": 0.0, "position": [-2.01071834564209, 0.0, 0.5]}
