@@ -34,7 +34,7 @@ public:
   Boxes boxes();
   mos::Camera camera() const;
 private:
-  Entity::SharedEntity create_entity(const glm::mat4 & transform);
+  Entity::SharedEntity create_entity(mos::Assets &assets, const glm::mat4 &transform);
   Camera camera_;
   float time_;
   mos::Model floor_;

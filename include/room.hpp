@@ -8,13 +8,12 @@
 
 class Room : public Entity {
 public:
-  Room(const glm::mat4 &transform);
+  Room(mos::Assets &assets, const glm::mat4 &transform);
   mos::Model model();
   friend std::ostream &operator<<(std::ostream &os, const Room &room);
 private:
   glm::ivec2 size_;
   mos::Model room_;
-  static mos::Assets assets_;
 };
 
 

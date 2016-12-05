@@ -17,7 +17,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
           for (auto &entity : entities_) {
             for (auto &door : entity->exits) {
               if (!door.next) {
-                auto next = create_entity(door.transform);
+                auto next = create_entity(assets, door.transform);
 
                 if (std::none_of(entities_.begin(), entities_.end(),
                                  [&](const Entity::SharedEntity &e0) {
@@ -37,7 +37,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
           time_ = 0.0f;
           std::cout << "Level generating done." << std::endl;
         }
-      })) {}
+      })){}
 
 Level::~Level() {}
 
@@ -81,12 +81,12 @@ Level::Boxes Level::boxes() {
 
 mos::Camera Level::camera() const { return camera_.camera(); }
 
-Entity::SharedEntity Level::create_entity(const glm::mat4 &transform) {
+Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &transform) {
   std::vector<std::shared_ptr<Entity>> entities;
   entities.push_back(std::make_shared<Corridor>(transform, floor_));
   entities.push_back(std::make_shared<Stairs>(transform, stairs_));
   entities.push_back(std::make_shared<StairsDown>(transform, stairs_down_));
-  entities.push_back(std::make_shared<Room>(transform));
+  entities.push_back(std::make_shared<Room>(assets, transform));
   entities.push_back(std::make_shared<TestCorridor>(transform, floor_));
 
   auto seed = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);

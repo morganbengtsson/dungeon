@@ -3,9 +3,7 @@
 #include <mos/util.hpp>
 #include <algorithm.hpp>
 
-mos::Assets Room::assets_;
-
-Room::Room(const glm::mat4 &transform) {
+Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   room_.transform = transform;
   size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
   size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
@@ -14,17 +12,16 @@ Room::Room(const glm::mat4 &transform) {
 
   const auto entry_pos = mos::position(transform);
 
-  auto floor_model = assets_.model("room_floor.model");
+  auto floor_model = assets.model("room_floor.model");
 
-  std::vector<mos::Model> edge_models{assets_.model("room_edge0.model")};
-                                      /*
-                                      assets_.model("room_edge1.model"),
-                                      assets_.model("room_edge2.model"),
-                                      assets_.model("room_edge3.model"),
-                                      assets_.model("room_edge4.model")};*/
+  std::vector<mos::Model> edge_models{assets.model("room_edge1.model"),
+                                      assets.model("room_edge1.model"),
+                                      assets.model("room_edge2.model"),
+                                      assets.model("room_edge3.model"),
+                                      assets.model("room_edge4.model")};
 
-  auto corner_model = assets_.model("room_corner.model");
-  auto entry_model = assets_.model("room_entry.model");
+  auto corner_model = assets.model("room_corner.model");
+  auto entry_model = assets.model("room_entry.model");
 
   //Entry door
   entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
