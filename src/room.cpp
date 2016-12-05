@@ -14,9 +14,10 @@ Room::Room(const glm::mat4 &transform) {
   const auto entry_pos = mos::position(transform);
 
   auto floor_model = assets_.model("room_floor.model");
-  auto edge_model = assets_.model("room_edge.model");
-  auto edge_model1 = assets_.model("room_edge1.model");
-  edge_model = edge_model1;
+
+  std::vector<mos::Model> edge_models{assets_.model("room_edge.model"),
+                                      assets_.model("room_edge1.model")};
+
   auto corner_model = assets_.model("room_corner.model");
   auto entry_model = assets_.model("room_entry.model");
 
@@ -46,10 +47,12 @@ Room::Room(const glm::mat4 &transform) {
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
 
+    auto & edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t0)) * edge_models.size()))];
     if (x != float(size_.x / 2)) {
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
+      edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t1)) * edge_models.size()))];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
     } else {
@@ -65,11 +68,14 @@ Room::Room(const glm::mat4 &transform) {
       floor_model.position(glm::vec3(x + 0.5f, y, 0.0f));
       room_.models.push_back(floor_model);
 
-      edge_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
+      const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
+      edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t0)) * edge_models.size()))];
+      edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
-      edge_model.transform =
-          glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+      const auto t1 = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+      edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t1)) * edge_models.size()))];
+      edge_model.transform = t1;
       room_.models.push_back(edge_model);
     }
   }
