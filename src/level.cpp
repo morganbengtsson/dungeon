@@ -8,7 +8,6 @@
 Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
     : time_(0.0f), camera_(resolution),
       floor_(assets.model("room_floor.model")),
-      floor_edge_(assets.model("floor_edge.model")),
       stairs_(assets.model("stairs.model")),
       stairs_down_(assets.model("stairs_down.model")),
       entities_{std::make_shared<Corridor>(glm::mat4(1.0f), floor_)},

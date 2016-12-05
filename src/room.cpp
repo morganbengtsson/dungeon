@@ -16,8 +16,12 @@ Room::Room(const glm::mat4 &transform) {
 
   auto floor_model = assets_.model("room_floor.model");
 
-  std::vector<mos::Model> edge_models{assets_.model("room_edge.model"),
-                                      assets_.model("room_edge1.model")};
+  std::vector<mos::Model> edge_models{assets_.model("room_edge0.model")};
+                                      /*
+                                      assets_.model("room_edge1.model"),
+                                      assets_.model("room_edge2.model"),
+                                      assets_.model("room_edge3.model"),
+                                      assets_.model("room_edge4.model")};*/
 
   auto corner_model = assets_.model("room_corner.model");
   auto entry_model = assets_.model("room_entry.model");
@@ -83,6 +87,7 @@ Room::Room(const glm::mat4 &transform) {
 
   box_ = mos::Box::create_from_model(room_);
   box_.extent -= 0.01;
+  std::cout << box_.extent << std::endl;
 
   exits.push_back(
       Door(transform *
