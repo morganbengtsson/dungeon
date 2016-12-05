@@ -1,5 +1,6 @@
 #include <room.hpp>
 #include <glm/gtc/noise.hpp>
+#include <mos/util.hpp>
 
 mos::Assets Room::assets_;
 
@@ -10,17 +11,29 @@ Room::Room(const glm::mat4 &transform) {
 
   size_ = {3, 3};
 
+  const auto entry_pos = mos::position(transform);
+
   auto floor_model = assets_.model("room_floor.model");
   auto edge_model = assets_.model("room_edge.model");
   auto corner_model = assets_.model("room_corner.model");
+  auto entry_model = assets_.model("room_entry.model");
 
+  /*
   corner_model.transform =
       glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, 0.0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
-  room_.models.push_back(corner_model);
+  room_.models.push_back(corner_model);*/
 
+  //Entry door
+  entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+  room_.models.push_back(entry_model);
+
+  //Exit door
+  entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - .5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+  room_.models.push_back(entry_model);
+  /*
   corner_model.transform =
       glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, 0.0f, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-  room_.models.push_back(corner_model);
+  room_.models.push_back(corner_model);*/
 
   corner_model.transform =
       glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, size_.y - 1.0f, .0f}), 0.0f, {.0f, .0f, 1.f});
@@ -31,6 +44,8 @@ Room::Room(const glm::mat4 &transform) {
                                        {.0f, .0f, 1.f});
   room_.models.push_back(corner_model);
 
+
+  auto exit_x = float(size_.x);
 
   for (float x = 1.0f; x < (size_.x - 1.0f); x++) {
 
@@ -57,13 +72,11 @@ Room::Room(const glm::mat4 &transform) {
   }
 
   box_ = mos::Box::create_from_model(room_);
-  std::cout << box_.extent << std::endl;
   box_.extent -= 0.01;
 
-  /*
   exits.push_back(
       Door(transform *
-          glm::translate(glm::mat4(1.0f), glm::vec3(size_.x, 0.0f, 0.0f))));*/
+          glm::translate(glm::mat4(1.0f), glm::vec3(size_.x, 0.0f, 0.0f))));
 
   //uint right = uint((glm::abs(glm::simplex(model_.position())) * length_));
 
