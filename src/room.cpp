@@ -1,6 +1,7 @@
 #include <room.hpp>
 #include <glm/gtc/noise.hpp>
 #include <mos/util.hpp>
+#include <algorithm.hpp>
 
 mos::Assets Room::assets_;
 
@@ -47,12 +48,12 @@ Room::Room(const glm::mat4 &transform) {
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
 
-    auto & edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t0)) * edge_models.size()))];
+    auto & edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
     if (x != float(size_.x / 2)) {
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
-      edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t1)) * edge_models.size()))];
+      edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
     } else {
@@ -69,12 +70,12 @@ Room::Room(const glm::mat4 &transform) {
       room_.models.push_back(floor_model);
 
       const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
-      edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t0)) * edge_models.size()))];
+      edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
       const auto t1 = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-      edge_model = edge_models[int(glm::abs(glm::simplex(mos::position(t1)) * edge_models.size()))];
+      edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
     }
