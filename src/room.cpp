@@ -9,7 +9,7 @@ Room::Room(const glm::mat4 &transform) {
   size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
   size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
 
-  size_ = {3, 3};
+  //size_ = {3, 3};
 
   const auto entry_pos = mos::position(transform);
 
@@ -18,10 +18,6 @@ Room::Room(const glm::mat4 &transform) {
   auto corner_model = assets_.model("room_corner.model");
   auto entry_model = assets_.model("room_entry.model");
 
-  /*
-  corner_model.transform =
-      glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, 0.0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
-  room_.models.push_back(corner_model);*/
 
   //Entry door
   entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
@@ -30,10 +26,6 @@ Room::Room(const glm::mat4 &transform) {
   //Exit door
   entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - .5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
   room_.models.push_back(entry_model);
-  /*
-  corner_model.transform =
-      glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, 0.0f, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-  room_.models.push_back(corner_model);*/
 
   corner_model.transform =
       glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, size_.y - 1.0f, .0f}), 0.0f, {.0f, .0f, 1.f});
@@ -45,30 +37,41 @@ Room::Room(const glm::mat4 &transform) {
   room_.models.push_back(corner_model);
 
 
-  auto exit_x = float(size_.x);
-
   for (float x = 1.0f; x < (size_.x - 1.0f); x++) {
 
-    edge_model.transform =
-        glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
-    room_.models.push_back(edge_model);
+    const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
+    const auto t1 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, size_.y - 1.0f, .0f}),
+                                -glm::half_pi<float>(),
+                                {.0f, .0f, 1.f});
 
-    edge_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, size_.y - 1.0f, .0f}),
-                                       -glm::half_pi<float>(),
-                                       {.0f, .0f, 1.f});
-    room_.models.push_back(edge_model);
+    if (x != float(size_.x / 2)) {
+      edge_model.transform = t0;
+      room_.models.push_back(edge_model);
+
+      edge_model.transform = t1;
+      room_.models.push_back(edge_model);
+    }
+    else {
+      floor_model.transform = t0;
+      room_.models.push_back(floor_model);
+
+      floor_model.transform = t1;
+      room_.models.push_back(floor_model);
+    }
 
     for (float y = 1; y < (size_.y - 1.f); y++) {
+
       floor_model.position(glm::vec3(x + 0.5f, y, 0.0f));
       room_.models.push_back(floor_model);
 
       edge_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
       room_.models.push_back(edge_model);
 
-      edge_model.transform =
-          glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-      room_.models.push_back(edge_model);
-    }
+
+        edge_model.transform =
+            glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+        room_.models.push_back(edge_model);
+      }
   }
 
   box_ = mos::Box::create_from_model(room_);
@@ -80,19 +83,19 @@ Room::Room(const glm::mat4 &transform) {
 
   //uint right = uint((glm::abs(glm::simplex(model_.position())) * length_));
 
-  /*
+
   exits.push_back(
       Door(transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, -0.5f, 0.0f))
-               * glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));*/
+               * glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
   //uint left = uint((glm::abs(glm::simplex(model_.position())) * length_));
 
-  /*
+
   exits.push_back(
       Door(transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
-          glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));*/
+          glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
 }
 
