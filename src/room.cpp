@@ -18,13 +18,13 @@ Room::Room(const glm::mat4 &transform) {
   auto corner_model = assets_.model("room_corner.model");
   auto entry_model = assets_.model("room_entry.model");
 
-
   //Entry door
   entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
   room_.models.push_back(entry_model);
 
   //Exit door
-  entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - .5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+  entry_model.transform =
+      glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - .5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
   room_.models.push_back(entry_model);
 
   corner_model.transform =
@@ -36,10 +36,10 @@ Room::Room(const glm::mat4 &transform) {
                                        {.0f, .0f, 1.f});
   room_.models.push_back(corner_model);
 
-
   for (float x = 1.0f; x < (size_.x - 1.0f); x++) {
-
-    const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}), glm::half_pi<float>(), {.0f, .0f, 1.f});
+    const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}),
+                                glm::half_pi<float>(),
+                                {.0f, .0f, 1.f});
     const auto t1 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, size_.y - 1.0f, .0f}),
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
@@ -50,8 +50,7 @@ Room::Room(const glm::mat4 &transform) {
 
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
-    }
-    else {
+    } else {
       floor_model.transform = t0;
       room_.models.push_back(floor_model);
 
@@ -67,11 +66,10 @@ Room::Room(const glm::mat4 &transform) {
       edge_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
       room_.models.push_back(edge_model);
 
-
-        edge_model.transform =
-            glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-        room_.models.push_back(edge_model);
-      }
+      edge_model.transform =
+          glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+      room_.models.push_back(edge_model);
+    }
   }
 
   box_ = mos::Box::create_from_model(room_);
