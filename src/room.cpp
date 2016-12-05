@@ -8,7 +8,7 @@ Room::Room(const glm::mat4 &transform){
   size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
   size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
 
-  size_ = {3,3};
+  //size_ = {3,3};
 
   auto m = assets_.model("room_floor.model");
   auto e = assets_.model("room_edge.model");
@@ -36,6 +36,12 @@ Room::Room(const glm::mat4 &transform){
     for(float y = 1; y  < (size_.y - 1.f); y++) {
       m.position(glm::vec3(x + 0.5f, y, 0.0f));
       room_.models.push_back(m);
+
+      e.transform =  glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
+      room_.models.push_back(e);
+
+      e.transform =  glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+      room_.models.push_back(e);
     }
   }
 
