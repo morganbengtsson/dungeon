@@ -5,8 +5,8 @@
 
 Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   room_.transform = transform;
-  size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
-  size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 2.0f;
+  size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 3.0f;
+  size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 3.0f;
 
   //size_ = {3, 3};
 
@@ -41,8 +41,6 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
     floor_models = {assets.model("room_floor_wood.model")};
     edge_models = {assets.model("room_edge_wood0.model")};
   }
-
-
 
   //Entry door
   entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
