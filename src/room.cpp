@@ -140,6 +140,6 @@ mos::Model Room::model() {
 }
 
 void Room::print(std::ostream &os) {
-  os << "Room";
+  os << "Room, " << "type: " << room_type;
 }
 

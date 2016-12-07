@@ -29,14 +29,15 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
                                  })) {
                   door.next = next;
                   new_entities.push_back(door.next);
+                  std::cout << *next << std::endl;
                 }
               }
             }
           }
           entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
           time_ = 0.0f;
-          std::cout << "Level generating done." << std::endl;
         }
+        std::cout << "Level generating done." << std::endl;
       })){}
 
 Level::~Level() {}
