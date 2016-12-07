@@ -13,7 +13,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
       entities_{std::make_shared<Corridor>(glm::mat4(1.0f), floor_)},
       load_(std::async(std::launch::async, [&] {
         Entities new_entities;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 6; i++) {
           for (auto &entity : entities_) {
             for (auto &door : entity->exits) {
               if (!door.next) {
@@ -88,13 +88,15 @@ Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &
   auto stairs = std::make_shared<Stairs>(transform, stairs_);
   auto stairs_down = std::make_shared<StairsDown>(transform, stairs_down_);
   auto room = std::make_shared<Room>(assets, transform);
+  auto elevator = std::make_shared<Elevator>(assets, transform);
 
   entities.push_back(corridor);
   entities.push_back(corridor);
   entities.push_back(stairs);
   entities.push_back(stairs_down);
-  entities.push_back(room);
-  entities.push_back(room);
+  entities.push_back(elevator);
+  entities.push_back(elevator);
+  entities.push_back(elevator);
   entities.push_back(room);
   entities.push_back(room);
   entities.push_back(room);

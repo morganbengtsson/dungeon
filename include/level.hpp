@@ -13,6 +13,7 @@
 #include <stairs_down.hpp>
 #include <test_corridor.hpp>
 #include <room.hpp>
+#include <elevator.hpp>
 #include <future>
 
 class Level {

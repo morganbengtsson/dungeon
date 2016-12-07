@@ -6,7 +6,8 @@
 #include <mos/assets.hpp>
 
 class Elevator : public Entity {
-  Elevator(mos::Assets & assets, const glm::mat4 &transform, const int max_length = 5);
+public:
+  Elevator(mos::Assets & assets, const glm::mat4 &transform, const int max_length = 10);
   mos::Model model();
 protected:
   void print(std::ostream &os) override;
