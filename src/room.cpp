@@ -12,7 +12,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
   const auto entry_pos = mos::position(transform);
 
-  room_type = simplex_index(entry_pos, 4);
+  room_type = simplex_index(entry_pos, 3);
 
   //TODO: Move to own class.
   std::vector<mos::Model> floor_models;
@@ -20,7 +20,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   mos::Model corner_model;
   mos::Model entry_model;
 
-  if ((room_type == 1) || (room_type == 0)) {
+  if (room_type == 2) {
     corner_model = assets.model("room_corner.model");
     entry_model = assets.model("room_entry.model");
     floor_models = {assets.model("room_floor.model")};
@@ -30,13 +30,13 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                    assets.model("room_edge3.model"),
                    assets.model("room_edge4.model")};
   }
-  else if (room_type == 2) {
+  else if (room_type == 1) {
     corner_model = assets.model("room_corner_metal.model");
     entry_model = assets.model("room_entry_metal.model");
     floor_models = {assets.model("room_floor_metal.model")};
     edge_models = {assets.model("room_edge_metal0.model")};
   }
-  else if (room_type == 3) {
+  else if (room_type == 0) {
     corner_model = assets.model("room_corner_wood.model");
     entry_model = assets.model("room_entry_wood.model");
     floor_models = {assets.model("room_floor_wood.model")};
