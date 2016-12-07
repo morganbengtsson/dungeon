@@ -24,7 +24,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
     corner_model = assets.model("room_corner.model");
     entry_model = assets.model("room_entry.model");
     floor_models = {assets.model("room_floor.model")};
-    edge_models = {assets.model("room_edge1.model"),
+    edge_models = {assets.model("room_edge0.model"),
                    assets.model("room_edge1.model"),
                    assets.model("room_edge2.model"),
                    assets.model("room_edge3.model"),
@@ -34,19 +34,15 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
     corner_model = assets.model("room_corner_metal.model");
     entry_model = assets.model("room_entry_metal.model");
     floor_models = {assets.model("room_floor_metal.model")};
-    edge_models = {assets.model("room_edge_metal0.model")};
+    edge_models = {assets.model("room_edge_metal0.model"),
+                   assets.model("room_edge_metal1.model")};
   }
   else if (room_type == 0) {
     corner_model = assets.model("room_corner_wood.model");
     entry_model = assets.model("room_entry_wood.model");
     floor_models = {assets.model("room_floor_wood.model")};
-    edge_models = {assets.model("room_edge_wood0.model")};
-  }
-  else {
-    corner_model = assets.model("room_corner.model");
-    entry_model = assets.model("room_entry.model");
-    floor_models = {assets.model("room_floor.model")};
-    edge_models = {assets.model("room_edge1.model")};
+    edge_models = {assets.model("room_edge_wood0.model"),
+                   assets.model("room_edge_wood1.model")};
   }
 
   //Entry door
@@ -75,8 +71,8 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
 
-    auto & edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
-    auto & floor_model = floor_models[0];
+    auto edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
+    auto floor_model = floor_models[0];
     if (x != float(size_.x / 2)) {
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
