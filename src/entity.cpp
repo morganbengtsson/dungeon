@@ -10,3 +10,8 @@ bool Entity::intersects(const Entity &entity) const {
 mos::Box Entity::box() const {
   return box_;
 }
+
+std::ostream &operator<<(std::ostream &os, Entity &e) {
+  e.print(os);
+  return os;
+}

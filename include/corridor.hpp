@@ -10,6 +10,8 @@ public:
   Corridor(const glm::mat4 &transform,
            const mos::Model &floor);
   mos::Model model();
+protected:
+  void print(std::ostream &os) override;
 private:
   int length_;
   mos::Model floor_;

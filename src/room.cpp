@@ -12,14 +12,15 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
   const auto entry_pos = mos::position(transform);
 
-  auto room_type = simplex_index(entry_pos, 3);
+  room_type = simplex_index(entry_pos, 4);
 
   //TODO: Move to own class.
   std::vector<mos::Model> floor_models;
   std::vector<mos::Model> edge_models;
   mos::Model corner_model;
   mos::Model entry_model;
-  if (room_type == 0) {
+
+  if ((room_type == 1) || (room_type == 0)) {
     corner_model = assets.model("room_corner.model");
     entry_model = assets.model("room_entry.model");
     floor_models = {assets.model("room_floor.model")};
@@ -29,17 +30,23 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                    assets.model("room_edge3.model"),
                    assets.model("room_edge4.model")};
   }
-  else if (room_type == 1) {
+  else if (room_type == 2) {
     corner_model = assets.model("room_corner_metal.model");
     entry_model = assets.model("room_entry_metal.model");
     floor_models = {assets.model("room_floor_metal.model")};
     edge_models = {assets.model("room_edge_metal0.model")};
   }
-  else if (room_type == 2) {
+  else if (room_type == 3) {
     corner_model = assets.model("room_corner_wood.model");
     entry_model = assets.model("room_entry_wood.model");
     floor_models = {assets.model("room_floor_wood.model")};
     edge_models = {assets.model("room_edge_wood0.model")};
+  }
+  else {
+    corner_model = assets.model("room_corner.model");
+    entry_model = assets.model("room_entry.model");
+    floor_models = {assets.model("room_floor.model")};
+    edge_models = {assets.model("room_edge1.model")};
   }
 
   //Entry door
@@ -105,7 +112,6 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
   box_ = mos::Box::create_from_model(room_);
   box_.extent -= 0.01;
-  std::cout << box_.extent << std::endl;
 
   exits.push_back(
       Door(transform *
@@ -133,8 +139,7 @@ mos::Model Room::model() {
   return room_;
 }
 
-std::ostream &operator<<(std::ostream &os, const Room &room) {
-  os << " size: " << room.size_;
-  return os;
+void Room::print(std::ostream &os) {
+  os << "Room";
 }
 

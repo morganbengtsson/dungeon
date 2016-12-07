@@ -22,3 +22,7 @@ Stairs::Stairs(const glm::mat4 &transform,
 }
 
 mos::Model Stairs::model() { return model_; }
+
+void Stairs::print(std::ostream &os) {
+  os << "Stairs";
+}

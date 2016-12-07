@@ -8,8 +8,10 @@ class StairsDown : public Entity {
 public:
   StairsDown(const glm::mat4 &transform,
          const mos::Model model,
-         const unsigned int max_length = 10);
+         const unsigned int max_length = 5);
   mos::Model model();
+protected:
+  void print(std::ostream &os) override;
 private:
   int length_;
   mos::Model model_;

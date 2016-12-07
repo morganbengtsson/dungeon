@@ -1,5 +1,6 @@
 #include <stairs_down.hpp>
 #include <glm/gtc/noise.hpp>
+#include <string>
 
 StairsDown::StairsDown(const glm::mat4 &transform,
                const mos::Model model,
@@ -21,3 +22,7 @@ const unsigned int max_length) : length_(0) {
 }
 
 mos::Model StairsDown::model() { return model_; }
+
+void StairsDown::print(std::ostream &os) {
+  os << "Stairs down.";
+}

@@ -18,7 +18,9 @@ public:
   std::vector<Door> exits;
   bool intersects(const Entity &entity) const;
   mos::Box box() const;
+  friend std::ostream& operator<<(std::ostream& ofs, Entity& e);
 protected:
+  virtual void print(std::ostream &os) = 0;
   mos::Box box_;
 };
 
