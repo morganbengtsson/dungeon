@@ -71,7 +71,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
 
-    auto edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
+    auto edge_model = edge_models[simplex_index(mos::position(t0),edge_models.size())];
     auto floor_model = floor_models[0];
     if (x != float(size_.x / 2)) {
       edge_model.transform = t0;
@@ -95,7 +95,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       room_.models.push_back(floor_model);
 
       const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
-      edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
+      edge_model = edge_models[simplex_index(mos::position(t0),edge_models.size())];
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
