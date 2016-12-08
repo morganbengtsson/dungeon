@@ -1,0 +1,1 @@
+{"euler": [0.0, 0.0, 0.0], "mesh": "table_edge_split.mesh", "texture": "table.png", "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], "lightmap": null, "axis": [0.0, 1.0, 0.0], "position": [0.0, 0.0, 0.0], "material": "table.material", "name": "table", "models": [], "angle": 0.0}
