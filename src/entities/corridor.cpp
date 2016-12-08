@@ -4,30 +4,30 @@
 #include <glm/gtc/random.hpp>
 #include <glm/gtx/rotate_vector.hpp>
 
-Corridor::Corridor(const glm::mat4 &transform, const mos::Model &floor)
-    : floor_(floor) {
+Corridor::Corridor(mos::Assets &assets, const glm::mat4 &transform)
+    : floor_(assets.model("corridor.model")) {
   model_.transform = transform;
 
   length_ = uint((glm::abs(glm::simplex(model_.position()))) * 8.0f + 5.0f);
-  auto m = floor;
+  auto m = floor_;
 
   for (float i = 0; i < length_; i++) {
     m.position(glm::vec3(i + 0.5f, 0.0f, 0.0f));
     model_.models.push_back(m);
   }
   exits.push_back(
-      Door(transform *
+      Door(assets, transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(length_, 0.0f, 0.0f))));
 
   unsigned int right = uint((glm::abs(glm::simplex(model_.position())) * length_));
   exits.push_back(
-      Door(transform *
+      Door(assets, transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(0.5f + right, -0.5f, 0.0f)) *
            glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
   unsigned int left = uint((glm::abs(glm::simplex(model_.position())) * length_));
   exits.push_back(
-      Door(transform *
+      Door(assets, transform *
            glm::translate(glm::mat4(1.0f), glm::vec3(0.5f + left, 0.5f, 0.0f)) *
            glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 

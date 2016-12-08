@@ -6,7 +6,7 @@
 #include <vector>
 #include <mos/render/model.hpp>
 #include <mos/simulate/box.hpp>
-#include <entities/door.hpp>
+#include <door.hpp>
 
 class Door;
 

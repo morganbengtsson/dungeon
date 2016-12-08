@@ -7,8 +7,7 @@
 
 class Corridor : public Entity {
 public:  
-  Corridor(const glm::mat4 &transform,
-           const mos::Model &floor);
+  Corridor(mos::Assets &assets, const glm::mat4 &transform);
   mos::Model model();
   void update(const float dt) override;
 protected:

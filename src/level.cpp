@@ -10,7 +10,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
       floor_(assets.model("corridor.model")),
       stairs_(assets.model("stairs.model")),
       stairs_down_(assets.model("stairs_down.model")),
-      entities_{std::make_shared<Corridor>(glm::mat4(1.0f), floor_)},
+      entities_{std::make_shared<Corridor>(assets, glm::mat4(1.0f))},
       load_(std::async(std::launch::async, [&] {
         Entities new_entities;
         for (int i = 0; i < 6; i++) {
@@ -70,6 +70,9 @@ Level::Models Level::models() {
   out_models_.clear();
   for (auto &c : entities_) {
     out_models_.push_back(c->model());
+    for (auto &door : c->exits){
+      out_models_.push_back(door.model());
+    }
   }
   return out_models_;
 }
@@ -87,7 +90,7 @@ mos::Camera Level::camera() const { return camera_.camera(); }
 
 Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &transform) {
   std::vector<std::shared_ptr<Entity>> entities;
-  auto corridor = std::make_shared<Corridor>(transform, floor_);
+  auto corridor = std::make_shared<Corridor>(assets, transform);
   auto stairs = std::make_shared<Stairs>(transform, stairs_);
   auto stairs_down = std::make_shared<StairsDown>(transform, stairs_down_);
   auto room = std::make_shared<Room>(assets, transform);

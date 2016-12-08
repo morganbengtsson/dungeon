@@ -7,7 +7,7 @@
 #include <mos/render/model.hpp>
 #include <mos/render/render_box.hpp>
 #include <entities/corridor.hpp>
-#include <entities/door.hpp>
+#include <door.hpp>
 #include <camera.hpp>
 #include <entities/stairs.hpp>
 #include <entities/stairs_down.hpp>

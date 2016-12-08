@@ -9,7 +9,7 @@ height_ = uint((glm::abs(glm::simplex(model_.position()))) * max_length + 1.0f);
 auto elevator = assets.model("elevator.model");
 
 exits.push_back(
-    Door(transform *
+    Door(assets, transform *
         glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, height_))*
         glm::rotate(glm::mat4(1.0f), glm::pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
