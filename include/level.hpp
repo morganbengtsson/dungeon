@@ -15,6 +15,7 @@
 #include <entities/room.hpp>
 #include <entities/elevator.hpp>
 #include <future>
+#include <mutex>
 
 class Level {
 public:
@@ -44,6 +45,7 @@ private:
   Entities entities_;
   Models out_models_;
   std::future<void> load_;
+  std::mutex load_mutex_;
 };
 
 #endif // LEVEL_HPP
