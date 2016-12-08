@@ -1,4 +1,4 @@
-#include <entity.hpp>
+#include <entities/entity.hpp>
 
 bool Entity::intersects(const Entity &entity) const {
   if (box_.intersects(entity.box_)) {

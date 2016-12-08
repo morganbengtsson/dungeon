@@ -2,7 +2,7 @@
 #define DOOR_HPP
 
 #include <memory>
-#include <entity.hpp>
+#include <entities/entity.hpp>
 
 class Entity;
 

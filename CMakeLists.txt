@@ -22,8 +22,10 @@ add_subdirectory(externals/mos)
 include_directories(externals/mos/include)
 
 # Main
-file(GLOB SRC "src/*.cpp")
-file(GLOB INCLUDE "include/*.hpp")
+file(GLOB SRC "src/*.cpp"
+        "src/entities/*.cpp")
+file(GLOB INCLUDE "include/*.hpp"
+        "include/entities/*.hpp")
 file(GLOB TXT "*.txt")
 include_directories(include)
 add_executable(${PROJECT_NAME} ${INCLUDE} ${SRC} ${TXT})

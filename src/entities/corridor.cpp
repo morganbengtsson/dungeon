@@ -1,5 +1,5 @@
 #include <array>
-#include <corridor.hpp>
+#include <entities/corridor.hpp>
 #include <glm/gtc/noise.hpp>
 #include <glm/gtc/random.hpp>
 #include <glm/gtx/rotate_vector.hpp>
@@ -41,4 +41,7 @@ mos::Model Corridor::model() { return model_; }
 
 void Corridor::print(std::ostream &os) {
   os << "Corridor";
+}
+void Corridor::update(const float dt) {
+
 }

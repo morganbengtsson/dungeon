@@ -1,5 +1,5 @@
 #include <array>
-#include <test_corridor.hpp>
+#include <entities/test_corridor.hpp>
 #include <glm/gtc/noise.hpp>
 #include <glm/gtc/random.hpp>
 #include <glm/gtx/rotate_vector.hpp>

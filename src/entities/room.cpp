@@ -1,4 +1,4 @@
-#include <room.hpp>
+#include <entities/room.hpp>
 #include <glm/gtc/noise.hpp>
 #include <mos/util.hpp>
 #include <algorithm.hpp>
@@ -137,5 +137,8 @@ mos::Model Room::model() {
 
 void Room::print(std::ostream &os) {
   os << "Room, " << "type: " << room_type;
+}
+void Room::update(const float dt) {
+
 }
 

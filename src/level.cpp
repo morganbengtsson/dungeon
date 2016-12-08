@@ -61,6 +61,9 @@ void Level::camera_zoom_out(const bool zoom_out) {
 void Level::update(const float dt) {
   time_ += dt;
   camera_.update(dt);
+  for (auto & entity : entities_){
+    entity->update(dt);
+  }
 }
 
 Level::Models Level::models() {

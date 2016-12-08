@@ -1,4 +1,4 @@
-#include <stairs_down.hpp>
+#include <entities/stairs_down.hpp>
 #include <glm/gtc/noise.hpp>
 #include <string>
 
@@ -25,4 +25,7 @@ mos::Model StairsDown::model() { return model_; }
 
 void StairsDown::print(std::ostream &os) {
   os << "Stairs down.";
+}
+void StairsDown::update(const float dt) {
+
 }

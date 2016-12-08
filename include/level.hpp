@@ -6,14 +6,14 @@
 #include <mos/render/camera.hpp>
 #include <mos/render/model.hpp>
 #include <mos/render/render_box.hpp>
-#include <corridor.hpp>
-#include <door.hpp>
+#include <entities/corridor.hpp>
+#include <entities/door.hpp>
 #include <camera.hpp>
-#include <stairs.hpp>
-#include <stairs_down.hpp>
-#include <test_corridor.hpp>
-#include <room.hpp>
-#include <elevator.hpp>
+#include <entities/stairs.hpp>
+#include <entities/stairs_down.hpp>
+#include <entities/test_corridor.hpp>
+#include <entities/room.hpp>
+#include <entities/elevator.hpp>
 #include <future>
 
 class Level {

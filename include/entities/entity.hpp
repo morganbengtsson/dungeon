@@ -6,7 +6,7 @@
 #include <vector>
 #include <mos/render/model.hpp>
 #include <mos/simulate/box.hpp>
-#include <door.hpp>
+#include <entities/door.hpp>
 
 class Door;
 
@@ -15,6 +15,7 @@ public:
   using SharedEntity = std::shared_ptr<Entity>;
   virtual ~Entity(){}
   virtual mos::Model model() = 0;
+  virtual void update(const float dt) = 0;
   std::vector<Door> exits;
   bool intersects(const Entity &entity) const;
   mos::Box box() const;

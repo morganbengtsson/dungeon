@@ -3,7 +3,7 @@
 
 #include <memory>
 #include <mos/render/model.hpp>
-#include <entity.hpp>
+#include <entities/entity.hpp>
 
 class TestCorridor : public Entity {
 public:  

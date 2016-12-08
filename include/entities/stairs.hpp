@@ -1,7 +1,7 @@
 #ifndef STAIRS_HPP
 #define STAIRS_HPP
 
-#include <entity.hpp>
+#include <entities/entity.hpp>
 #include <mos/render/model.hpp>
 
 class Stairs : public Entity {
@@ -10,6 +10,7 @@ public:
          const mos::Model model,
          const unsigned int max_length = 5);
   mos::Model model();
+  void update(const float dt) override;
 protected:
   void print(std::ostream &os) override;
 private:

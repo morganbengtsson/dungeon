@@ -1,4 +1,4 @@
-#include <stairs.hpp>
+#include <entities/stairs.hpp>
 #include <glm/gtc/noise.hpp>
 
 Stairs::Stairs(const glm::mat4 &transform,
@@ -25,4 +25,7 @@ mos::Model Stairs::model() { return model_; }
 
 void Stairs::print(std::ostream &os) {
   os << "Stairs";
+}
+void Stairs::update(const float dt) {
+
 }
