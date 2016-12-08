@@ -7,8 +7,7 @@
 
 class TestCorridor : public Entity {
 public:  
-  TestCorridor(const glm::mat4 &transform,
-           const mos::Model &floor);
+  TestCorridor(mos::Assets &assets, const glm::mat4 &transform);
   mos::Model model();
 private:
   int length_;

@@ -91,8 +91,8 @@ mos::Camera Level::camera() const { return camera_.camera(); }
 Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &transform) {
   std::vector<std::shared_ptr<Entity>> entities;
   auto corridor = std::make_shared<Corridor>(assets, transform);
-  auto stairs = std::make_shared<Stairs>(transform, stairs_);
-  auto stairs_down = std::make_shared<StairsDown>(transform, stairs_down_);
+  auto stairs = std::make_shared<Stairs>(assets, transform);
+  auto stairs_down = std::make_shared<StairsDown>(assets, transform);
   auto room = std::make_shared<Room>(assets, transform);
   auto elevator = std::make_shared<Elevator>(assets, transform);
 

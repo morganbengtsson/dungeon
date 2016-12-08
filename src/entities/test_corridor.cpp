@@ -5,12 +5,12 @@
 #include <glm/gtx/rotate_vector.hpp>
 #include <mos/util.hpp>
 
-TestCorridor::TestCorridor(const glm::mat4 &transform, const mos::Model &floor)
-    : floor_(floor) {
+TestCorridor::TestCorridor(mos::Assets &assets, const glm::mat4 &transform)
+    : floor_(assets.model("corridor.model")) {
   model_.transform = transform;
 
   length_ = uint((glm::abs(glm::simplex(model_.position()))) * 10.0f + 1.0f);
-  auto m = floor;
+  auto m = floor_;
 
   auto t = glm::mat4(1.0f);
 
@@ -24,7 +24,7 @@ TestCorridor::TestCorridor(const glm::mat4 &transform, const mos::Model &floor)
     if (glm::simplex(m.position()) > 0.0f) {
       auto p = mos::position(t);
       exits.push_back(
-          Door(transform *
+          Door(assets, transform *
               glm::translate(glm::mat4(1.0f), p) *
               glm::translate(glm::mat4(1.0f), glm::vec3(-0.5f, -0.5f, 0.0f)) *
               glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
@@ -32,7 +32,7 @@ TestCorridor::TestCorridor(const glm::mat4 &transform, const mos::Model &floor)
     if (glm::simplex(m.position()) > 0.0f) {
       auto p = mos::position(t);
       exits.push_back(
-          Door(transform *
+          Door(assets, transform *
               glm::translate(glm::mat4(1.0f), p) *
               glm::translate(glm::mat4(1.0f), glm::vec3(-0.5f, 0.5f, 0.0f)) *
               glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
@@ -42,7 +42,7 @@ TestCorridor::TestCorridor(const glm::mat4 &transform, const mos::Model &floor)
   //t *= glm::translate(glm::mat4(1.0f), glm::vec3(1.0, 0.0f, 0.0f));
   //t *= glm::rotate(glm::mat4(1.0f), 0.2f, glm::vec3(0.0f, 0.0f, 1.0f));
   auto p = mos::position(t);
-  exits.push_back(Door(transform * glm::translate(glm::mat4(1.0f), p)));
+  exits.push_back(Door(assets, transform * glm::translate(glm::mat4(1.0f), p)));
 
   //model_.overlay(glm::linearRand(glm::vec4(0.0f), glm::vec4(1.0f)));
 

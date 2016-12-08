@@ -110,14 +110,14 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   box_.extent -= 0.01;
 
   exits.push_back(
-      Door(transform *
+      Door(assets, transform *
           glm::translate(glm::mat4(1.0f), glm::vec3(size_.x, 0.0f, 0.0f))));
 
   //uint right = uint((glm::abs(glm::simplex(model_.position())) * length_));
 
 
   exits.push_back(
-      Door(transform *
+      Door(assets, transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, -0.5f, 0.0f))
                * glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
@@ -125,7 +125,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
 
   exits.push_back(
-      Door(transform *
+      Door(assets, transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
           glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
