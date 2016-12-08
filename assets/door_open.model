@@ -1,0 +1,1 @@
+{"texture": "door_open.png", "position": [0.0, 2.0, 0.0], "mesh": "door_open.mesh", "angle": 0.0, "lightmap": null, "axis": [0.0, 1.0, 0.0], "models": [], "name": "door_open", "transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 2.0, 0.0, 1.0], "material": "door_open.material", "euler": [0.0, -0.0, 0.0]}

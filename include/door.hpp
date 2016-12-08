@@ -12,8 +12,10 @@ public:
   std::shared_ptr<Entity> next;
   const glm::mat4 transform;
   mos::Model model() const;
+  bool open;
 private:
-  mos::Model model_;
+  mos::Model door_closed_;
+  mos::Model door_open_;
 };
 
 #endif // DOOR_HPP

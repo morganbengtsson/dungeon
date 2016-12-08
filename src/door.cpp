@@ -1,9 +1,15 @@
 #include <door.hpp>
+#include <algorithm.hpp>
+#include <mos/util.hpp>
 
-Door::Door(mos::Assets &assets, const glm::mat4 &transform) : transform(transform), model_(assets.model("door.model")) {
-  model_.transform = transform;
+Door::Door(mos::Assets &assets, const glm::mat4 &transform)
+    : transform(transform), door_closed_(assets.model("door_closed.model")),
+      door_open_(assets.model("door_open.model")) {
+  door_closed_.transform = transform;
+  door_open_.transform = transform;
+  open = bool(simplex_index(mos::position(transform), 2));
 }
 
 mos::Model Door::model() const {
-  return model_;
+  return open ? door_open_ : door_closed_;
 }
