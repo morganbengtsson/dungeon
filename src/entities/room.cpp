@@ -1,5 +1,6 @@
 #include <entities/room.hpp>
 #include <glm/gtc/noise.hpp>
+#include <glm/gtc/random.hpp>
 #include <mos/util.hpp>
 #include <algorithm.hpp>
 
@@ -44,6 +45,11 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
     edge_models = {assets.model("room_edge_wood0.model"),
                    assets.model("room_edge_wood1.model")};
   }
+
+  // Items
+  const std::vector<mos::Model> items{assets.model("plant.model"),
+                                      assets.model("table.model"),
+                                      assets.model("package.model")};
 
   //Entry door
   entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
@@ -91,8 +97,15 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
     for (float y = 1; y < (size_.y - 1.f); y++) {
 
-      floor_model.position(glm::vec3(x + 0.5f, y, 0.0f));
+      auto floor_pos = glm::vec3(x + 0.5f, y, 0.0f);
+      floor_model.position(floor_pos);
       room_.models.push_back(floor_model);
+
+      if (simplex_bool(entry_pos + floor_pos)){
+        auto item = items[simplex_index(entry_pos + floor_pos, items.size())];
+        item.position(floor_pos);
+        items_.push_back(item);
+      }
 
       const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
       edge_model = edge_models[simplex_index(mos::position(t0),edge_models.size())];
@@ -129,10 +142,21 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
           glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
           glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
+
+
+  for (int i = 0; i < 5 ; i++) {
+    //auto m = items[simplex_index(mos::position(transform) / float(i + 1), items.size())];
+    // m.position(p);
+    //m.position(glm::linearRand(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(size_.x, size_.y, 0.0f)));
+
+    //items_.push_back(m);
+  }
 }
 
 mos::Model Room::model() {
-  return room_;
+  auto r = room_;
+  r.models.insert(r.end(), items_.begin(), items_.end());
+  return r;
 }
 
 void Room::print(std::ostream &os) {

@@ -18,6 +18,7 @@ public:
 private:
   glm::ivec2 size_;
   mos::Model room_;
+  std::vector<mos::Model> items_;
 };
 
 
