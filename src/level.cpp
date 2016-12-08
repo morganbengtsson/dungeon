@@ -12,33 +12,35 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
       stairs_down_(assets.model("stairs_down.model")),
       entities_{std::make_shared<Corridor>(assets, glm::mat4(1.0f))},
       load_(std::async(std::launch::async, [&] {
-        Entities new_entities;
-        for (int i = 0; i < 6; i++) {
-          for (auto &entity : entities_) {
-            for (auto &door : entity->exits) {
-              if (!door.next) {
-                auto next = create_entity(assets, door.transform);
 
-                if (std::none_of(entities_.begin(), entities_.end(),
-                                 [&](const Entity::SharedEntity &e0) {
-                                   return e0->intersects(*next);
-                                 }) &&
-                    std::none_of(new_entities.begin(), new_entities.end(),
-                                 [&](const Entity::SharedEntity &e0) {
-                                   return e0->intersects(*next);
-                                 })) {
-                  door.next = next;
-                  new_entities.push_back(door.next);
-                  std::cout << *next << std::endl;
-                }
-              }
-            }
+      })){
+  Entities new_entities;
+  for (int i = 0; i < 6; i++) {
+    for (auto &entity : entities_) {
+      for (auto &door : entity->exits) {
+        if (!door.next) {
+          auto next = create_entity(assets, door.transform);
+
+          if (std::none_of(entities_.begin(), entities_.end(),
+                           [&](const Entity::SharedEntity &e0) {
+                             return e0->intersects(*next);
+                           }) &&
+              std::none_of(new_entities.begin(), new_entities.end(),
+                           [&](const Entity::SharedEntity &e0) {
+                             return e0->intersects(*next);
+                           })) {
+            door.next = next;
+            new_entities.push_back(door.next);
+            std::cout << *next << std::endl;
           }
-          entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
-          time_ = 0.0f;
         }
-        std::cout << "Level generating done." << std::endl;
-      })){}
+      }
+    }
+    entities_.insert(entities_.end(), new_entities.begin(), new_entities.end());
+    time_ = 0.0f;
+  }
+  std::cout << "Level generating done." << std::endl;
+}
 
 Level::~Level() {}
 

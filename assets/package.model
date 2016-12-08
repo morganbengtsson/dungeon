@@ -1,0 +1,1 @@
+{"models": [], "angle": 0.0, "transform": [0.19999991357326508, 0.0, 0.0, 0.0, 0.0, 0.19999991357326508, 0.0, 0.0, 0.0, 0.0, 0.20000000298023224, 0.0, 0.0, 0.0, 0.0, 1.0], "euler": [0.0, -0.0, 0.0], "name": "package", "material": "package.material", "lightmap": null, "position": [0.0, 0.0, 0.0], "mesh": "Cube_edge_split.mesh", "axis": [0.0, 1.0, 0.0], "texture": "package.png"}

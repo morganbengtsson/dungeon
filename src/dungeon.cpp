@@ -20,7 +20,6 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution) {
                  glm::vec3(0.0f), glm::vec3(1.0f));
 
   const auto models = level_.models();
-
   const auto fog = mos::FogLinear(glm::vec3(0.0f), 50.0f, 80.0f);
   const mos::ModelsBatch main(models.begin(), models.end(), level_.camera().view,
                         level_.camera().projection, resolution_, light, mos::FogExp(), fog);
