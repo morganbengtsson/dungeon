@@ -7,7 +7,7 @@
 Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   room_.transform = transform;
   size_.x = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 3.0f;
-  size_.y = int(glm::abs(glm::simplex(room_.position()) * 5.0f)) + 3.0f;
+  size_.y = int(glm::abs(glm::simplex(room_.position() * 0.5f) * 5.0f)) + 3.0f;
 
   //size_ = {3, 3};
 
