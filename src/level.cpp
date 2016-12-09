@@ -30,6 +30,8 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
                                  })) {
                   door.next = next;
                   new_entities.push_back(door.next);
+                } else {
+                  door.open = false;
                 }
               }
             }

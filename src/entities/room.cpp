@@ -9,8 +9,6 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   size_.x = simplex_int(room_.position(), 3, 6);
   size_.y = simplex_int(room_.position() * .5f, 3, 6);
 
-  //size_ = {3, 3};
-
   const auto entry_pos = mos::position(transform);
 
   room_type = simplex_int(entry_pos, 0, 3);
@@ -30,15 +28,13 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                    assets.model("room_edge2.model"),
                    assets.model("room_edge3.model"),
                    assets.model("room_edge4.model")};
-  }
-  else if (room_type == 1) {
+  } else if (room_type == 1) {
     corner_model = assets.model("room_corner_metal.model");
     entry_model = assets.model("room_entry_metal.model");
     floor_models = {assets.model("room_floor_metal.model")};
     edge_models = {assets.model("room_edge_metal0.model"),
                    assets.model("room_edge_metal1.model")};
-  }
-  else if (room_type == 0) {
+  } else if (room_type == 0) {
     corner_model = assets.model("room_corner_wood.model");
     entry_model = assets.model("room_entry_wood.model");
     floor_models = {assets.model("room_floor_wood.model")};
@@ -69,6 +65,9 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                                        {.0f, .0f, 1.f});
   room_.models.push_back(corner_model);
 
+  int left = simplex_int(room_.position() * 0.5f, 1, size_.x - 1);
+  int right = simplex_int(room_.position(), 1, size_.x - 1);
+
   for (float x = 1.0f; x < (size_.x - 1.0f); x++) {
     const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}),
                                 glm::half_pi<float>(),
@@ -79,21 +78,26 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
     auto edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
     auto floor_model = floor_models[0];
-    if (x != float(size_.x / 2)) {
+    if (x != float(left)) {
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
-
+    } else {
+      floor_model.transform = t0;
+      room_.models.push_back(floor_model);
+    }
+    if (x != float(right)) {
       edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
     } else {
-
-      floor_model.transform = t0;
-      room_.models.push_back(floor_model);
-
       floor_model.transform = t1;
       room_.models.push_back(floor_model);
     }
+    /*
+
+
+    */
+
 
     for (float y = 1; y < (size_.y - 1.f); y++) {
 
@@ -101,7 +105,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       floor_model.position(floor_pos);
       room_.models.push_back(floor_model);
 
-      if (simplex_bool(entry_pos + floor_pos)){
+      if (simplex_bool(entry_pos + floor_pos)) {
         auto item = items[simplex_int(entry_pos + floor_pos, 0, items.size())];
         item.position(floor_pos);
         items_.push_back(item);
@@ -112,7 +116,8 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
-      const auto t1 = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
+      const auto t1 =
+          glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
       edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
@@ -126,31 +131,16 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       Door(assets, transform *
           glm::translate(glm::mat4(1.0f), glm::vec3(size_.x, 0.0f, 0.0f))));
 
-  //uint right = uint((glm::abs(glm::simplex(model_.position())) * length_));
-
+  exits.push_back(
+      Door(assets, transform *
+          glm::translate(glm::mat4(1.0f), glm::vec3((left) + 0.5f, -0.5f, 0.0f))
+          * glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
   exits.push_back(
       Door(assets, transform *
-          glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, -0.5f, 0.0f))
-               * glm::rotate(glm::mat4(1.0f), -glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
-
-  //uint left = uint((glm::abs(glm::simplex(model_.position())) * length_));
-
-
-  exits.push_back(
-      Door(assets, transform *
-          glm::translate(glm::mat4(1.0f), glm::vec3((size_.x / 2) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
+          glm::translate(glm::mat4(1.0f), glm::vec3((right) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
           glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
 
-
-
-  for (int i = 0; i < 5 ; i++) {
-    //auto m = items[simplex_index(mos::position(transform) / float(i + 1), items.size())];
-    // m.position(p);
-    //m.position(glm::linearRand(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(size_.x, size_.y, 0.0f)));
-
-    //items_.push_back(m);
-  }
 }
 
 mos::Model Room::model() {
