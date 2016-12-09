@@ -13,7 +13,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
   const auto entry_pos = mos::position(transform);
 
-  room_type = simplex_index(entry_pos, 3);
+  room_type = simplex_int(entry_pos, 0, 3);
 
   //TODO: Move to own class.
   std::vector<mos::Model> floor_models;
@@ -77,13 +77,13 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
 
-    auto edge_model = edge_models[simplex_index(mos::position(t0),edge_models.size())];
+    auto edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
     auto floor_model = floor_models[0];
     if (x != float(size_.x / 2)) {
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
-      edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
+      edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
     } else {
@@ -102,18 +102,18 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       room_.models.push_back(floor_model);
 
       if (simplex_bool(entry_pos + floor_pos)){
-        auto item = items[simplex_index(entry_pos + floor_pos, items.size())];
+        auto item = items[simplex_int(entry_pos + floor_pos, 0, items.size())];
         item.position(floor_pos);
         items_.push_back(item);
       }
 
       const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
-      edge_model = edge_models[simplex_index(mos::position(t0),edge_models.size())];
+      edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
       edge_model.transform = t0;
       room_.models.push_back(edge_model);
 
       const auto t1 = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-      edge_model = edge_models[simplex_index(mos::position(t1),edge_models.size())];
+      edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
       edge_model.transform = t1;
       room_.models.push_back(edge_model);
     }
