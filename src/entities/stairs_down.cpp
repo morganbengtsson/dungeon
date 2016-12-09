@@ -1,10 +1,10 @@
 #include <entities/stairs_down.hpp>
 #include <glm/gtc/noise.hpp>
-#include <string>
+#include <algorithm.hpp>
 
 StairsDown::StairsDown(mos::Assets &assets, const glm::mat4 &transform, const unsigned int max_length) : length_(0) {
   model_.transform = transform;
-  length_ = int((glm::abs(glm::simplex(model_.position()))) * max_length + 1.0f);
+  length_ = simplex_int(model_.position(), 1, max_length);
 
   exits.push_back(
       Door(assets, transform *

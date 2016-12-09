@@ -1,9 +1,10 @@
 #include <entities/stairs.hpp>
 #include <glm/gtc/noise.hpp>
+#include <algorithm.hpp>
 
 Stairs::Stairs(mos::Assets &assets, const glm::mat4 &transform, const unsigned int max_length) {
   model_.transform = transform;
-  length_ = uint((glm::abs(glm::simplex(model_.position()))) * max_length + 1.0f);
+  length_ = simplex_int(model_.position(), 1, max_length);
 
   exits.push_back(
       Door(assets, transform *

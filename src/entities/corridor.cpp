@@ -3,12 +3,13 @@
 #include <glm/gtc/noise.hpp>
 #include <glm/gtc/random.hpp>
 #include <glm/gtx/rotate_vector.hpp>
+#include <algorithm.hpp>
 
 Corridor::Corridor(mos::Assets &assets, const glm::mat4 &transform)
     : floor_(assets.model("corridor.model")) {
   model_.transform = transform;
 
-  length_ = uint((glm::abs(glm::simplex(model_.position()))) * 8.0f + 5.0f);
+  length_ = simplex_int(model_.position(), 5, 10);
   auto m = floor_;
 
   for (float i = 0; i < length_; i++) {

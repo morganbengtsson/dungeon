@@ -7,7 +7,7 @@
 
 class Elevator : public Entity {
 public:
-  Elevator(mos::Assets & assets, const glm::mat4 &transform, const int max_length = 10);
+  Elevator(mos::Assets & assets, const glm::mat4 &transform, const int max_height = 10);
   mos::Model model();
   void update(const float dt) override;
 protected:

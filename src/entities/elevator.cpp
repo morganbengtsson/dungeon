@@ -1,10 +1,13 @@
 #include <entities/elevator.hpp>
 #include <glm/gtc/noise.hpp>
+#include <algorithm.hpp>
+
 Elevator::Elevator(mos::Assets &assets,
                    const glm::mat4 &transform, const int max_length) : time_(.0f), elevator_cart_(assets.model("elevator_cart.model")) {
 model_.transform = transform;
 elevator_cart_.position(glm::vec3(0.0f));
-height_ = uint((glm::abs(glm::simplex(model_.position()))) * max_length + 1.0f);
+
+height_ = simplex_int(model_.position(), 1, max_length);
 
 auto elevator = assets.model("elevator.model");
 

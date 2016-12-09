@@ -11,7 +11,6 @@ int simplex_int(const T &seed, const int min, const int max) {
 
   // Scale it to the min , max range.
   auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
-
   return int(n);
 }
 
