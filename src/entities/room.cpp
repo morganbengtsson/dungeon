@@ -44,6 +44,8 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
   // Items
   const std::vector<mos::Model> items{assets.model("plant.model"),
+                                      assets.model("plant.model"),
+                                      assets.model("plant.model"),    
                                       assets.model("table.model"),
                                       assets.model("package.model")};
 
@@ -93,11 +95,6 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       floor_model.transform = t1;
       room_.models.push_back(floor_model);
     }
-    /*
-
-
-    */
-
 
     for (float y = 1; y < (size_.y - 1.f); y++) {
 
