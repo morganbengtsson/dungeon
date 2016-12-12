@@ -81,7 +81,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
     auto edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
     auto floor_model = floor_models[0];
     if (x != float(left)) {
-      edge_model.transform = t0;
+      edge_model.transform = t0 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t0)) + 2.0f));
       room_.models.push_back(edge_model);
     } else {
       floor_model.transform = t0;
@@ -89,7 +89,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
     }
     if (x != float(right)) {
       edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
-      edge_model.transform = t1;
+      edge_model.transform = t1 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t1)) + 2.0f));;
       room_.models.push_back(edge_model);
     } else {
       floor_model.transform = t1;
@@ -110,13 +110,13 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
 
       const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
       edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
-      edge_model.transform = t0;
+      edge_model.transform = t0 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t0)) + 2.0f));;
       room_.models.push_back(edge_model);
 
       const auto t1 =
           glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
       edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
-      edge_model.transform = t1;
+      edge_model.transform = t1 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t1)) + 2.0f));;
       room_.models.push_back(edge_model);
     }
   }

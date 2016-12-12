@@ -18,19 +18,19 @@ Introduction
 
 This is a report for the final project in the course Procedural methods for images, TNM022 at Linköping university. 
 
-Procedural methods for generating content for games is an attractive subject. Done right it can help to give the appearance of very big game world, without to much work regarding modeling and texturing. There are different routes to take when doing things procedurally. Either everything is fully procedural. Within the realm of 3D graphics meaning that, from each vertex in the models to every pixel in the textures are generated from mathematical functions. Another option is to combine procedural methods with manually made building blocks. This is the approach taken in this work, where predefined components are used with adjustable parameters to affect their appearance. Procedural methods can then be used to adjust the parameters. Also to choose what components are created, where they are placed, how many and so forth. This approach is often called shape algebra or procedural modeling. In this work theese ideas are used to generate a dungeon, inspired from old games such as Daggerfall.
+Procedural methods for generating content for games is an attractive subject. Done right it can help to give the appearance of very big game world, without to much work regarding modeling and texturing. There are different routes to take when doing things procedurally. Either everything is fully procedural. Within the realm of 3D graphics meaning that, from each vertex in the models to every pixel in the textures are generated from mathematical functions. Another option is to combine procedural methods with manually made building blocks. This is the approach taken in this work, where predefined components are used with adjustable parameters to affect their appearance. Procedural methods can then be used to adjust those parameters. Furthermore also to choose what components are created, where they are placed, how many and so forth. This approach is often called shape algebra or procedural modeling. In this work theese ideas are used to generate a dungeon, inspired from old games such as Daggerfall_.
 
 .. figure:: daggerfall.jpg
    :width: 70%   
    :align: center
    :name: daggerfall
    
-   A dungeon from the old game Daggerfall (excuse the pixels).
+   A dungeon from the old game Daggerfall.
 
 
 Noise
 -----
-The mathematical functions used for generating values are arbitrary. Though in this work mainly noise functions are used. An inportant property of them is that they are deterministic, meaning that the same input values will always generate the same output. Hence with the same input the exact same dungeon will be generated again in the end. This is important for games, since if the player comes back to a location, the same geometry should be present. Noise is also artistically pleasant for creating sense of randomness, while the predefined components gives a sense of structure. Further are two important noise methods described.
+The mathematical functions used for generating values are arbitrary. Though in this work mainly noise functions are used. An inportant property of them is that they are deterministic, meaning that the same input values will always generate the same output. Hence with the same input the exact same dungeon will be generated again in the end. This is important for games, since if the player comes back to a location, the same geometry should be present. Noise is also artistically pleasant for creating sense of randomness, while the predefined components gives a sense of structure. Two important noise methods described are described further.
 
 simplex_int_ is a method that generates deterministic random values within a defined range. Three dimensional inputs are most often used, though others types are supported.
 
@@ -58,7 +58,6 @@ simplex_bool_ is a convenience method that either gives true or false depending 
    }
 
 
-
 Components
 ----------
 There are two types of components defined to generate the dungeon: doors and entities. 
@@ -67,7 +66,7 @@ There are two types of components defined to generate the dungeon: doors and ent
 Door
 ----
 
-Doors are small objects that define the connection between two entities. A door consist of a transform matrix, a pointer to the next entity and a `model for rendering`__. The door has two *states*, open and closed, which are set by the simplex_bool_ function. Input is the door position.
+Doors are small objects that define the connection between two entities. A door consist of a transform matrix, a pointer to the next entity and a `model for rendering`__. The door has two *states*; open and closed, which are set by the simplex_bool_ function. Input for that method is the door position.
 
 __ door_model_
 
@@ -83,7 +82,7 @@ Entity
 ------
 
 The entity is a base component that the following components are based from. The
-common denominator is that an entity can contain several doors that lead to new entities. All entities also takes a transformation matrix that specifies where the entity should be generated. Each entity also contains a bounding box that is used for collision detection in the `algorithm`_.
+common denominator is that an entity can contain several doors that lead to new entities. All entities also takes a transformation matrix that specifies where the entity should be generated. Each entity contains a bounding box that is used for collision detection in the `algorithm`_.
 
 Corridor
 ========
@@ -110,22 +109,24 @@ __ elevator_model_
    :width: 70%
    :align: center
    :name: elevator_model
+   
+   The elevator model, with the cart to the left.
 
 Room
 ====
 
-The room is the most advanced and most configurable entity. Meaning that it can change much in appearance depending on what values are used to create it. The main values are it *size* in two dimensions and room *type*. The simplex_int_ function is used to initialize theese, with position as input. The input position is scaled a bit for the second *size* dimension, to not get square rooms. 
+The room is the most advanced and most configurable entity. Meaning that it can change much in appearance depending on what values are used to create it. The main values are its *size* in two dimensions and the room *type*. The simplex_int_ function is used to initialize both, with position as input. The input position is scaled a bit for the second *size* dimension, to not get square rooms. 
 
-
-Another value that is generated from the noise function is the room type. There are three types of room types and many walls and floor combinations as seen in the room_figure.
-As seen in the `room edges`_ figure. There are several room edge types.
+The *type* value determines wich set of models to use when creating the room. There are three sets, one with stone material one with metal material and won with wood material. There are several models that builds a room such as floor and edge models. Some of the edge variations are shown in the `room edges`_ figure.
 
 .. figure:: room_edges.png
    :width: 70 %
    :align: center
    :name: room edges
    
-   Different types of room edge variations.
+   Different types of room edges.
+
+When the *type* is determined, the corresponding set of models are used to build the room. A two dimensional loop fills the room with the correct type of models. Edge models for walls, special models for corners, entries and exit, along floor models in the middle. What model that is used is varied depending on simplex_int_ with position as input. As seen in the `room edges`_ figure. The stone material room has many variations of the edge wall. 
 
 
 ------
