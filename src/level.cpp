@@ -65,10 +65,12 @@ void Level::update(const float dt) {
 Level::Models Level::models() {
   out_models_.clear();
   for (auto &c : entities_) {
+    load_mutex_.lock();
     out_models_.push_back(c->model());
     for (auto &door : c->exits){
       out_models_.push_back(door.model());
     }
+    load_mutex_.unlock();
   }
   return out_models_;
 }
