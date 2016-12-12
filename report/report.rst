@@ -127,7 +127,7 @@ Room
 
 The room is the most advanced and most configurable entity. Meaning that it can change much in appearance depending on what values are used to create it. The main values are its *size* in two dimensions and the room *type*. The simplex_range_ function is used to initialize both, with position as input. The input position is scaled a bit for the second *size* dimension, to not get square rooms. 
 
-The *type* value determines wich set of models to use when creating the room. There are three sets, one with stone material one with metal material and won with wood material. There are several models that builds a room such as floor and edge models. Some of the edge variations are shown in the `room edges`_ figure.
+The *type* value determines wich set of models to use when creating the room. There are three sets, one with stone material one with metal material and one with wood material. There are several models that builds a room such as floor and edge models. Some of the variations are shown in the `room edges`_ figure.
 
 .. figure:: room_edges.png
    :width: 70 %
@@ -136,37 +136,79 @@ The *type* value determines wich set of models to use when creating the room. Th
    
    Different types of room edges.
 
-When the *type* is determined, the corresponding set of models are used to build the room. A two dimensional loop fills the room with the correct type of models. Edge models for walls, special models for corners, entries and exit, along floor models in the middle. What model that is used is varied depending on simplex_range_ with position as input. As seen in the `room edges`_ figure. The stone material room has many variations of the edge wall. All walls are also varied slightly in height with the simplex_range_ function.
+When the room *type* is determined, the corresponding set of models are used to build the room. A two dimensional loop fills the room with models. Edge models for walls, special models for corners, entries and exits and floor models in the middle. What model variation that is used depends on the simplex_range_ with position as input. As seen in the `room edges`_ figure, the stone material room has many variations for example. All walls are also varied slightly in height with the simplex_range_ function.
 
 ------
 Stairs
 ------
 
+Stairs are similar to the corridor_ with its only adjustable parameter being its *length*. This variable is again populated by the simplex_range_ method with position as input. The difference is that the stairs extends both vertically and horisontaly. An exit door is added to the end of the model. There are also two versions of this entity, one that goes up and one that goes down, as shown in the `stairs models`_ figure.
+
+.. figure:: stairs.png
+   :width: 70 %
+   :align: center
+   :name: stairs models
+   
+   Stairs up and down.
+
 Items
 -----
+
+To further spice up the environment. Some extra items are added to each room_. They are placed on each floor model in the room_ depending on the simplex_bool_ function and the model position. Which item is used is determined by simplex_range_, and the same position.
+
+.. figure:: items.png
+   :width: 70 %
+   :align: center
+   :name: item models
+   
+   A table, a package and a tree.
 
 
 Algorithm
 ---------
 
-To generate a dungeon the first entity has to be created manually. Then a loop iterates a defined number of times. Each time the loop checks for doors in each entity that has an empty pointer to their next entity. If that is the case a new entity is generated and linked to that pointer. 
+To generate a dungeon the first entity has to be created manually. Then a loop iterates a defined number of times. Each time the loop checks for doors in each entity that has an empty pointer to their next entity. If that is the case a new entity is created and linked to that pointer. 
 
-What type of entity that is generated is decided by a method that takes a seed value as input. In this case the door position is used for that. The seed is put into a simplex noise function and rounded to nearest integer. This integer decides what type of entity is created. 
+Before the entity is linked to the door. The entities bounding box is checked for collision with all other bounding boxes in the level. If a collision is detected, the entity is discarded and the door hence leads nowhere. The doors state is marked as closed in this case.
 
-Before the entity is linked to the door. The entities bounding box is checked for collision with all other bounding boxes in the level. If a collision is detected, the entity is discarded and the door hence leads nowhere. 
-
-
+What type of entity that is generated is decided by a method that takes the door position as input and uses the simplex_range_ method to get an index value. The index value is used on a container filled with all types of entities described in previous sections. When each entity is created it takes the door transform as input for further processing.
 
 Implementation
 --------------
 
-The implementation is done in C++ with a couple of helper libraries. One is mos, mainly used for defining models and meshes for rendering. Another important one is GLM, whish is used for all the math. And especially the simplex noise method that is essential for the algorithm.
+The implementation is done in C++ with a couple of helper libraries. One is Mos_, mainly used for defining models and meshes for rendering. Another important one is GLM_, whish is used for all the math. Especially the simplex noise method that is essential for the algorithm.
 
-The level is generated in its own thread at startup, to not stall the rendering.
+The level is generated in its own thread at startup, to show how the dungeion generates and  not to stall the rendering.
+
+The code itself is available at https://github.com/morganbengtsson/dungeon and can be downloaded with the following git command:
+
+.. code:: bash
+
+	git clone --recursive https://github.com/morganbengtsson/dungeon.git
+
+.. _Mos: https://github.com/morganbengtsson/mos
+.. _GLM: http://glm.g-truc.net/0.9.8/index.html
 
 
 Results
 -------
 
+A video and a screenshot_ of the resulting application are shown below:
+
+.. raw:: html
+   
+	<div class = "align-center">
+	<iframe width="640" height="360"
+	src="https://www.youtube.com/embed/-ZhnmNAsNJo">
+	</iframe>
+	</div>
 
 
+
+.. figure:: screenshot.png
+   :width: 80 %
+   :align: center
+   :name: screenshot
+   :target: screenshot.png
+   
+   The resulting dungeon after six iterations.
