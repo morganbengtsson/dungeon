@@ -10,14 +10,12 @@ public:
   void update(const float dt);
   bool rotate_left;
   bool rotate_right;
-  bool left;
-  bool right;
-  bool forward;
-  bool backward;
   bool zoom_in;
   bool zoom_out;
 private:
   glm::vec3 velocity_;
+  glm::vec3 offset_;
+  float angular_velocity_;
   mos::Camera camera_;
 };
 

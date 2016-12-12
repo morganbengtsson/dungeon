@@ -2,11 +2,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
 #include <glm/gtx/io.hpp>
+#include <glm/gtx/rotate_vector.hpp>
 
 Camera::Camera(const glm::uvec2 &resolution)
-    : rotate_left(false), rotate_right(false), left(false), right(false), forward(false), backward(false),
-      zoom_in(false), zoom_out(false), velocity_(0.0f),
-      camera_(glm::vec3(-20.0f, -20.0f, 50.0f), glm::vec3(0.0f),
+    : rotate_left(false), rotate_right(false),
+      zoom_in(false), zoom_out(false), velocity_(0.0f), angular_velocity_(0.2f),
+      offset_(-20.0f, -20.0f, 50.0f),
+      camera_(offset_, glm::vec3(0.0f),
               glm::perspective(45.0f,
                                ((float)resolution.x / (float)resolution.y),
                                0.1f, 200.0f)) {}
@@ -14,32 +16,13 @@ Camera::Camera(const glm::uvec2 &resolution)
 mos::Camera Camera::camera() const { return camera_; }
 
 void Camera::update(const float dt) {
-
-  const float acceleration = 20.0f;
-  if (forward) {
-    velocity_.y += dt * acceleration;
-  }
-  if (backward) {
-    velocity_.y -= dt * acceleration;
-  }
-  if (left) {
-    velocity_.x += dt * acceleration;
-  }
-  if (right) {
-    velocity_.x -= dt * acceleration;
-  }
-
   if (zoom_in) {
-    velocity_ += camera_.direction() * dt * acceleration;
+    offset_ += camera_.direction() * dt * 10.0f;
   }
   if (zoom_out) {
-    velocity_ -= camera_.direction() * dt * acceleration;
+    offset_ -= camera_.direction() * dt * 10.0f;
   }
 
-  velocity_ *= 0.90f;
-
-  auto p = camera_.position();
-  auto c = camera_.center();
-  camera_.position(p + velocity_ * dt);
-  camera_.center(c + velocity_ * dt);
+  offset_ = glm::rotateZ(offset_, angular_velocity_ * dt);
+  camera_.position(offset_ + camera_.center());
 }

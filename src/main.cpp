@@ -24,40 +24,10 @@ int main(int argc, char **argv) {
 
     if (key == GLFW_KEY_F3 && action == GLFW_PRESS) {
     }
-
-    if (key == GLFW_KEY_W) {
-      if (action == GLFW_PRESS) {
-        dungeon.camera_forward(true);
-      } else if (action == GLFW_RELEASE) {
-        dungeon.camera_forward(false);
-      }
-    }
-    if (key == GLFW_KEY_S) {
-      if (action == GLFW_PRESS) {
-        dungeon.camera_backward(true);
-      } else if (action == GLFW_RELEASE) {
-        dungeon.camera_backward(false);
-      }
-    }
-    if (key == GLFW_KEY_A) {
-      if (action == GLFW_PRESS) {
-        dungeon.camera_right(true);
-      } else if (action == GLFW_RELEASE) {
-        dungeon.camera_right(false);
-      }
-    }
-    if (key == GLFW_KEY_D) {
-      if (action == GLFW_PRESS) {
-        dungeon.camera_left(true);
-      } else if (action == GLFW_RELEASE) {
-        dungeon.camera_left(false);
-      }
-    }
-
   };
 
   window.mouse_func = [&](const glm::dvec2 &position) {
-    std::cout << position << std::endl;
+
   };
 
   window.click_func = [&](int button, int action, int mods) {

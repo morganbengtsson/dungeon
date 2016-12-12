@@ -31,33 +31,10 @@ void Dungeon::update(const float dt, const glm::uvec2 &resolution) {
   renderer_.batches({main}, {}, {}, glm::vec4(0.0f));
 }
 
-void Dungeon::camera_left(const bool left) {
-  level_.camera_left(left);
-}
-
-void Dungeon::camera_right(const bool right) {
-  level_.camera_right(right);
-}
-
-void Dungeon::camera_backward(const bool backward) {
-  level_.camera_backward(backward);
-}
-
-void Dungeon::camera_forward(const bool forward) {
-  level_.camera_forward(forward);
-}
-
 void Dungeon::camera_zoom_in(const bool zoom_in) {
   level_.camera_zoom_in(zoom_in);
 }
 
 void Dungeon::camera_zoom_out(const bool zoom_out) {
   level_.camera_zoom_out(zoom_out);
-}
-void Dungeon::camera_rotate_left(const bool rotate_left) {
-  level_.camera_rotate_left(rotate_left);
-
-}
-void Dungeon::camera_rotate_rigth(const bool rotate_right) {
-  level_.camera_rotate_right(rotate_right);
 }

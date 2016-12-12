@@ -48,16 +48,6 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
 
 Level::~Level() {}
 
-void Level::camera_left(const bool left) { camera_.left = left; }
-
-void Level::camera_right(const bool right) { camera_.right = right; }
-
-void Level::camera_forward(const bool forward) { camera_.forward = forward; }
-
-void Level::camera_backward(const bool backward) {
-  camera_.backward = backward;
-}
-
 void Level::camera_zoom_in(const bool zoom_in) { camera_.zoom_in = zoom_in; }
 
 void Level::camera_zoom_out(const bool zoom_out) {

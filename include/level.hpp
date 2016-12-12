@@ -26,10 +26,6 @@ public:
   Level(mos::Assets &assets, const glm::vec2 &resolution);
   ~Level();
   void update(const float dt);
-  void camera_left(const bool left);
-  void camera_right(const bool right);
-  void camera_forward(const bool forward);
-  void camera_backward(const bool backward);
   void camera_zoom_in(const bool zoom_in);
   void camera_zoom_out(const bool zoom_out);
   void camera_rotate_right(const bool rotate_right);
