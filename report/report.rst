@@ -32,20 +32,30 @@ Noise
 -----
 The mathematical functions used for generating values are arbitrary. Though in this work mainly noise functions are used. An inportant property of them is that they are deterministic, meaning that the same input values will always generate the same output. Hence with the same input the exact same dungeon will be generated again in the end. This is important for games, since if the player comes back to a location, the same geometry should be present. Noise is also artistically pleasant for creating sense of randomness, while the predefined components gives a sense of structure. Two important noise methods described are described further.
 
-simplex_int_ is a method that generates deterministic random values within a defined range. Three dimensional inputs are most often used, though others types are supported.
+simplex_range_ is a method that generates deterministic random values within a defined range. Three dimensional inputs are most often used, though others types are supported. It is available in an integer and a float variant.
 
 .. code:: c++
-   :name: simplex_int
+   :name: simplex_range
    
-   template<class T>
-   int simplex_int(const T &seed, const int min, const int max) {
-     // Noise value in range -1.0f, 1.0f.
-     auto s = glm::simplex(seed);
+	template<class T>
+	int simplex_range(const T &seed, const int min, const int max) {
+	  // Noise value in range -1.0f, 1.0f.
+	  auto s = glm::simplex(seed);
 
-     // Scale it to the min , max range.
-     auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
-     return int(n);
-   }
+	  // Scale it to the min , max range.
+	  auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
+	  return int(n);
+	}
+
+	template<class T>
+	float simplex_range(const T &seed, const float min, const float max){
+	  // Noise value in range -1.0f, 1.0f.
+	  auto s = glm::simplex(seed);
+
+	  // Scale it to the min , max range.
+	  auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
+	  return n;
+	}
 
 simplex_bool_ is a convenience method that either gives true or false depending on the input.
 
@@ -87,7 +97,7 @@ common denominator is that an entity can contain several doors that lead to new 
 Corridor
 ========
 
-The corridor is a simple entiy where the only adjustable parameter is its *length*. The length is defined with the simplex_int_ function with position as input. At the end of the corridor an exit door is created. Only one `model`__ is used for rendering and it is repeated until the desired length is reached. 
+The corridor is a simple entiy where the only adjustable parameter is its *length*. The length is defined with the simplex_range_ function with position as input. At the end of the corridor an exit door is created. Only one `model`__ is used for rendering and it is repeated until the desired length is reached. 
 
 __ corridor_model_
 
@@ -101,7 +111,7 @@ __ corridor_model_
 Elevator
 ========
 
-The elevator is similar to the corridor_ entity. With the difference that it extends in the vertical direction. Hence the *height* is the only adjustable parameter, populated by the simplex_int_ function, with position as input. The model for this entity looks a bit different since it also has an animated cart, as shown in the `image`__. The model is repeated vertically until the desired height is reached.
+The elevator is similar to the corridor_ entity. With the difference that it extends in the vertical direction. Hence the *height* is the only adjustable parameter, populated by the simplex_range_ function, with position as input. The model for this entity looks a bit different since it also has an animated cart, as shown in the `image`__. The model is repeated vertically until the desired height is reached.
 
 __ elevator_model_
 
@@ -115,7 +125,7 @@ __ elevator_model_
 Room
 ====
 
-The room is the most advanced and most configurable entity. Meaning that it can change much in appearance depending on what values are used to create it. The main values are its *size* in two dimensions and the room *type*. The simplex_int_ function is used to initialize both, with position as input. The input position is scaled a bit for the second *size* dimension, to not get square rooms. 
+The room is the most advanced and most configurable entity. Meaning that it can change much in appearance depending on what values are used to create it. The main values are its *size* in two dimensions and the room *type*. The simplex_range_ function is used to initialize both, with position as input. The input position is scaled a bit for the second *size* dimension, to not get square rooms. 
 
 The *type* value determines wich set of models to use when creating the room. There are three sets, one with stone material one with metal material and won with wood material. There are several models that builds a room such as floor and edge models. Some of the edge variations are shown in the `room edges`_ figure.
 
@@ -126,8 +136,7 @@ The *type* value determines wich set of models to use when creating the room. Th
    
    Different types of room edges.
 
-When the *type* is determined, the corresponding set of models are used to build the room. A two dimensional loop fills the room with the correct type of models. Edge models for walls, special models for corners, entries and exit, along floor models in the middle. What model that is used is varied depending on simplex_int_ with position as input. As seen in the `room edges`_ figure. The stone material room has many variations of the edge wall. 
-
+When the *type* is determined, the corresponding set of models are used to build the room. A two dimensional loop fills the room with the correct type of models. Edge models for walls, special models for corners, entries and exit, along floor models in the middle. What model that is used is varied depending on simplex_range_ with position as input. As seen in the `room edges`_ figure. The stone material room has many variations of the edge wall. All walls are also varied slightly in height with the simplex_range_ function.
 
 ------
 Stairs
