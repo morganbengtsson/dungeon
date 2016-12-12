@@ -177,7 +177,7 @@ What type of entity that is generated is decided by a method that takes the door
 Implementation
 --------------
 
-The implementation is done in C++ with a couple of helper libraries. One is Mos_, mainly used for defining models and meshes for rendering. Another important one is GLM_, whish is used for all the math. Especially the simplex noise method that is essential for the algorithm_.
+The implementation is done in C++ with a couple of helper libraries. One is Mos_, mainly used for defining models and meshes for rendering. Another important one is GLM_, which is used for all the math. Especially the simplex noise method that is essential for the algorithm_.
 
 The level is generated in its own thread at startup, to show how the dungeon generates and  not to stall the rendering.
 
@@ -194,16 +194,9 @@ The code itself is available at https://github.com/morganbengtsson/dungeon and c
 Results and discussion
 ----------------------
 
-A video and a screenshot_ of the resulting application are shown below:
+A video_ of the resulting application is available along with a screenshot_ below:
 
-.. raw:: html
-   
-	<div class = "align-center">
-	<iframe width="640" height="360"
-	src="https://www.youtube.com/embed/-ZhnmNAsNJo">
-	</iframe>
-	</div>
-
+.. _video: https://www.youtube.com/watch?v=-ZhnmNAsNJo
 
 
 .. figure:: screenshot.png
@@ -215,6 +208,6 @@ A video and a screenshot_ of the resulting application are shown below:
    The resulting dungeon after six iterations.
    
 
-The results for generating a dungeon procedurally this way are quite positive. With only a few basic models it is possible to generate a quite versitale dungeon. Many parameters are tweak-able, to quickly get a desired result. In contrast to manual modeling, that would take much longer. 
+The results for generating a dungeon procedurally this way are quite positive. With only a few basic models it is possible to generate a quite versatile dungeon. Many parameters are tweak-able, to quickly get a desired result. In contrast to manual modeling, that would take much longer. 
 
 Improvements that could be done are optimizations to the rendering. Even more variations in the different entities. The room_ could be customized even further for example. With more floors, different shapes and materials. Procedural methods could have been used even further ,to place or randomize vertex positions in the models to. That would be at the cost of performance though.
