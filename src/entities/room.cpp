@@ -140,13 +140,12 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       Door(assets, transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((right) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
           glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
-
+  
+  room_.models.insert(room_.end(), items_.begin(), items_.end());
 }
 
 mos::Model Room::model() {
-  auto r = room_;
-  r.models.insert(r.end(), items_.begin(), items_.end());
-  return r;
+  return room_;
 }
 
 void Room::print(std::ostream &os) {
