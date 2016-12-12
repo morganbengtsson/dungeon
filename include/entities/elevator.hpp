@@ -17,7 +17,6 @@ private:
   int height_;
   mos::Model model_;
   mos::Model elevator_;
-  mos::Model elevator_cart_;
 };
 
 #endif //DUNGEON_ELEVATOR_HPP

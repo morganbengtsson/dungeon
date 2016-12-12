@@ -3,9 +3,9 @@
 #include <algorithm.hpp>
 
 Elevator::Elevator(mos::Assets &assets,
-                   const glm::mat4 &transform, const int max_length) : time_(.0f), elevator_cart_(assets.model("elevator_cart.model")) {
+                   const glm::mat4 &transform, const int max_length) : time_(.0f) {
 model_.transform = transform;
-elevator_cart_.position(glm::vec3(0.0f));
+
 
 height_ = simplex_int(model_.position(), 1, max_length);
 
@@ -22,20 +22,21 @@ for (int i = 0; i <= height_; i++) {
   m.mesh.reset();
   model_.models.push_back(m);
 }
+model_.models.push_back(assets.model("elevator_cart.model"));
+model_.models.back().position(glm::vec3(0.0f));
 
 box_ = mos::Box::create_from_model(model_);
 box_.extent -= 0.001;
 
 }
 mos::Model Elevator::model() {
-  auto m = model_;
-  m.models.push_back(elevator_cart_);
-  return m;
+  return model_;
 }
 void Elevator::print(std::ostream &os) {
   os << "Elevator";
 }
 void Elevator::update(const float dt) {
+  auto & elevator_cart_ = model_.models.back();
   time_ += dt;
   auto p = elevator_cart_.position();
   p.z = (glm::sin(time_  * 3.0f / height_) + 1.0f) / 2.0f * height_;
