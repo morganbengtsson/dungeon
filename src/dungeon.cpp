@@ -54,3 +54,10 @@ void Dungeon::camera_zoom_in(const bool zoom_in) {
 void Dungeon::camera_zoom_out(const bool zoom_out) {
   level_.camera_zoom_out(zoom_out);
 }
+void Dungeon::camera_rotate_left(const bool rotate_left) {
+  level_.camera_rotate_left(rotate_left);
+
+}
+void Dungeon::camera_rotate_rigth(const bool rotate_right) {
+  level_.camera_rotate_right(rotate_right);
+}

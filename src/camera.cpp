@@ -4,7 +4,7 @@
 #include <glm/gtx/io.hpp>
 
 Camera::Camera(const glm::uvec2 &resolution)
-    : left(false), right(false), forward(false), backward(false),
+    : rotate_left(false), rotate_right(false), left(false), right(false), forward(false), backward(false),
       zoom_in(false), zoom_out(false), velocity_(0.0f),
       camera_(glm::vec3(-20.0f, -20.0f, 50.0f), glm::vec3(0.0f),
               glm::perspective(45.0f,
@@ -15,7 +15,7 @@ mos::Camera Camera::camera() const { return camera_; }
 
 void Camera::update(const float dt) {
 
-  const float acceleration = 10.0f;
+  const float acceleration = 20.0f;
   if (forward) {
     velocity_.y += dt * acceleration;
   }
@@ -36,7 +36,7 @@ void Camera::update(const float dt) {
     velocity_ -= camera_.direction() * dt * acceleration;
   }
 
-  velocity_ *= 0.99f;
+  velocity_ *= 0.90f;
 
   auto p = camera_.position();
   auto c = camera_.center();

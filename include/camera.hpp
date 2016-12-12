@@ -8,6 +8,8 @@ public:
   Camera(const glm::uvec2 &resolution);
   mos::Camera camera() const;
   void update(const float dt);
+  bool rotate_left;
+  bool rotate_right;
   bool left;
   bool right;
   bool forward;

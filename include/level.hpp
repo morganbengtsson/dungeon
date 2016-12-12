@@ -32,6 +32,8 @@ public:
   void camera_backward(const bool backward);
   void camera_zoom_in(const bool zoom_in);
   void camera_zoom_out(const bool zoom_out);
+  void camera_rotate_right(const bool rotate_right);
+  void camera_rotate_left(const bool rotate_left);
   Models models();
   Boxes boxes();
   mos::Camera camera() const;

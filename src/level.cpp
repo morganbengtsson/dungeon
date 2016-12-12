@@ -122,3 +122,11 @@ Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &
   auto value = simplex_int(seed, 0, entities.size());
   return entities[value];
 }
+
+void Level::camera_rotate_right(const bool rotate_right) {
+  camera_.rotate_right = rotate_right;
+}
+
+void Level::camera_rotate_left(const bool rotate_left) {
+  camera_.rotate_left = rotate_left;
+}
