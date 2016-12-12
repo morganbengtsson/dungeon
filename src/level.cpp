@@ -11,10 +11,10 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
       floor_(assets.model("corridor.model")),
       stairs_(assets.model("stairs.model")),
       stairs_down_(assets.model("stairs_down.model")),
-      entities_{std::make_shared<Corridor>(assets, glm::mat4(1.0f))},
+      entities_{std::make_shared<Room>(assets, glm::mat4(1.0f))},
       load_(std::async(std::launch::async, [&] {
         Entities new_entities;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 6; i++) {
           for (auto &entity : entities_) {
             for (auto &door : entity->exits) {
               if (!door.next) {
@@ -99,11 +99,6 @@ Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &
   entities.push_back(stairs);
   entities.push_back(stairs_down);
   entities.push_back(elevator);
-  entities.push_back(elevator);
-  entities.push_back(elevator);
-  entities.push_back(room);
-  entities.push_back(room);
-  entities.push_back(room);
   entities.push_back(room);
   entities.push_back(room);
   entities.push_back(room);

@@ -6,7 +6,7 @@
 
 class Stairs : public Entity {
 public:
-  Stairs(mos::Assets &assets, const glm::mat4 &transform, const unsigned int max_length = 5);
+  Stairs(mos::Assets &assets, const glm::mat4 &transform, const unsigned int max_length = 10);
   mos::Model model();
   void update(const float dt) override;
 protected:
