@@ -106,7 +106,7 @@ Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &
 
   auto seed = glm::vec3(transform[3][0], transform[3][1], transform[3][2]);
 
-  auto value = simplex_int(seed, 0, entities.size());
+  auto value = simplex_range(seed, 0, entities.size());
   return entities[value];
 }
 

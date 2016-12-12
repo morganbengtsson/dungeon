@@ -6,12 +6,12 @@
 
 Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   room_.transform = transform;
-  size_.x = simplex_int(room_.position(), 3, 6);
-  size_.y = simplex_int(room_.position() * .5f, 3, 6);
+  size_.x = simplex_range(room_.position(), 3, 6);
+  size_.y = simplex_range(room_.position() * .5f, 3, 6);
 
   const auto entry_pos = mos::position(transform);
 
-  room_type = simplex_int(entry_pos, 0, 3);
+  room_type = simplex_range(entry_pos, 0, 3);
 
   //TODO: Move to own class.
   std::vector<mos::Model> floor_models;
@@ -45,30 +45,34 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
   // Items
   const std::vector<mos::Model> items{assets.model("plant.model"),
                                       assets.model("plant.model"),
-                                      assets.model("plant.model"),    
+                                      assets.model("plant.model"),
                                       assets.model("table.model"),
                                       assets.model("package.model")};
 
   //Entry door
-  entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+  entry_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {.5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f})
+      * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(glm::vec3(.5f, .0f, .0f) + entry_pos, 1.0f, 2.0f)));
   room_.models.push_back(entry_model);
 
   //Exit door
   entry_model.transform =
-      glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - .5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+      glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - .5f, .0f, .0f}), 0.0f, {.0f, .0f, 1.f})
+          * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(glm::vec3(size_.x - .5f, .0f, .0f) + entry_pos, 1.0f, 2.0f)));
   room_.models.push_back(entry_model);
 
   corner_model.transform =
-      glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, size_.y - 1.0f, .0f}), 0.0f, {.0f, .0f, 1.f});
+      glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, size_.y - 1.0f, .0f}), 0.0f, {.0f, .0f, 1.f})
+          * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(glm::vec3(0.5f, size_.y - 1.0f, .0f) + entry_pos, 1.0f, 2.0f)));
   room_.models.push_back(corner_model);
 
   corner_model.transform = glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, size_.y - 1.0f, .0f}),
                                        -glm::half_pi<float>(),
-                                       {.0f, .0f, 1.f});
+                                       {.0f, .0f, 1.f})
+      * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(glm::vec3(size_.x - 0.5f, size_.y - 1.0f, .0f) + entry_pos, 1.0f, 2.0f)));
   room_.models.push_back(corner_model);
 
-  int left = simplex_int(room_.position() * 0.5f, 1, size_.x - 1);
-  int right = simplex_int(room_.position(), 1, size_.x - 1);
+  int left = simplex_range(room_.position() * 0.5f, 1, size_.x - 1);
+  int right = simplex_range(room_.position(), 1, size_.x - 1);
 
   for (float x = 1.0f; x < (size_.x - 1.0f); x++) {
     const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {x + .5f, .0f, .0f}),
@@ -78,18 +82,18 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
                                 -glm::half_pi<float>(),
                                 {.0f, .0f, 1.f});
 
-    auto edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
+    auto edge_model = edge_models[simplex_range(mos::position(t0), 0, edge_models.size())];
     auto floor_model = floor_models[0];
     if (x != float(left)) {
-      edge_model.transform = t0 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t0)) + 2.0f));
+      edge_model.transform = t0 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(mos::position(t0) + entry_pos, 1.0f, 2.0f)));
       room_.models.push_back(edge_model);
     } else {
       floor_model.transform = t0;
       room_.models.push_back(floor_model);
     }
     if (x != float(right)) {
-      edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
-      edge_model.transform = t1 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t1)) + 2.0f));;
+      edge_model = edge_models[simplex_range(mos::position(t1), 0, edge_models.size())];
+      edge_model.transform = t1 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(mos::position(t0) + entry_pos, 1.0f, 2.0f)));
       room_.models.push_back(edge_model);
     } else {
       floor_model.transform = t1;
@@ -103,20 +107,20 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       room_.models.push_back(floor_model);
 
       if (simplex_bool(entry_pos + floor_pos)) {
-        auto item = items[simplex_int(entry_pos + floor_pos, 0, items.size())];
+        auto item = items[simplex_range(entry_pos + floor_pos, 0, items.size())];
         item.position(floor_pos);
         items_.push_back(item);
       }
 
       const auto t0 = glm::rotate(glm::translate(glm::mat4(1.0f), {0.5f, y, .0f}), 0.0f, {.0f, .0f, 1.f});
-      edge_model = edge_models[simplex_int(mos::position(t0), 0, edge_models.size())];
-      edge_model.transform = t0 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t0)) + 2.0f));;
+      edge_model = edge_models[simplex_range(mos::position(t0), 0, edge_models.size())];
+      edge_model.transform = t0 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(mos::position(t0) + entry_pos, 1.0f, 2.0f)));
       room_.models.push_back(edge_model);
 
       const auto t1 =
           glm::rotate(glm::translate(glm::mat4(1.0f), {size_.x - 0.5f, y, .0f}), glm::pi<float>(), {.0f, .0f, 1.f});
-      edge_model = edge_models[simplex_int(mos::position(t1), 0, edge_models.size())];
-      edge_model.transform = t1 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, glm::simplex(mos::position(t1)) + 2.0f));;
+      edge_model = edge_models[simplex_range(mos::position(t1), 0, edge_models.size())];
+      edge_model.transform = t1 * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, simplex_range(mos::position(t0) + entry_pos, 1.0f, 2.0f)));
       room_.models.push_back(edge_model);
     }
   }
@@ -137,7 +141,7 @@ Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
       Door(assets, transform *
           glm::translate(glm::mat4(1.0f), glm::vec3((right) + 0.5f, float(size_.y) - 0.5f, 0.0f)) *
           glm::rotate(glm::mat4(1.0f), glm::half_pi<float>(), glm::vec3(0.0f, 0.0f, 1.0f))));
-  
+
   room_.models.insert(room_.end(), items_.begin(), items_.end());
 }
 

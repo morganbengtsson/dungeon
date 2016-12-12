@@ -7,7 +7,7 @@ Elevator::Elevator(mos::Assets &assets,
 model_.transform = transform;
 
 
-height_ = simplex_int(model_.position(), 1, max_length);
+height_ = simplex_range(model_.position(), 1, max_length);
 
 auto elevator = assets.model("elevator.model");
 

@@ -7,7 +7,7 @@ Door::Door(mos::Assets &assets, const glm::mat4 &transform)
       door_open_(assets.model("door_open.model")) {
   door_closed_.transform = transform;
   door_open_.transform = transform;
-  open = bool(simplex_int(mos::position(transform), 0, 2));
+  open = bool(simplex_range(mos::position(transform), 0, 2));
 }
 
 mos::Model Door::model() const {

@@ -9,7 +9,7 @@ Corridor::Corridor(mos::Assets &assets, const glm::mat4 &transform)
     : floor_(assets.model("corridor.model")) {
   model_.transform = transform;
 
-  length_ = simplex_int(model_.position(), 5, 10);
+  length_ = simplex_range(model_.position(), 5, 10);
   auto m = floor_;
 
   for (float i = 0; i < length_; i++) {
