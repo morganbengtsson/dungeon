@@ -1,1 +1,1 @@
-Install by placing or cloning into one of Blenders *scripts/addons* directories.
+Project in the course TNM022/TNM084 at Linköping university.
