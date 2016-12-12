@@ -9,7 +9,7 @@ TestCorridor::TestCorridor(mos::Assets &assets, const glm::mat4 &transform)
     : floor_(assets.model("corridor.model")) {
   model_.transform = transform;
 
-  length_ = uint((glm::abs(glm::simplex(model_.position()))) * 10.0f + 1.0f);
+  length_ = int((glm::abs(glm::simplex(model_.position()))) * 10.0f + 1.0f);
   auto m = floor_;
 
   auto t = glm::mat4(1.0f);
