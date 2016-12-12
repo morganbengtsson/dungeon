@@ -27,11 +27,9 @@ int main(int argc, char **argv) {
   };
 
   window.mouse_func = [&](const glm::dvec2 &position) {
-
   };
 
   window.click_func = [&](int button, int action, int mods) {
-
   };
 
   window.scroll_func = [&](const glm::dvec2 offset) {
