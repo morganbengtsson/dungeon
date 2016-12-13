@@ -2,9 +2,9 @@
 #include <glm/gtc/noise.hpp>
 #include <algorithm.hpp>
 
-StairsDown::StairsDown(mos::Assets &assets, const glm::mat4 &transform, const unsigned int max_length) : length_(0) {
+StairsDown::StairsDown(mos::Assets &assets, const glm::mat4 &transform, const int min_length, const int max_length) : length_(0) {
   model_.transform = transform;
-  length_ = simplex_range(model_.position(), 5, max_length);
+  length_ = simplex_range(model_.position(), min_length, max_length);
 
   exits.push_back(
       Door(assets, transform *

@@ -5,11 +5,11 @@
 #include <glm/gtx/rotate_vector.hpp>
 #include <algorithm.hpp>
 
-Corridor::Corridor(mos::Assets &assets, const glm::mat4 &transform)
+Corridor::Corridor(mos::Assets &assets, const glm::mat4 &transform, const int min_length, const int max_length)
     : floor_(assets.model("corridor.model")) {
   model_.transform = transform;
 
-  length_ = simplex_range(model_.position(), 5, 10);
+  length_ = simplex_range(model_.position(), min_length, max_length);
   auto m = floor_;
 
   for (float i = 0; i < length_; i++) {

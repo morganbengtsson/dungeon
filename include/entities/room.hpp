@@ -8,7 +8,10 @@
 
 class Room : public Entity {
 public:
-  Room(mos::Assets &assets, const glm::mat4 &transform);
+  Room(mos::Assets &assets,
+       const glm::mat4 &transform,
+       const glm::ivec2 min_size = glm::ivec2(3,3),
+       const glm::ivec2 max_size = glm::ivec2(6,6));
   void update(const float dt) override;
   mos::Model model();
 protected:

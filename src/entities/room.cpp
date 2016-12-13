@@ -4,10 +4,10 @@
 #include <mos/util.hpp>
 #include <algorithm.hpp>
 
-Room::Room(mos::Assets &assets, const glm::mat4 &transform) {
+Room::Room(mos::Assets &assets, const glm::mat4 &transform, const glm::ivec2 min_size, const glm::ivec2 max_size) {
   room_.transform = transform;
-  size_.x = simplex_range(room_.position(), 3, 6);
-  size_.y = simplex_range(room_.position() * .5f, 3, 6);
+  size_.x = simplex_range(room_.position(), min_size.x, max_size.x);
+  size_.y = simplex_range(room_.position() * .5f, min_size.y, max_size.y);
 
   const auto entry_pos = mos::position(transform);
 

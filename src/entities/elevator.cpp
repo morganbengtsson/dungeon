@@ -3,11 +3,11 @@
 #include <algorithm.hpp>
 
 Elevator::Elevator(mos::Assets &assets,
-                   const glm::mat4 &transform, const int max_length) : time_(.0f) {
+                   const glm::mat4 &transform, const int min_height, const int max_height) : time_(.0f) {
 model_.transform = transform;
 
 
-height_ = simplex_range(model_.position(), 1, max_length);
+height_ = simplex_range(model_.position(), min_height, max_height);
 
 auto elevator = assets.model("elevator.model");
 
