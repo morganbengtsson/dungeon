@@ -14,7 +14,7 @@ Level::Level(mos::Assets &assets, const glm::vec2 &resolution)
       entities_{std::make_shared<Room>(assets, glm::mat4(1.0f))},
       load_(std::async(std::launch::async, [&] {
         Entities new_entities;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
           for (auto &entity : entities_) {
             for (auto &door : entity->exits) {
               if (!door.next) {
@@ -87,12 +87,18 @@ Level::Boxes Level::boxes() {
 mos::Camera Level::camera() const { return camera_.camera(); }
 
 Entity::SharedEntity Level::create_entity(mos::Assets &assets, const glm::mat4 &transform) {
+
+  int min = 5;
+  int max = 10;
+  glm::uvec2 min_size(3,3);
+  glm::uvec2 max_size(6,6);
+
   std::vector<std::shared_ptr<Entity>> entities;
-  auto corridor = std::make_shared<Corridor>(assets, transform);
-  auto stairs = std::make_shared<Stairs>(assets, transform);
-  auto stairs_down = std::make_shared<StairsDown>(assets, transform);
-  auto room = std::make_shared<Room>(assets, transform);
-  auto elevator = std::make_shared<Elevator>(assets, transform);
+  auto corridor = std::make_shared<Corridor>(assets, transform, min, max);
+  auto stairs = std::make_shared<Stairs>(assets, transform, min, max);
+  auto stairs_down = std::make_shared<StairsDown>(assets, transform, min, max);
+  auto room = std::make_shared<Room>(assets, transform, min_size, max_size);
+  auto elevator = std::make_shared<Elevator>(assets, transform, min, max);
 
   entities.push_back(corridor);
   entities.push_back(corridor);
