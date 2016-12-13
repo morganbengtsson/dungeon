@@ -227,7 +227,7 @@ To show how adjustable the dungeon is, two examples are shown. One where only lo
    Dungeons generated with low and high values.
 
 
-Finally video_ of the resulting dungeon after six iterations is shown along with a screenshot_ of the result:
+Finally a video_ of the resulting dungeon after six iterations is available, along with a screenshot_ of the results:
 
 .. _video: https://www.youtube.com/watch?v=-ZhnmNAsNJo
 
