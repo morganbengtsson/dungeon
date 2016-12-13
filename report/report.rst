@@ -208,7 +208,26 @@ This should generate appropriate Makefiles for the Linux platform, or a Visual S
 Results and discussion
 ----------------------
 
-A video_ of the resulting application is available along with a screenshot_ below:
+The generation of the dungeon goes quickly at start of the application. To show the evolution of the dungeon, the first five iteration steps are shown below:
+
+.. figure:: iterations.png
+   :width: 70%
+   :align: center
+   :name: iterations
+   
+   Five iterations of the generating loop.
+
+To show how adjustable the dungeon is, two examples are shown. One where only low input values for the entities are allowed, and one where high values are used. As seen they differ quite a lot:
+
+.. figure:: low_high.png
+   :width: 70%
+   :align: center
+   :name: low_high
+
+   Dungeons generated with low and high values.
+
+
+Finally video_ of the resulting dungeon after six iterations is shown along with a screenshot_ of the result:
 
 .. _video: https://www.youtube.com/watch?v=-ZhnmNAsNJo
 
