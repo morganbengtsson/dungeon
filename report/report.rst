@@ -37,25 +37,25 @@ simplex_range_ is a function that generates deterministic random values within a
 .. code:: c++
    :name: simplex_range
    
-	template<class T>
-	int simplex_range(const T &seed, const int min, const int max) {
-	  // Noise value in range -1.0f, 1.0f.
-	  auto s = glm::simplex(seed);
+   template<class T>
+   int simplex_range(const T &seed, const int min, const int max) {
+     // Noise value in range -1.0f, 1.0f.
+     auto s = glm::simplex(seed);
 
-	  // Scale it to the min , max range.
-	  auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
-	  return int(n);
-	}
+     // Scale it to the min , max range.
+     auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
+     return int(n);
+   }
 
-	template<class T>
-	float simplex_range(const T &seed, const float min, const float max){
-	  // Noise value in range -1.0f, 1.0f.
-	  auto s = glm::simplex(seed);
+   template<class T>
+   float simplex_range(const T &seed, const float min, const float max){
+     // Noise value in range -1.0f, 1.0f.
+     auto s = glm::simplex(seed);
 
-	  // Scale it to the min , max range.
-	  auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
-	  return n;
-	}
+     // Scale it to the min , max range.
+     auto n = (((s + 1.0f) * (max - min)) / 2.0f) + min;
+     return n;
+   }
 
 simplex_bool_ is a convenience method that either gives true or false depending on the input.
 
@@ -130,7 +130,7 @@ The room is the most advanced and most configurable entity. Meaning that it can 
 The *type* value determines which set of models to use when creating the room. There are three sets, one with stone material one with metal material and one with wood material. There are several models that builds a room such as floor, edge models and corners. Some of the variations are shown in the `room edges`_ figure.
 
 .. figure:: room_edges.png
-   :width: 70 %
+   :width: 70%
    :align: center
    :name: room edges
    
@@ -145,7 +145,7 @@ Stairs
 Stairs are similar to the corridor_ with its only adjustable parameter being its *length*. This variable is again populated by the simplex_range_ method with position as input. The difference is that the stairs extends both vertically and horizontally. An exit door is added to the end of the model. There two versions of this entity, one that goes up and one that goes down, as shown in the `stairs models`_ figure.
 
 .. figure:: stairs.png
-   :width: 70 %
+   :width: 70%
    :align: center
    :name: stairs models
    
@@ -157,7 +157,7 @@ Items
 To further spice up the environment, some extra items are added to each room_. If they are placed on a floor model in the room_ depends on the simplex_bool_ function and the model position. Which item is used is determined by simplex_range_, and the same position. The `item models`_ are shown below:
 
 .. figure:: items.png
-   :width: 70 %
+   :width: 70%
    :align: center
    :name: item models
    
@@ -214,10 +214,9 @@ A video_ of the resulting application is available along with a screenshot_ belo
 
 
 .. figure:: screenshot.png
-   :width: 80 %
+   :width: 70%
    :align: center
    :name: screenshot
-   :target: screenshot.png
    
    The resulting dungeon after six iterations.
    
